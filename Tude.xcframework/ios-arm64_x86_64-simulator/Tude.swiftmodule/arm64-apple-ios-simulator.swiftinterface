@@ -1,0 +1,73 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Tude
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import GoogleMobileAds
+import PrebidMobile
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import os
+public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
+@_hasMissingDesignatedInitializers @objc public class AditudeWrapper : ObjectiveC.NSObject {
+  @objc public static func setShareGeoLocation(_ flag: Swift.Bool)
+  @objc public static func setPubApiKey(_ inputPubApiKey: Swift.String)
+  @objc public static func initialize(_ onInitialized: @escaping () -> Swift.Void)
+  @objc public static func initializeWithoutCallback()
+  @objc public static func cmd(_ vc: UIKit.UIViewController, command: @escaping (Tude.AditudeWrapper) -> Swift.Void)
+  @objc public func renderBannerAds(_ vc: UIKit.UIViewController)
+  @objc public func createBannerAdView(_ vc: UIKit.UIViewController, _ adSlot: Swift.String) -> Tude.BannerAdView?
+  @objc public func getRewardedVideoAd(_ slot: Swift.String) -> Tude.RewardedVideoAd?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class RewardItem : ObjectiveC.NSObject {
+  @objc final public let type: Swift.String
+  @objc final public let amount: Swift.Double
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class BannerAdView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdLoaded: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdLoadingError: ((_ loadAdErrorMessage: Swift.String) -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdClicked: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdImpression: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdOpened: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdClosed: (() -> Swift.Void)?
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var adSlot: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public func load(_ vc: UIKit.UIViewController)
+  @objc deinit
+}
+extension Tude.BannerAdView : GoogleMobileAds.GADBannerViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerViewDidReceiveAd(_ bannerView: GoogleMobileAds.GADBannerView)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerView(_ bannerView: GoogleMobileAds.GADBannerView, didFailToReceiveAdWithError error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.GADBannerView)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.GADBannerView)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.GADBannerView)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.GADBannerView)
+}
+@objc @_hasMissingDesignatedInitializers final public class RewardedVideoAd : ObjectiveC.NSObject {
+  @objc final public var onAdLoadingError: ((_ loadAdErrorMessage: Swift.String) -> Swift.Void)?
+  @objc final public var onAdDidDismissFullScreenContent: (() -> Swift.Void)?
+  @objc final public var onAdDidFailToPresentFullScreenWithError: ((any Swift.Error) -> Swift.Void)?
+  @objc final public var onAdClicked: (() -> Swift.Void)?
+  @objc final public var onAdDidRecordImpression: (() -> Swift.Void)?
+  @objc final public var onAdWillPresentFullScreenContent: (() -> Swift.Void)?
+  @objc final public var onAdWillDismissFullScreenContent: (() -> Swift.Void)?
+  @objc deinit
+  @objc final public func preload(_ vc: UIKit.UIViewController)
+  @objc final public func preload(_ vc: UIKit.UIViewController, onAdLoaded: @escaping (Tude.RewardedVideoAd) -> Swift.Void)
+  @objc final public func render(_ vc: UIKit.UIViewController)
+  @objc final public func render(_ vc: UIKit.UIViewController, rewardHandler: @escaping (Tude.RewardItem) -> Swift.Void)
+}
+extension Tude.RewardedVideoAd : GoogleMobileAds.GADFullScreenContentDelegate {
+  @objc final public func ad(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
+  @objc final public func adDidRecordClick(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adDidRecordImpression(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adWillDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+}
