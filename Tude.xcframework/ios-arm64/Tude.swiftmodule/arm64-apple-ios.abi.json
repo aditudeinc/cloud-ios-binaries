@@ -158,18 +158,12 @@
           {
             "kind": "Function",
             "name": "cmd",
-            "printedName": "cmd(_:command:)",
+            "printedName": "cmd(command:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
               },
               {
                 "kind": "TypeFunc",
@@ -191,14 +185,16 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)cmd:command:",
-            "mangledName": "$s4Tude14AditudeWrapperC3cmd_7commandySo16UIViewControllerC_yACctFZ",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)cmdWithCommand:",
+            "mangledName": "$s4Tude14AditudeWrapperC3cmd7commandyyACc_tFZ",
             "moduleName": "Tude",
             "static": true,
+            "objc_name": "cmdWithCommand:",
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -3217,23 +3213,17 @@
           {
             "kind": "Function",
             "name": "preload",
-            "printedName": "preload(_:)",
+            "printedName": "preload()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)preload:",
-            "mangledName": "$s4Tude15RewardedVideoAdC7preloadyySo16UIViewControllerCF",
+            "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)preload",
+            "mangledName": "$s4Tude15RewardedVideoAdC7preloadyyF",
             "moduleName": "Tude",
             "declAttributes": [
               "Final",
@@ -3246,18 +3236,12 @@
           {
             "kind": "Function",
             "name": "preload",
-            "printedName": "preload(_:onAdLoaded:)",
+            "printedName": "preload(onAdLoaded:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
               },
               {
                 "kind": "TypeFunc",
@@ -3279,9 +3263,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)preload:onAdLoaded:",
-            "mangledName": "$s4Tude15RewardedVideoAdC7preload_02onD6LoadedySo16UIViewControllerC_yACctF",
+            "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)preloadOnAdLoaded:",
+            "mangledName": "$s4Tude15RewardedVideoAdC7preload02onD6LoadedyyACc_tF",
             "moduleName": "Tude",
+            "objc_name": "preloadOnAdLoaded:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -3755,833 +3740,833 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
-      "kind": "Dictionary",
-      "offset": 510,
-      "length": 3,
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "Array",
+      "offset": 500,
+      "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 831,
+      "offset": 820,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 1396,
+      "offset": 1385,
       "length": 63,
       "value": "\"Cannot initialize Aditude wrapper without setting the api key\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 1723,
+      "offset": 1712,
       "length": 63,
       "value": "\"Cannot initialize Aditude wrapper without setting the api key\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 3229,
+      "offset": 3063,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 4234,
+      "offset": 4068,
       "length": 18,
       "value": "\"Starting wrapper\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 4327,
+      "offset": 4161,
       "length": 122,
       "value": "\"  Cannot start Tude wrapper without being given the publisher API key at least once before\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 7244,
+      "offset": 6969,
       "length": 45,
       "value": "\"Searching for adConfig for adSlot=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 7288,
+      "offset": 7013,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 7575,
+      "offset": 7300,
       "length": 37,
       "value": "\"Found adConfig for adSlot=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 7611,
+      "offset": 7336,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 8367,
+      "offset": 8092,
       "length": 47,
       "value": "\"Could not find adConfig for adSlot: \""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 8413,
+      "offset": 8138,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 8516,
+      "offset": 8241,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
-      "kind": "Dictionary",
-      "offset": 8907,
-      "length": 3,
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "Array",
+      "offset": 8632,
+      "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 9187,
+      "offset": 8911,
       "length": 17,
       "value": "\"No config found\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
       "offset": 284,
       "length": 14,
       "value": "\"Tude.AditudeWrapper\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 216,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "StringLiteral",
       "offset": 288,
       "length": 52,
       "value": "\"https:\/\/aditude.prebid-server.com\/openrtb2\/auction\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 376,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 415,
       "length": 4,
       "value": "3000"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 443,
       "length": 4,
       "value": "3000"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "StringLiteral",
       "offset": 482,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "StringLiteral",
       "offset": 534,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 423,
       "length": 11,
       "value": "\"accountId\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 459,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 423,
       "length": 11,
       "value": "\"accountId\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 459,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 1045,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 1080,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 1045,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 1080,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 1331,
       "length": 17,
       "value": "\"storedRequestId\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 1331,
       "length": 17,
       "value": "\"storedRequestId\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedItem.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedItem.swift",
       "kind": "StringLiteral",
       "offset": 192,
       "length": 10,
       "value": "\"Tude.RewardItem\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAd.swift",
       "kind": "StringLiteral",
       "offset": 365,
       "length": 91,
       "value": "\"Creating new banner ad configId=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAd.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 1,
       "value": "\", w=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAd.swift",
       "kind": "StringLiteral",
       "offset": 435,
       "length": 1,
       "value": "\", h=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAd.swift",
       "kind": "StringLiteral",
       "offset": 455,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAd.swift",
       "kind": "StringLiteral",
       "offset": 531,
       "length": 90,
       "value": "\"Created new banner ad configId=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAd.swift",
       "kind": "StringLiteral",
       "offset": 581,
       "length": 1,
       "value": "\", w=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAd.swift",
       "kind": "StringLiteral",
       "offset": 600,
       "length": 1,
       "value": "\", h=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAd.swift",
       "kind": "StringLiteral",
       "offset": 620,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAdConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAdConfig.swift",
       "kind": "StringLiteral",
       "offset": 188,
       "length": 21,
       "value": "\"Tude.RewardedVideoAdConfig\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
       "offset": 1447,
       "length": 17,
       "value": "\"No config found\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
       "offset": 1522,
       "length": 71,
       "value": "\"Initialize adUnitId=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
       "offset": 1560,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
       "offset": 1563,
       "length": 1,
       "value": "\", configId=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
       "offset": 1592,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "Dictionary",
       "offset": 1841,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
       "offset": 2046,
       "length": 67,
       "value": "\"Fetch ad status code=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
       "offset": 2077,
       "length": 3,
       "value": "\" for adUnitId=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
       "offset": 2109,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
       "offset": 2112,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
       "offset": 2933,
       "length": 25,
       "value": "\"Building banner ad unit\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/View\/BannerAdView.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 3244,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
       "offset": 968,
       "length": 17,
       "value": "\"Rewarded deinit\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
       "offset": 1109,
       "length": 165,
       "value": "\"    Creating new rewarded video ad configId=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
       "offset": 1187,
       "length": 1,
       "value": "\",\n    w=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
       "offset": 1222,
       "length": 1,
       "value": "\",\n    h=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
       "offset": 1258,
-      "length": 4694,
+      "length": 4636,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 2039,
+      "offset": 1989,
       "length": 58,
       "value": "\"Loaded rewarded video ad for adUnitId=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 2096,
+      "offset": 2046,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 2292,
+      "offset": 2242,
       "length": 44,
       "value": "\"Rewarded video ad failed to load: \""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 2335,
+      "offset": 2285,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3717,
+      "offset": 3659,
       "length": 98,
       "value": "\"Created new rewarded video ad configId=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3775,
+      "offset": 3717,
       "length": 1,
       "value": "\", w=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3794,
+      "offset": 3736,
       "length": 1,
       "value": "\", h=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3814,
+      "offset": 3756,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "Dictionary",
-      "offset": 4078,
+      "offset": 4020,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "Array",
-      "offset": 4379,
+      "offset": 4321,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
       "offset": 232,
       "length": 15,
       "value": "\"Tude.RewardedVideoAd\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
       "offset": 299,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 399,
       "length": 17,
       "value": "\"Starting prebid\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 518,
       "length": 73,
       "value": "\"Setting server account ID config.account=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 590,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 719,
       "length": 31,
       "value": "\"Running prebid in debug mode.\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
       "offset": 789,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 68,
       "value": "\"Setting server host config.host=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 898,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 1062,
       "length": 30,
       "value": "\"setCustomPrebidServer failed\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 1140,
       "length": 75,
       "value": "\"Setting timeout config.timeout=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 1214,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 1306,
       "length": 55,
       "value": "\"Setting share geo location=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 1360,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 1505,
       "length": 25,
       "value": "\"Setting custom headers)\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 1930,
       "length": 52,
       "value": "\"An error occurred during Prebid SDK initialization\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
       "offset": 2021,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 2152,
       "length": 37,
       "value": "\"Prebid SDK successfully initialized\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
       "offset": 2232,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 2306,
       "length": 71,
       "value": "\"An error occurred during Prebid SDK initialization with failed status\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
       "offset": 2420,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 2508,
       "length": 72,
       "value": "\"An error occurred during Prebid SDK initialization serverStatusWarning\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
       "offset": 2623,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 2702,
       "length": 60,
       "value": "\"An unknown error occurred during Prebid SDK initialization\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
       "offset": 2805,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAdConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAdConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 245,
       "length": 5,
       "value": "30000"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAdConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAdConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 643,
       "length": 5,
       "value": "30000"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAdConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAdConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 1151,
       "length": 5,
       "value": "30000"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/AdTypes\/display\/BannerAdConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/display\/BannerAdConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 1621,
       "length": 5,
       "value": "30000"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Utils\/Logger.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 363,
       "length": 9,
       "value": "\"general\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Utils\/Logger.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 569,
       "length": 12,
       "value": "\"%{public}@\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Utils\/Logger.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 675,
       "length": 12,
       "value": "\"%{public}@\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Utils\/Logger.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 786,
       "length": 12,
       "value": "\"%{public}@\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/BaseAdConfig.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/BaseAdConfig.swift",
       "kind": "Dictionary",
       "offset": 340,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/GAMWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "StringLiteral",
       "offset": 237,
       "length": 10,
       "value": "\"Tude GAM\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/GAMWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "StringLiteral",
       "offset": 293,
       "length": 28,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/GAMWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "StringLiteral",
       "offset": 302,
       "length": 1,
       "value": "\": Initializing GAM\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/GAMWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "StringLiteral",
       "offset": 418,
       "length": 37,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/GAMWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "StringLiteral",
       "offset": 427,
       "length": 1,
       "value": "\": Finished initializing GAM\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/GAMWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "StringLiteral",
       "offset": 602,
       "length": 44,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/GAMWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "StringLiteral",
       "offset": 611,
       "length": 1,
       "value": "\": Gam status=\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/GAMWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "StringLiteral",
       "offset": 645,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/Bidders\/GAMWrapper.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 663,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/TudeFetch.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 41,
       "value": "\"https:\/\/api.prebid-server.com\/publisher\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/TudeFetch.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 29,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/TudeFetch.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
       "kind": "StringLiteral",
       "offset": 585,
       "length": 1,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/TudeFetch.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
       "kind": "StringLiteral",
       "offset": 598,
       "length": 1,
       "value": "\"\/config\""
     },
     {
-      "filePath": "\/Users\/m.skrypchenko\/Downloads\/tude\/Tude\/TudeFetch.swift",
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
       "kind": "IntegerLiteral",
       "offset": 1303,
       "length": 1,

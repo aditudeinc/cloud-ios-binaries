@@ -295,7 +295,7 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 + (void)setPubApiKey:(NSString * _Nonnull)inputPubApiKey;
 + (void)initialize:(void (^ _Nonnull)(void))onInitialized;
 + (void)initializeWithoutCallback;
-+ (void)cmd:(UIViewController * _Nonnull)vc command:(void (^ _Nonnull)(AditudeWrapper * _Nonnull))command;
++ (void)cmdWithCommand:(void (^ _Nonnull)(AditudeWrapper * _Nonnull))command;
 - (void)renderBannerAds:(UIViewController * _Nonnull)vc;
 - (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)adSlot SWIFT_WARN_UNUSED_RESULT;
 - (RewardedVideoAd * _Nullable)getRewardedVideoAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
@@ -349,8 +349,8 @@ SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 @property (nonatomic, copy) void (^ _Nullable onAdDidRecordImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
-- (void)preload:(UIViewController * _Nonnull)vc;
-- (void)preload:(UIViewController * _Nonnull)vc onAdLoaded:(void (^ _Nonnull)(RewardedVideoAd * _Nonnull))onAdLoaded;
+- (void)preload;
+- (void)preloadOnAdLoaded:(void (^ _Nonnull)(RewardedVideoAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
 - (void)render:(UIViewController * _Nonnull)vc rewardHandler:(void (^ _Nonnull)(RewardItem * _Nonnull))rewardHandler;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

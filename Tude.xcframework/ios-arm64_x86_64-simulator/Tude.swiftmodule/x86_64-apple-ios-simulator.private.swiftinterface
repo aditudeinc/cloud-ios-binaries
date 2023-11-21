@@ -16,7 +16,7 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc public static func setPubApiKey(_ inputPubApiKey: Swift.String)
   @objc public static func initialize(_ onInitialized: @escaping () -> Swift.Void)
   @objc public static func initializeWithoutCallback()
-  @objc public static func cmd(_ vc: UIKit.UIViewController, command: @escaping (Tude.AditudeWrapper) -> Swift.Void)
+  @objc public static func cmd(command: @escaping (Tude.AditudeWrapper) -> Swift.Void)
   @objc public func renderBannerAds(_ vc: UIKit.UIViewController)
   @objc public func createBannerAdView(_ vc: UIKit.UIViewController, _ adSlot: Swift.String) -> Tude.BannerAdView?
   @objc public func getRewardedVideoAd(_ slot: Swift.String) -> Tude.RewardedVideoAd?
@@ -58,8 +58,8 @@ extension Tude.BannerAdView : GoogleMobileAds.GADBannerViewDelegate {
   @objc final public var onAdWillPresentFullScreenContent: (() -> Swift.Void)?
   @objc final public var onAdWillDismissFullScreenContent: (() -> Swift.Void)?
   @objc deinit
-  @objc final public func preload(_ vc: UIKit.UIViewController)
-  @objc final public func preload(_ vc: UIKit.UIViewController, onAdLoaded: @escaping (Tude.RewardedVideoAd) -> Swift.Void)
+  @objc final public func preload()
+  @objc final public func preload(onAdLoaded: @escaping (Tude.RewardedVideoAd) -> Swift.Void)
   @objc final public func render(_ vc: UIKit.UIViewController)
   @objc final public func render(_ vc: UIKit.UIViewController, rewardHandler: @escaping (Tude.RewardItem) -> Swift.Void)
 }
