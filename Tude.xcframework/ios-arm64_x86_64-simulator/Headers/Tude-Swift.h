@@ -261,6 +261,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import Foundation;
 @import GoogleMobileAds;
 @import ObjectiveC;
 @import UIKit;
@@ -285,6 +286,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 @class NSString;
+
+SWIFT_CLASS("_TtC4Tude19AdFailedToLoadError")
+@interface AdFailedToLoadError : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull domain;
+@property (nonatomic, readonly) NSInteger errorCode;
+@property (nonatomic, readonly, copy) NSString * _Nonnull failureReason;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull errorUserInfo;
+@property (nonatomic, readonly, copy) NSString * _Nonnull localizedDescription;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UIViewController;
 @class BannerAdView;
 @class RewardedVideoAd;
@@ -293,6 +306,8 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 @interface AditudeWrapper : NSObject
 + (void)setShareGeoLocation:(BOOL)flag;
 + (void)setPubApiKey:(NSString * _Nonnull)inputPubApiKey;
++ (void)setAppId:(NSString * _Nonnull)inputAppId;
++ (void)setStoreURL:(NSString * _Nonnull)inputStoreURL;
 + (void)initialize:(void (^ _Nonnull)(void))onInitialized;
 + (void)initializeWithoutCallback;
 + (void)cmdWithCommand:(void (^ _Nonnull)(AditudeWrapper * _Nonnull))command;
@@ -308,12 +323,11 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 SWIFT_CLASS("_TtC4Tude12BannerAdView")
 @interface BannerAdView : UIView
 @property (nonatomic, copy) void (^ _Nullable onAdLoaded)(void);
-@property (nonatomic, copy) void (^ _Nullable onAdLoadingError)(NSString * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
-@property (nonatomic, copy) IBInspectable NSString * _Nullable adSlot;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)load:(UIViewController * _Nonnull)vc;
@@ -342,7 +356,8 @@ SWIFT_CLASS("_TtC4Tude10RewardItem")
 
 SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 @interface RewardedVideoAd : NSObject
-@property (nonatomic, copy) void (^ _Nullable onAdLoadingError)(NSString * _Nonnull);
+@property (nonatomic, readonly) BOOL isLoaded;
+@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onAdDidDismissFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdDidFailToPresentFullScreenWithError)(NSError * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
@@ -640,6 +655,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import Foundation;
 @import GoogleMobileAds;
 @import ObjectiveC;
 @import UIKit;
@@ -664,6 +680,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 @class NSString;
+
+SWIFT_CLASS("_TtC4Tude19AdFailedToLoadError")
+@interface AdFailedToLoadError : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull domain;
+@property (nonatomic, readonly) NSInteger errorCode;
+@property (nonatomic, readonly, copy) NSString * _Nonnull failureReason;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull errorUserInfo;
+@property (nonatomic, readonly, copy) NSString * _Nonnull localizedDescription;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UIViewController;
 @class BannerAdView;
 @class RewardedVideoAd;
@@ -672,6 +700,8 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 @interface AditudeWrapper : NSObject
 + (void)setShareGeoLocation:(BOOL)flag;
 + (void)setPubApiKey:(NSString * _Nonnull)inputPubApiKey;
++ (void)setAppId:(NSString * _Nonnull)inputAppId;
++ (void)setStoreURL:(NSString * _Nonnull)inputStoreURL;
 + (void)initialize:(void (^ _Nonnull)(void))onInitialized;
 + (void)initializeWithoutCallback;
 + (void)cmdWithCommand:(void (^ _Nonnull)(AditudeWrapper * _Nonnull))command;
@@ -687,12 +717,11 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 SWIFT_CLASS("_TtC4Tude12BannerAdView")
 @interface BannerAdView : UIView
 @property (nonatomic, copy) void (^ _Nullable onAdLoaded)(void);
-@property (nonatomic, copy) void (^ _Nullable onAdLoadingError)(NSString * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
-@property (nonatomic, copy) IBInspectable NSString * _Nullable adSlot;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)load:(UIViewController * _Nonnull)vc;
@@ -721,7 +750,8 @@ SWIFT_CLASS("_TtC4Tude10RewardItem")
 
 SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 @interface RewardedVideoAd : NSObject
-@property (nonatomic, copy) void (^ _Nullable onAdLoadingError)(NSString * _Nonnull);
+@property (nonatomic, readonly) BOOL isLoaded;
+@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onAdDidDismissFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdDidFailToPresentFullScreenWithError)(NSError * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);

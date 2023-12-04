@@ -14,12 +14,22 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
 @_hasMissingDesignatedInitializers @objc public class AditudeWrapper : ObjectiveC.NSObject {
   @objc public static func setShareGeoLocation(_ flag: Swift.Bool)
   @objc public static func setPubApiKey(_ inputPubApiKey: Swift.String)
+  @objc public static func setAppId(_ inputAppId: Swift.String)
+  @objc public static func setStoreURL(_ inputStoreURL: Swift.String)
   @objc public static func initialize(_ onInitialized: @escaping () -> Swift.Void)
   @objc public static func initializeWithoutCallback()
   @objc public static func cmd(command: @escaping (Tude.AditudeWrapper) -> Swift.Void)
   @objc public func renderBannerAds(_ vc: UIKit.UIViewController)
   @objc public func createBannerAdView(_ vc: UIKit.UIViewController, _ adSlot: Swift.String) -> Tude.BannerAdView?
   @objc public func getRewardedVideoAd(_ slot: Swift.String) -> Tude.RewardedVideoAd?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class AdFailedToLoadError : ObjectiveC.NSObject, Foundation.CustomNSError {
+  @objc final public let domain: Swift.String
+  @objc final public let errorCode: Swift.Int
+  @objc final public let failureReason: Swift.String
+  @objc final public let errorUserInfo: [Swift.String : Any]
+  @objc final public let localizedDescription: Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class RewardItem : ObjectiveC.NSObject {
@@ -29,14 +39,14 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class BannerAdView : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) final public var onAdLoaded: (() -> Swift.Void)?
-  @objc @_Concurrency.MainActor(unsafe) final public var onAdLoadingError: ((_ loadAdErrorMessage: Swift.String) -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdFailedToLoad: ((_ loadAdError: Tude.AdFailedToLoadError) -> Swift.Void)?
   @objc @_Concurrency.MainActor(unsafe) final public var onAdClicked: (() -> Swift.Void)?
   @objc @_Concurrency.MainActor(unsafe) final public var onAdImpression: (() -> Swift.Void)?
   @objc @_Concurrency.MainActor(unsafe) final public var onAdOpened: (() -> Swift.Void)?
   @objc @_Concurrency.MainActor(unsafe) final public var onAdClosed: (() -> Swift.Void)?
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var adSlot: Swift.String? {
-    @objc get
-    @objc set
+  @_Concurrency.MainActor(unsafe) final public var adSlot: Swift.String? {
+    get
+    set
   }
   @objc @_Concurrency.MainActor(unsafe) final public func load(_ vc: UIKit.UIViewController)
   @objc deinit
@@ -50,7 +60,10 @@ extension Tude.BannerAdView : GoogleMobileAds.GADBannerViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.GADBannerView)
 }
 @objc @_hasMissingDesignatedInitializers final public class RewardedVideoAd : ObjectiveC.NSObject {
-  @objc final public var onAdLoadingError: ((_ loadAdErrorMessage: Swift.String) -> Swift.Void)?
+  @objc final public var isLoaded: Swift.Bool {
+    get
+  }
+  @objc final public var onAdFailedToLoad: ((_ loadAdError: Tude.AdFailedToLoadError) -> Swift.Void)?
   @objc final public var onAdDidDismissFullScreenContent: (() -> Swift.Void)?
   @objc final public var onAdDidFailToPresentFullScreenWithError: ((any Swift.Error) -> Swift.Void)?
   @objc final public var onAdClicked: (() -> Swift.Void)?

@@ -94,6 +94,64 @@
           },
           {
             "kind": "Function",
+            "name": "setAppId",
+            "printedName": "setAppId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)setAppId:",
+            "mangledName": "$s4Tude14AditudeWrapperC8setAppIdyySSFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setStoreURL",
+            "printedName": "setStoreURL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)setStoreURL:",
+            "mangledName": "$s4Tude14AditudeWrapperC11setStoreURLyySSFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(_:)",
             "children": [
@@ -419,6 +477,422 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdFailedToLoadError",
+        "printedName": "AdFailedToLoadError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "domain",
+            "printedName": "domain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(py)domain",
+            "mangledName": "$s4Tude19AdFailedToLoadErrorC6domainSSvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(im)domain",
+                "mangledName": "$s4Tude19AdFailedToLoadErrorC6domainSSvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorCode",
+            "printedName": "errorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(py)errorCode",
+            "mangledName": "$s4Tude19AdFailedToLoadErrorC9errorCodeSivp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(im)errorCode",
+                "mangledName": "$s4Tude19AdFailedToLoadErrorC9errorCodeSivg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failureReason",
+            "printedName": "failureReason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(py)failureReason",
+            "mangledName": "$s4Tude19AdFailedToLoadErrorC13failureReasonSSvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(im)failureReason",
+                "mangledName": "$s4Tude19AdFailedToLoadErrorC13failureReasonSSvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorUserInfo",
+            "printedName": "errorUserInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(py)errorUserInfo",
+            "mangledName": "$s4Tude19AdFailedToLoadErrorC13errorUserInfoSDySSypGvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(im)errorUserInfo",
+                "mangledName": "$s4Tude19AdFailedToLoadErrorC13errorUserInfoSDySSypGvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "localizedDescription",
+            "printedName": "localizedDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(py)localizedDescription",
+            "mangledName": "$s4Tude19AdFailedToLoadErrorC20localizedDescriptionSSvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(im)localizedDescription",
+                "mangledName": "$s4Tude19AdFailedToLoadErrorC20localizedDescriptionSSvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdFailedToLoadError",
+                "printedName": "Tude.AdFailedToLoadError",
+                "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError(im)init",
+            "mangledName": "$s4Tude19AdFailedToLoadErrorCACycfc",
+            "moduleName": "Tude",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError",
+        "mangledName": "$s4Tude19AdFailedToLoadErrorC",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomNSError",
+            "printedName": "CustomNSError",
+            "usr": "s:10Foundation13CustomNSErrorP",
+            "mangledName": "$s10Foundation13CustomNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Tude",
         "declAttributes": [
@@ -872,18 +1346,18 @@
           },
           {
             "kind": "Var",
-            "name": "onAdLoadingError",
-            "printedName": "onAdLoadingError",
+            "name": "onAdFailedToLoad",
+            "printedName": "onAdFailedToLoad",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.String) -> ())?",
+                "printedName": "((Tude.AdFailedToLoadError) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String) -> ()",
+                    "printedName": "(Tude.AdFailedToLoadError) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -892,9 +1366,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "AdFailedToLoadError",
+                        "printedName": "Tude.AdFailedToLoadError",
+                        "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError"
                       }
                     ]
                   }
@@ -903,8 +1377,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@Tude@objc(cs)BannerAdView(py)onAdLoadingError",
-            "mangledName": "$s4Tude12BannerAdViewC02onC12LoadingErrorySScSgvp",
+            "usr": "c:@M@Tude@objc(cs)BannerAdView(py)onAdFailedToLoad",
+            "mangledName": "$s4Tude12BannerAdViewC02onC12FailedToLoadyAA0cfgH5ErrorCcSgvp",
             "moduleName": "Tude",
             "declAttributes": [
               "HasInitialValue",
@@ -924,12 +1398,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.String) -> ())?",
+                    "printedName": "((Tude.AdFailedToLoadError) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.String) -> ()",
+                        "printedName": "(Tude.AdFailedToLoadError) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -938,9 +1412,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "AdFailedToLoadError",
+                            "printedName": "Tude.AdFailedToLoadError",
+                            "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError"
                           }
                         ]
                       }
@@ -949,8 +1423,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Tude@objc(cs)BannerAdView(im)onAdLoadingError",
-                "mangledName": "$s4Tude12BannerAdViewC02onC12LoadingErrorySScSgvg",
+                "usr": "c:@M@Tude@objc(cs)BannerAdView(im)onAdFailedToLoad",
+                "mangledName": "$s4Tude12BannerAdViewC02onC12FailedToLoadyAA0cfgH5ErrorCcSgvg",
                 "moduleName": "Tude",
                 "implicit": true,
                 "declAttributes": [
@@ -972,12 +1446,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.String) -> ())?",
+                    "printedName": "((Tude.AdFailedToLoadError) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.String) -> ()",
+                        "printedName": "(Tude.AdFailedToLoadError) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -986,9 +1460,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "AdFailedToLoadError",
+                            "printedName": "Tude.AdFailedToLoadError",
+                            "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError"
                           }
                         ]
                       }
@@ -997,8 +1471,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Tude@objc(cs)BannerAdView(im)setOnAdLoadingError:",
-                "mangledName": "$s4Tude12BannerAdViewC02onC12LoadingErrorySScSgvs",
+                "usr": "c:@M@Tude@objc(cs)BannerAdView(im)setOnAdFailedToLoad:",
+                "mangledName": "$s4Tude12BannerAdViewC02onC12FailedToLoadyAA0cfgH5ErrorCcSgvs",
                 "moduleName": "Tude",
                 "implicit": true,
                 "declAttributes": [
@@ -1019,8 +1493,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:4Tude12BannerAdViewC02onC12LoadingErrorySScSgvM",
-                "mangledName": "$s4Tude12BannerAdViewC02onC12LoadingErrorySScSgvM",
+                "usr": "s:4Tude12BannerAdViewC02onC12FailedToLoadyAA0cfgH5ErrorCcSgvM",
+                "mangledName": "$s4Tude12BannerAdViewC02onC12FailedToLoadyAA0cfgH5ErrorCcSgvM",
                 "moduleName": "Tude",
                 "implicit": true,
                 "declAttributes": [
@@ -1679,7 +2153,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@Tude@objc(cs)BannerAdView(py)adSlot",
+            "usr": "s:4Tude12BannerAdViewC6adSlotSSSgvp",
             "mangledName": "$s4Tude12BannerAdViewC6adSlotSSSgvp",
             "moduleName": "Tude",
             "declAttributes": [
@@ -1687,9 +2161,7 @@
               "Final",
               "Custom",
               "HasStorage",
-              "AccessControl",
-              "IBInspectable",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1714,13 +2186,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Tude@objc(cs)BannerAdView(im)adSlot",
+                "usr": "s:4Tude12BannerAdViewC6adSlotSSSgvg",
                 "mangledName": "$s4Tude12BannerAdViewC6adSlotSSSgvg",
                 "moduleName": "Tude",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               },
@@ -1750,13 +2221,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Tude@objc(cs)BannerAdView(im)setAdSlot:",
+                "usr": "s:4Tude12BannerAdViewC6adSlotSSSgvs",
                 "mangledName": "$s4Tude12BannerAdViewC6adSlotSSSgvs",
                 "moduleName": "Tude",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "set"
               },
@@ -2114,18 +2584,69 @@
         "children": [
           {
             "kind": "Var",
-            "name": "onAdLoadingError",
-            "printedName": "onAdLoadingError",
+            "name": "isLoaded",
+            "printedName": "isLoaded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(py)isLoaded",
+            "mangledName": "$s4Tude15RewardedVideoAdC8isLoadedSbvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)isLoaded",
+                "mangledName": "$s4Tude15RewardedVideoAdC8isLoadedSbvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onAdFailedToLoad",
+            "printedName": "onAdFailedToLoad",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.String) -> ())?",
+                "printedName": "((Tude.AdFailedToLoadError) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String) -> ()",
+                    "printedName": "(Tude.AdFailedToLoadError) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2134,9 +2655,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "AdFailedToLoadError",
+                        "printedName": "Tude.AdFailedToLoadError",
+                        "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError"
                       }
                     ]
                   }
@@ -2145,8 +2666,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(py)onAdLoadingError",
-            "mangledName": "$s4Tude15RewardedVideoAdC02onD12LoadingErrorySScSgvp",
+            "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(py)onAdFailedToLoad",
+            "mangledName": "$s4Tude15RewardedVideoAdC02onD12FailedToLoadyAA0dfgH5ErrorCcSgvp",
             "moduleName": "Tude",
             "declAttributes": [
               "HasInitialValue",
@@ -2165,12 +2686,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.String) -> ())?",
+                    "printedName": "((Tude.AdFailedToLoadError) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.String) -> ()",
+                        "printedName": "(Tude.AdFailedToLoadError) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -2179,9 +2700,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "AdFailedToLoadError",
+                            "printedName": "Tude.AdFailedToLoadError",
+                            "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError"
                           }
                         ]
                       }
@@ -2190,8 +2711,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)onAdLoadingError",
-                "mangledName": "$s4Tude15RewardedVideoAdC02onD12LoadingErrorySScSgvg",
+                "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)onAdFailedToLoad",
+                "mangledName": "$s4Tude15RewardedVideoAdC02onD12FailedToLoadyAA0dfgH5ErrorCcSgvg",
                 "moduleName": "Tude",
                 "implicit": true,
                 "declAttributes": [
@@ -2213,12 +2734,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.String) -> ())?",
+                    "printedName": "((Tude.AdFailedToLoadError) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.String) -> ()",
+                        "printedName": "(Tude.AdFailedToLoadError) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -2227,9 +2748,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "AdFailedToLoadError",
+                            "printedName": "Tude.AdFailedToLoadError",
+                            "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError"
                           }
                         ]
                       }
@@ -2238,8 +2759,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)setOnAdLoadingError:",
-                "mangledName": "$s4Tude15RewardedVideoAdC02onD12LoadingErrorySScSgvs",
+                "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)setOnAdFailedToLoad:",
+                "mangledName": "$s4Tude15RewardedVideoAdC02onD12FailedToLoadyAA0dfgH5ErrorCcSgvs",
                 "moduleName": "Tude",
                 "implicit": true,
                 "declAttributes": [
@@ -2260,8 +2781,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:4Tude15RewardedVideoAdC02onD12LoadingErrorySScSgvM",
-                "mangledName": "$s4Tude15RewardedVideoAdC02onD12LoadingErrorySScSgvM",
+                "usr": "s:4Tude15RewardedVideoAdC02onD12FailedToLoadyAA0dfgH5ErrorCcSgvM",
+                "mangledName": "$s4Tude15RewardedVideoAdC02onD12FailedToLoadyAA0dfgH5ErrorCcSgvM",
                 "moduleName": "Tude",
                 "implicit": true,
                 "declAttributes": [
@@ -3734,6 +4255,16 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
@@ -3742,114 +4273,114 @@
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "Array",
-      "offset": 500,
+      "offset": 458,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1645,
+      "length": 22,
+      "value": "\"Initializing wrapper\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1984,
+      "length": 22,
+      "value": "\"Initializing wrapper\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 820,
+      "offset": 3399,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 1385,
-      "length": 63,
-      "value": "\"Cannot initialize Aditude wrapper without setting the api key\""
-    },
-    {
-      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 1712,
-      "length": 63,
-      "value": "\"Cannot initialize Aditude wrapper without setting the api key\""
-    },
-    {
-      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3063,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 4068,
+      "offset": 4404,
       "length": 18,
       "value": "\"Starting wrapper\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 4161,
-      "length": 122,
-      "value": "\"  Cannot start Tude wrapper without being given the publisher API key at least once before\""
+      "offset": 4497,
+      "length": 86,
+      "value": "\"  Cannot start Tude wrapper without initializing first\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 6969,
+      "offset": 4798,
+      "length": 63,
+      "value": "\"Cannot initialize Aditude wrapper without setting the api key\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 4989,
+      "length": 62,
+      "value": "\"Cannot initialize Aditude wrapper without setting the app ID\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 8122,
       "length": 45,
       "value": "\"Searching for adConfig for adSlot=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 7013,
+      "offset": 8166,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 7300,
+      "offset": 8453,
       "length": 37,
       "value": "\"Found adConfig for adSlot=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 7336,
+      "offset": 8489,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 8092,
+      "offset": 9245,
       "length": 47,
       "value": "\"Could not find adConfig for adSlot: \""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 8138,
+      "offset": 9291,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 8241,
+      "offset": 9394,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "Array",
-      "offset": 8632,
+      "offset": 9785,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 8911,
-      "length": 17,
-      "value": "\"No config found\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
@@ -3889,93 +4420,135 @@
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 443,
+      "offset": 469,
       "length": 4,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "StringLiteral",
-      "offset": 482,
+      "offset": 508,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "StringLiteral",
-      "offset": 534,
+      "offset": 560,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 423,
+      "offset": 409,
       "length": 11,
       "value": "\"accountId\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 459,
+      "offset": 445,
       "length": 10,
       "value": "\"configId\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 423,
+      "offset": 409,
       "length": 11,
       "value": "\"accountId\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 459,
+      "offset": 445,
       "length": 10,
       "value": "\"configId\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1045,
+      "offset": 1031,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1080,
+      "offset": 1066,
       "length": 10,
       "value": "\"configId\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1045,
+      "offset": 1031,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1080,
+      "offset": 1066,
       "length": 10,
       "value": "\"configId\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1331,
+      "offset": 1317,
       "length": 17,
       "value": "\"storedRequestId\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1331,
+      "offset": 1317,
       "length": 17,
       "value": "\"storedRequestId\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdEvents\/AdFailedToLoadError.swift",
+      "kind": "StringLiteral",
+      "offset": 537,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdEvents\/AdFailedToLoadError.swift",
+      "kind": "StringLiteral",
+      "offset": 206,
+      "length": 19,
+      "value": "\"Tude.AdFailedToLoadError\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
+      "kind": "Dictionary",
+      "offset": 387,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 432,
+      "length": 21,
+      "value": "\"Setting device type\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 597,
+      "length": 37,
+      "value": "\"Device type: \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 633,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedItem.swift",
@@ -4050,191 +4623,303 @@
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1447,
+      "offset": 1438,
       "length": 17,
       "value": "\"No config found\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1522,
+      "offset": 1513,
       "length": 71,
       "value": "\"Initialize adUnitId=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1560,
+      "offset": 1551,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1563,
+      "offset": 1554,
       "length": 1,
       "value": "\", configId=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1592,
+      "offset": 1583,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "Dictionary",
-      "offset": 1841,
+      "offset": 1832,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2046,
-      "length": 67,
+      "offset": 1961,
+      "length": 42,
+      "value": "\"Setting custom targeting for \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 1996,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 2002,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 2162,
+      "length": 100,
       "value": "\"Fetch ad status code=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2077,
+      "offset": 2202,
+      "length": 6,
+      "value": "\" reason=\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 2226,
       "length": 3,
       "value": "\" for adUnitId=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2109,
+      "offset": 2258,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2112,
+      "offset": 2261,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2933,
+      "offset": 3082,
       "length": 25,
       "value": "\"Building banner ad unit\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3244,
+      "offset": 3393,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 451,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1023,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 968,
+      "offset": 1056,
       "length": 17,
       "value": "\"Rewarded deinit\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 1109,
+      "offset": 1197,
       "length": 165,
       "value": "\"    Creating new rewarded video ad configId=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 1187,
+      "offset": 1275,
       "length": 1,
       "value": "\",\n    w=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 1222,
+      "offset": 1310,
       "length": 1,
       "value": "\",\n    h=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 1258,
-      "length": 4636,
+      "offset": 1346,
+      "length": 5197,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1634,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2113,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 1989,
+      "offset": 2157,
       "length": 58,
       "value": "\"Loaded rewarded video ad for adUnitId=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 2046,
+      "offset": 2214,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 2242,
-      "length": 44,
+      "offset": 2478,
+      "length": 65,
       "value": "\"Rewarded video ad failed to load: \""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 2285,
+      "offset": 2542,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3659,
+      "offset": 3916,
       "length": 98,
       "value": "\"Created new rewarded video ad configId=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3717,
+      "offset": 3974,
       "length": 1,
       "value": "\", w=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3736,
+      "offset": 3993,
       "length": 1,
       "value": "\", h=\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3756,
+      "offset": 4013,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
       "kind": "Dictionary",
-      "offset": 4020,
+      "offset": 4277,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
-      "kind": "Array",
-      "offset": 4321,
+      "kind": "StringLiteral",
+      "offset": 4394,
+      "length": 42,
+      "value": "\"Setting custom targeting for \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "StringLiteral",
+      "offset": 4429,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "StringLiteral",
+      "offset": 4435,
       "length": 2,
-      "value": "[]"
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "StringLiteral",
+      "offset": 4582,
+      "length": 104,
+      "value": "\"Fetch ad status code=\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "StringLiteral",
+      "offset": 4622,
+      "length": 6,
+      "value": "\" reason=\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "StringLiteral",
+      "offset": 4646,
+      "length": 3,
+      "value": "\" for adUnitId=\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "StringLiteral",
+      "offset": 4682,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "StringLiteral",
+      "offset": 4685,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "Array",
+      "offset": 4847,
+      "length": 13,
+      "value": "[\"video\/mp4\"]"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
@@ -4242,6 +4927,20 @@
       "offset": 232,
       "length": 15,
       "value": "\"Tude.RewardedVideoAd\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5275,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/AdTypes\/video\/RewardedVideoAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6150,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
@@ -4344,70 +5043,84 @@
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 1930,
+      "offset": 1683,
+      "length": 32,
+      "value": "\"Setting storeURL = \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
+      "kind": "StringLiteral",
+      "offset": 1714,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
+      "kind": "StringLiteral",
+      "offset": 2107,
       "length": 52,
       "value": "\"An error occurred during Prebid SDK initialization\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
-      "offset": 2021,
+      "offset": 2198,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 2152,
+      "offset": 2329,
       "length": 37,
       "value": "\"Prebid SDK successfully initialized\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
-      "offset": 2232,
+      "offset": 2409,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 2306,
+      "offset": 2483,
       "length": 71,
       "value": "\"An error occurred during Prebid SDK initialization with failed status\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
-      "offset": 2420,
+      "offset": 2597,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 2508,
+      "offset": 2685,
       "length": 72,
       "value": "\"An error occurred during Prebid SDK initialization serverStatusWarning\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
-      "offset": 2623,
+      "offset": 2800,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 2702,
+      "offset": 2879,
       "length": 60,
       "value": "\"An unknown error occurred during Prebid SDK initialization\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
-      "offset": 2805,
+      "offset": 2982,
       "length": 5,
       "value": "false"
     },
@@ -4541,36 +5254,204 @@
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
       "kind": "StringLiteral",
       "offset": 219,
-      "length": 41,
-      "value": "\"https:\/\/api.prebid-server.com\/publisher\""
+      "length": 35,
+      "value": "\"https:\/\/aditude.prebid-server.com\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 577,
-      "length": 29,
-      "value": "\"\""
+      "offset": 730,
+      "length": 73,
+      "value": "\"\/prebid\/cache\/\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 585,
+      "offset": 757,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 598,
+      "offset": 766,
       "length": 1,
-      "value": "\"\/config\""
+      "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1303,
+      "kind": "StringLiteral",
+      "offset": 789,
       "length": 1,
-      "value": "0"
+      "value": "\"\/current.json\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 829,
+      "length": 16,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 837,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 844,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 873,
+      "length": 38,
+      "value": "\"Starting request for \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 902,
+      "length": 7,
+      "value": "\" configs\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 1220,
+      "length": 40,
+      "value": "\"Success requesting for \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 1251,
+      "length": 7,
+      "value": "\" configs\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 1387,
+      "length": 95,
+      "value": "\"Error fetching configs for device \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 1449,
+      "length": 1,
+      "value": "\". Setting to mobile and retrying\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 1638,
+      "length": 151,
+      "value": "\"Error fetching configs for pubKey: \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 1691,
+      "length": 5,
+      "value": "\" appID: \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 1712,
+      "length": 3,
+      "value": "\" and device \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 1751,
+      "length": 5,
+      "value": "\" error: \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 1788,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 2065,
+      "length": 97,
+      "value": "\"Config results are empty for device \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 2129,
+      "length": 1,
+      "value": "\". Setting to mobile and retrying\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 2317,
+      "length": 116,
+      "value": "\"Config results are empty for pubKey: \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 2372,
+      "length": 5,
+      "value": "\" appID: \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 2393,
+      "length": 3,
+      "value": "\" and device \""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/TudeFetch.swift",
+      "kind": "StringLiteral",
+      "offset": 2432,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
+      "kind": "StringLiteral",
+      "offset": 209,
+      "length": 8,
+      "value": "\"mobile\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
+      "kind": "StringLiteral",
+      "offset": 236,
+      "length": 8,
+      "value": "\"tablet\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
+      "kind": "StringLiteral",
+      "offset": 209,
+      "length": 8,
+      "value": "\"mobile\""
+    },
+    {
+      "filePath": "\/Users\/m.skrypchenko\/Documents\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
+      "kind": "StringLiteral",
+      "offset": 236,
+      "length": 8,
+      "value": "\"tablet\""
     }
   ]
 }
