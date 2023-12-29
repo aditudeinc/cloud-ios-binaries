@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Tude
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import DTBiOSSDK
 import Foundation
 import GoogleMobileAds
 import PrebidMobile
@@ -22,6 +23,7 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc public func renderBannerAds(_ vc: UIKit.UIViewController)
   @objc public func createBannerAdView(_ vc: UIKit.UIViewController, _ adSlot: Swift.String) -> Tude.BannerAdView?
   @objc public func getRewardedVideoAd(_ slot: Swift.String) -> Tude.RewardedVideoAd?
+  @objc public func getInterstitialAd(_ slot: Swift.String) -> Tude.InterstitialAd?
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class AdFailedToLoadError : ObjectiveC.NSObject, Foundation.CustomNSError {
@@ -31,6 +33,30 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc final public let errorUserInfo: [Swift.String : Any]
   @objc final public let localizedDescription: Swift.String
   @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers final public class InterstitialAd : ObjectiveC.NSObject {
+  @objc final public var isLoaded: Swift.Bool {
+    get
+  }
+  @objc final public var onAdFailedToLoad: ((_ loadAdError: Tude.AdFailedToLoadError) -> Swift.Void)?
+  @objc final public var onAdDidDismissFullScreenContent: (() -> Swift.Void)?
+  @objc final public var onAdDidFailToPresentFullScreenWithError: ((any Swift.Error) -> Swift.Void)?
+  @objc final public var onAdClicked: (() -> Swift.Void)?
+  @objc final public var onAdDidRecordImpression: (() -> Swift.Void)?
+  @objc final public var onAdWillPresentFullScreenContent: (() -> Swift.Void)?
+  @objc final public var onAdWillDismissFullScreenContent: (() -> Swift.Void)?
+  @objc deinit
+  @objc final public func preload()
+  @objc final public func preload(onAdLoaded: @escaping (Tude.InterstitialAd) -> Swift.Void)
+  @objc final public func render(_ vc: UIKit.UIViewController)
+}
+extension Tude.InterstitialAd : GoogleMobileAds.GADFullScreenContentDelegate {
+  @objc final public func ad(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
+  @objc final public func adDidRecordClick(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adDidRecordImpression(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adWillDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
 }
 @_hasMissingDesignatedInitializers @objc final public class RewardItem : ObjectiveC.NSObject {
   @objc final public let type: Swift.String
@@ -44,9 +70,9 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc @_Concurrency.MainActor(unsafe) final public var onAdImpression: (() -> Swift.Void)?
   @objc @_Concurrency.MainActor(unsafe) final public var onAdOpened: (() -> Swift.Void)?
   @objc @_Concurrency.MainActor(unsafe) final public var onAdClosed: (() -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) final public var adSlot: Swift.String? {
-    get
-    set
+  @objc @_Concurrency.MainActor(unsafe) final public var adSlot: Swift.String? {
+    @objc get
+    @objc set
   }
   @objc @_Concurrency.MainActor(unsafe) final public func load(_ vc: UIKit.UIViewController)
   @objc deinit
@@ -70,6 +96,7 @@ extension Tude.BannerAdView : GoogleMobileAds.GADBannerViewDelegate {
   @objc final public var onAdDidRecordImpression: (() -> Swift.Void)?
   @objc final public var onAdWillPresentFullScreenContent: (() -> Swift.Void)?
   @objc final public var onAdWillDismissFullScreenContent: (() -> Swift.Void)?
+  @objc final public var onAdEarnedReward: ((Tude.RewardItem) -> Swift.Void)?
   @objc deinit
   @objc final public func preload()
   @objc final public func preload(onAdLoaded: @escaping (Tude.RewardedVideoAd) -> Swift.Void)

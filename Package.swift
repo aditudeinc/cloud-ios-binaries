@@ -21,6 +21,7 @@ let package = Package(
             dependencies: [
                 "Tude",
                 "PrebidMobile",
+                "DTBiOSSDK",
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
             ],
             path: "Tude"
@@ -32,6 +33,10 @@ let package = Package(
         .binaryTarget(
             name: "PrebidMobile",
             path: "PrebidMobile.xcframework"
+        ),
+        .binaryTarget(
+            name: "DTBiOSSDK",
+            path: "DTBiOSSDK.xcframework"
         )
     ]
 )

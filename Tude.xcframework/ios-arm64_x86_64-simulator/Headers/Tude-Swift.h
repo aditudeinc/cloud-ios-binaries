@@ -301,6 +301,7 @@ SWIFT_CLASS("_TtC4Tude19AdFailedToLoadError")
 @class UIViewController;
 @class BannerAdView;
 @class RewardedVideoAd;
+@class InterstitialAd;
 
 SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 @interface AditudeWrapper : NSObject
@@ -314,6 +315,7 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 - (void)renderBannerAds:(UIViewController * _Nonnull)vc;
 - (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)adSlot SWIFT_WARN_UNUSED_RESULT;
 - (RewardedVideoAd * _Nullable)getRewardedVideoAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
+- (InterstitialAd * _Nullable)getInterstitialAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -328,6 +330,7 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 @property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
+@property (nonatomic, copy) NSString * _Nullable adSlot;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)load:(UIViewController * _Nonnull)vc;
@@ -342,6 +345,35 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 - (void)bannerViewDidRecordImpression:(GADBannerView * _Nonnull)bannerView;
 - (void)bannerViewWillPresentScreen:(GADBannerView * _Nonnull)bannerView;
 - (void)bannerViewDidDismissScreen:(GADBannerView * _Nonnull)bannerView;
+@end
+
+
+SWIFT_CLASS("_TtC4Tude14InterstitialAd")
+@interface InterstitialAd : NSObject
+@property (nonatomic, readonly) BOOL isLoaded;
+@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdDidDismissFullScreenContent)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdDidFailToPresentFullScreenWithError)(NSError * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdDidRecordImpression)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
+- (void)preload;
+- (void)preloadOnAdLoaded:(void (^ _Nonnull)(InterstitialAd * _Nonnull))onAdLoaded;
+- (void)render:(UIViewController * _Nonnull)vc;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol GADFullScreenPresentingAd;
+
+@interface InterstitialAd (SWIFT_EXTENSION(Tude)) <GADFullScreenContentDelegate>
+- (void)ad:(id <GADFullScreenPresentingAd> _Nonnull)ad didFailToPresentFullScreenContentWithError:(NSError * _Nonnull)error;
+- (void)adDidRecordClick:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adDidRecordImpression:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adDidDismissFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adWillDismissFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adWillPresentFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
 @end
 
 
@@ -364,6 +396,7 @@ SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 @property (nonatomic, copy) void (^ _Nullable onAdDidRecordImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdEarnedReward)(RewardItem * _Nonnull);
 - (void)preload;
 - (void)preloadOnAdLoaded:(void (^ _Nonnull)(RewardedVideoAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
@@ -372,7 +405,6 @@ SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@protocol GADFullScreenPresentingAd;
 
 @interface RewardedVideoAd (SWIFT_EXTENSION(Tude)) <GADFullScreenContentDelegate>
 - (void)ad:(id <GADFullScreenPresentingAd> _Nonnull)ad didFailToPresentFullScreenContentWithError:(NSError * _Nonnull)error;
@@ -695,6 +727,7 @@ SWIFT_CLASS("_TtC4Tude19AdFailedToLoadError")
 @class UIViewController;
 @class BannerAdView;
 @class RewardedVideoAd;
+@class InterstitialAd;
 
 SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 @interface AditudeWrapper : NSObject
@@ -708,6 +741,7 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 - (void)renderBannerAds:(UIViewController * _Nonnull)vc;
 - (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)adSlot SWIFT_WARN_UNUSED_RESULT;
 - (RewardedVideoAd * _Nullable)getRewardedVideoAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
+- (InterstitialAd * _Nullable)getInterstitialAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -722,6 +756,7 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 @property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
+@property (nonatomic, copy) NSString * _Nullable adSlot;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)load:(UIViewController * _Nonnull)vc;
@@ -736,6 +771,35 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 - (void)bannerViewDidRecordImpression:(GADBannerView * _Nonnull)bannerView;
 - (void)bannerViewWillPresentScreen:(GADBannerView * _Nonnull)bannerView;
 - (void)bannerViewDidDismissScreen:(GADBannerView * _Nonnull)bannerView;
+@end
+
+
+SWIFT_CLASS("_TtC4Tude14InterstitialAd")
+@interface InterstitialAd : NSObject
+@property (nonatomic, readonly) BOOL isLoaded;
+@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdDidDismissFullScreenContent)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdDidFailToPresentFullScreenWithError)(NSError * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdDidRecordImpression)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
+- (void)preload;
+- (void)preloadOnAdLoaded:(void (^ _Nonnull)(InterstitialAd * _Nonnull))onAdLoaded;
+- (void)render:(UIViewController * _Nonnull)vc;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol GADFullScreenPresentingAd;
+
+@interface InterstitialAd (SWIFT_EXTENSION(Tude)) <GADFullScreenContentDelegate>
+- (void)ad:(id <GADFullScreenPresentingAd> _Nonnull)ad didFailToPresentFullScreenContentWithError:(NSError * _Nonnull)error;
+- (void)adDidRecordClick:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adDidRecordImpression:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adDidDismissFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adWillDismissFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
+- (void)adWillPresentFullScreenContent:(id <GADFullScreenPresentingAd> _Nonnull)ad;
 @end
 
 
@@ -758,6 +822,7 @@ SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 @property (nonatomic, copy) void (^ _Nullable onAdDidRecordImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdEarnedReward)(RewardItem * _Nonnull);
 - (void)preload;
 - (void)preloadOnAdLoaded:(void (^ _Nonnull)(RewardedVideoAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
@@ -766,7 +831,6 @@ SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@protocol GADFullScreenPresentingAd;
 
 @interface RewardedVideoAd (SWIFT_EXTENSION(Tude)) <GADFullScreenContentDelegate>
 - (void)ad:(id <GADFullScreenPresentingAd> _Nonnull)ad didFailToPresentFullScreenContentWithError:(NSError * _Nonnull)error;
