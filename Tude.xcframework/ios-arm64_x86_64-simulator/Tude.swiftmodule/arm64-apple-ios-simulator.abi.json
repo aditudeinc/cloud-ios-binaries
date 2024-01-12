@@ -7511,174 +7511,174 @@
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
       "offset": 219,
-      "length": 35,
-      "value": "\"https:\/\/aditude.prebid-server.com\""
+      "length": 33,
+      "value": "\"https:\/\/cache.prebid-server.com\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 735,
+      "offset": 733,
       "length": 73,
       "value": "\"\/prebid\/cache\/\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 762,
+      "offset": 760,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 771,
+      "offset": 769,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 794,
+      "offset": 792,
       "length": 1,
       "value": "\"\/current.json\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 834,
+      "offset": 832,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 842,
+      "offset": 840,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 849,
+      "offset": 847,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 878,
+      "offset": 876,
       "length": 38,
       "value": "\"Starting request for \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 907,
+      "offset": 905,
       "length": 7,
       "value": "\" configs\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 1225,
+      "offset": 1223,
       "length": 40,
       "value": "\"Success requesting for \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 1256,
+      "offset": 1254,
       "length": 7,
       "value": "\" configs\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 1392,
+      "offset": 1390,
       "length": 95,
       "value": "\"Error fetching configs for device \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 1454,
+      "offset": 1452,
       "length": 1,
       "value": "\". Setting to mobile and retrying\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 1643,
+      "offset": 1641,
       "length": 151,
       "value": "\"Error fetching configs for pubKey: \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 1696,
+      "offset": 1694,
       "length": 5,
       "value": "\" appID: \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 1717,
+      "offset": 1715,
       "length": 3,
       "value": "\" and device \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 1756,
+      "offset": 1754,
       "length": 5,
       "value": "\" error: \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 1793,
+      "offset": 1791,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 2070,
+      "offset": 2068,
       "length": 97,
       "value": "\"Config results are empty for device \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 2134,
+      "offset": 2132,
       "length": 1,
       "value": "\". Setting to mobile and retrying\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 2322,
+      "offset": 2320,
       "length": 116,
       "value": "\"Config results are empty for pubKey: \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 2377,
+      "offset": 2375,
       "length": 5,
       "value": "\" appID: \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 2398,
+      "offset": 2396,
       "length": 3,
       "value": "\" and device \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
-      "offset": 2437,
+      "offset": 2435,
       "length": 2,
       "value": "\"\""
     },
