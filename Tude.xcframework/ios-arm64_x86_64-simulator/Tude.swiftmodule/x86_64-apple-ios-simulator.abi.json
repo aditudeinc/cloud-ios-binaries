@@ -6334,56 +6334,70 @@
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1276,
+      "offset": 1319,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1311,
+      "offset": 1354,
       "length": 10,
       "value": "\"configId\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1346,
+      "offset": 1389,
       "length": 10,
       "value": "\"amazonId\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1276,
+      "offset": 1428,
+      "length": 14,
+      "value": "\"targetingMap\""
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1319,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1311,
+      "offset": 1354,
       "length": 10,
       "value": "\"configId\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1346,
+      "offset": 1389,
       "length": 10,
       "value": "\"amazonId\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1522,
+      "offset": 1428,
+      "length": 14,
+      "value": "\"targetingMap\""
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1608,
       "length": 17,
       "value": "\"storedRequestId\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1522,
+      "offset": 1608,
       "length": 17,
       "value": "\"storedRequestId\""
     },
@@ -7389,6 +7403,41 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/FetchUtils.swift",
+      "kind": "Array",
+      "offset": 480,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/FetchUtils.swift",
+      "kind": "Array",
+      "offset": 543,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/FetchUtils.swift",
+      "kind": "Array",
+      "offset": 593,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/FetchUtils.swift",
+      "kind": "Array",
+      "offset": 652,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/FetchUtils.swift",
+      "kind": "Dictionary",
+      "offset": 721,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/BaseAdConfig.swift",
       "kind": "Dictionary",
       "offset": 366,
@@ -7709,6 +7758,34 @@
       "offset": 236,
       "length": 8,
       "value": "\"tablet\""
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 370,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 412,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 453,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 512,
+      "length": 5,
+      "value": "false"
     }
   ]
 }
