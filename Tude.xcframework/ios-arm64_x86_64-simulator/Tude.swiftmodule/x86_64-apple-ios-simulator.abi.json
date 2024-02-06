@@ -258,6 +258,49 @@
           },
           {
             "kind": "Function",
+            "name": "setGlobalTargeting",
+            "printedName": "setGlobalTargeting(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)setGlobalTargeting:",
+            "mangledName": "$s4Tude14AditudeWrapperC18setGlobalTargetingyySDyS2SGFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "renderBannerAds",
             "printedName": "renderBannerAds(_:)",
             "children": [
@@ -2260,6 +2303,48 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "setTargeting",
+            "printedName": "setTargeting(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)InterstitialAd(im)setTargeting:",
+            "mangledName": "$s4Tude14InterstitialAdC12setTargetingyySDyS2SGF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -3922,6 +4007,49 @@
               "AccessControl",
               "ObjC",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTargeting",
+            "printedName": "setTargeting(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)BannerAdView(im)setTargeting:",
+            "mangledName": "$s4Tude12BannerAdViewC12setTargetingyySDyS2SGF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -5671,6 +5799,48 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "setTargeting",
+            "printedName": "setTargeting(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)setTargeting:",
+            "mangledName": "$s4Tude15RewardedVideoAdC12setTargetingyySDyS2SGF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -6130,106 +6300,134 @@
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 1690,
-      "length": 22,
-      "value": "\"Initializing wrapper\""
+      "kind": "BooleanLiteral",
+      "offset": 735,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 2151,
+      "offset": 1736,
       "length": 22,
       "value": "\"Initializing wrapper\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 3137,
+      "offset": 1785,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2153,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 2262,
+      "length": 22,
+      "value": "\"Initializing wrapper\""
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3625,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 4988,
+      "offset": 5476,
       "length": 18,
       "value": "\"Starting wrapper\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 5081,
-      "length": 86,
-      "value": "\"  Cannot start Tude wrapper without initializing first\""
+      "offset": 5602,
+      "length": 65,
+      "value": "\"Aditude wrapper is initializing, will run command when complete\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 5382,
+      "offset": 5717,
+      "length": 89,
+      "value": "\"  Cannot start Aditude wrapper without initializing first\""
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 6021,
       "length": 63,
       "value": "\"Cannot initialize Aditude wrapper without setting the api key\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 5573,
+      "offset": 6212,
       "length": 62,
       "value": "\"Cannot initialize Aditude wrapper without setting the app ID\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 8261,
+      "offset": 9056,
       "length": 45,
       "value": "\"Searching for adConfig for adSlot=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 8305,
+      "offset": 9100,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 8544,
+      "offset": 9339,
       "length": 37,
       "value": "\"Found adConfig for adSlot=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 8580,
+      "offset": 9375,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 9006,
+      "offset": 9801,
       "length": 47,
       "value": "\"Could not find adConfig for adSlot: \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 9052,
+      "offset": 9847,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 9155,
+      "offset": 9950,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "Array",
-      "offset": 9675,
+      "offset": 10470,
       "length": 2,
       "value": "[]"
     },
@@ -6244,6 +6442,13 @@
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/FetchConfig.swift",
       "kind": "Dictionary",
       "offset": 635,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/InterstitialAdConfig.swift",
+      "kind": "Dictionary",
+      "offset": 558,
       "length": 3,
       "value": "[]"
     },
@@ -6489,55 +6694,55 @@
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
       "kind": "StringLiteral",
       "offset": 1998,
-      "length": 43,
-      "value": "\"Integrating amazon params into ad request\""
+      "length": 36,
+      "value": "\"Integrating amazon into ad request\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
       "kind": "IntegerLiteral",
-      "offset": 2390,
+      "offset": 2383,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
       "kind": "StringLiteral",
-      "offset": 2911,
+      "offset": 2904,
       "length": 32,
       "value": "\"Loading ad in Prebid only mode\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
       "kind": "StringLiteral",
-      "offset": 3345,
+      "offset": 3338,
       "length": 53,
       "value": "\"Amazon ad request success bidId=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
       "kind": "StringLiteral",
-      "offset": 3397,
+      "offset": 3390,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
       "kind": "Dictionary",
-      "offset": 3516,
+      "offset": 3509,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
       "kind": "StringLiteral",
-      "offset": 3751,
+      "offset": 3744,
       "length": 72,
       "value": "\"Amazon ad load error status code \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
       "kind": "StringLiteral",
-      "offset": 3802,
+      "offset": 3795,
       "length": 7,
       "value": "\" falling back to GAM\""
     },
@@ -6580,7 +6785,7 @@
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "StringLiteral",
       "offset": 1320,
-      "length": 4963,
+      "length": 5299,
       "value": "\"\""
     },
     {
@@ -6635,98 +6840,91 @@
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 3165,
+      "offset": 3508,
       "length": 96,
       "value": "\"Created new interstitial ad configId=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 3221,
+      "offset": 3564,
       "length": 1,
       "value": "\", w=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 3240,
+      "offset": 3583,
       "length": 1,
       "value": "\", h=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 3260,
+      "offset": 3603,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "Dictionary",
-      "offset": 3711,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 3828,
+      "offset": 4164,
       "length": 42,
       "value": "\"Setting custom targeting for \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 3863,
+      "offset": 4199,
       "length": 1,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 3869,
+      "offset": 4205,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 4266,
+      "offset": 4602,
       "length": 26,
       "value": "\"Configuring video params\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "Array",
-      "offset": 4347,
+      "offset": 4683,
       "length": 28,
       "value": "[\"video\/x-flv\", \"video\/mp4\"]"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 4545,
+      "offset": 4881,
       "length": 4,
       "value": "1500"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 4578,
+      "offset": 4914,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 4611,
+      "offset": 4947,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 4643,
+      "offset": 4979,
       "length": 1,
       "value": "5"
     },
@@ -6740,7 +6938,7 @@
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5701,
+      "offset": 6037,
       "length": 5,
       "value": "false"
     },
@@ -6879,43 +7077,36 @@
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "Dictionary",
-      "offset": 1898,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2027,
+      "offset": 2020,
       "length": 42,
       "value": "\"Setting custom targeting for \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2062,
+      "offset": 2055,
       "length": 1,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2068,
+      "offset": 2061,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "StringLiteral",
-      "offset": 3102,
+      "offset": 3440,
       "length": 25,
       "value": "\"Building banner ad unit\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3413,
+      "offset": 3751,
       "length": 5,
       "value": "false"
     },
@@ -7020,63 +7211,56 @@
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3542,
+      "offset": 3880,
       "length": 98,
       "value": "\"Created new rewarded video ad configId=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3600,
+      "offset": 3938,
       "length": 1,
       "value": "\", w=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3619,
+      "offset": 3957,
       "length": 1,
       "value": "\", h=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 3639,
+      "offset": 3977,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "Dictionary",
-      "offset": 3906,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 4023,
+      "offset": 4354,
       "length": 42,
       "value": "\"Setting custom targeting for \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 4058,
+      "offset": 4389,
       "length": 1,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 4064,
+      "offset": 4395,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "Array",
-      "offset": 4413,
+      "offset": 4744,
       "length": 13,
       "value": "[\"video\/mp4\"]"
     },
@@ -7090,7 +7274,7 @@
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 5467,
+      "offset": 5798,
       "length": 5,
       "value": "false"
     },
@@ -7440,7 +7624,7 @@
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/BaseAdConfig.swift",
       "kind": "Dictionary",
-      "offset": 366,
+      "offset": 506,
       "length": 3,
       "value": "[]"
     },
@@ -7468,49 +7652,49 @@
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 656,
+      "offset": 705,
       "length": 44,
       "value": "\"Getting instance for appID=\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 699,
+      "offset": 748,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 830,
+      "offset": 884,
       "length": 52,
       "value": "\"Setting useGeoLocation to \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 881,
+      "offset": 935,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 1018,
+      "offset": 1072,
       "length": 41,
       "value": "\"Setting debug logs to \""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 1058,
+      "offset": 1112,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1286,
+      "offset": 1340,
       "length": 4,
       "value": "true"
     },
@@ -7786,6 +7970,27 @@
       "offset": 512,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
+      "kind": "Dictionary",
+      "offset": 1035,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
+      "kind": "Dictionary",
+      "offset": 1650,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
+      "kind": "Dictionary",
+      "offset": 2284,
+      "length": 3,
+      "value": "[]"
     }
   ]
 }

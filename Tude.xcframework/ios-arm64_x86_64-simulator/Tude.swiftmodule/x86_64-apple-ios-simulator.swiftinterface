@@ -20,6 +20,7 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc public static func initialize(_ onInitialized: @escaping () -> Swift.Void)
   @objc public static func initializeWithoutCallback()
   @objc public static func cmd(command: @escaping (Tude.AditudeWrapper) -> Swift.Void)
+  @objc public static func setGlobalTargeting(_ targeting: Swift.Dictionary<Swift.String, Swift.String>)
   @objc public func renderBannerAds(_ vc: UIKit.UIViewController)
   @objc public func createBannerAdView(_ vc: UIKit.UIViewController, _ adSlot: Swift.String) -> Tude.BannerAdView?
   @objc public func getRewardedVideoAd(_ slot: Swift.String) -> Tude.RewardedVideoAd?
@@ -49,6 +50,7 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc final public func preload()
   @objc final public func preload(onAdLoaded: @escaping (Tude.InterstitialAd) -> Swift.Void)
   @objc final public func render(_ vc: UIKit.UIViewController)
+  @objc final public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Swift.String>)
 }
 extension Tude.InterstitialAd : GoogleMobileAds.GADFullScreenContentDelegate {
   @objc final public func ad(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
@@ -75,6 +77,7 @@ extension Tude.InterstitialAd : GoogleMobileAds.GADFullScreenContentDelegate {
     @objc set
   }
   @objc @_Concurrency.MainActor(unsafe) final public func load(_ vc: UIKit.UIViewController)
+  @objc @_Concurrency.MainActor(unsafe) final public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Swift.String>)
   @objc deinit
 }
 extension Tude.BannerAdView : GoogleMobileAds.GADBannerViewDelegate {
@@ -102,6 +105,7 @@ extension Tude.BannerAdView : GoogleMobileAds.GADBannerViewDelegate {
   @objc final public func preload(onAdLoaded: @escaping (Tude.RewardedVideoAd) -> Swift.Void)
   @objc final public func render(_ vc: UIKit.UIViewController)
   @objc final public func render(_ vc: UIKit.UIViewController, rewardHandler: @escaping (Tude.RewardItem) -> Swift.Void)
+  @objc final public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Swift.String>)
 }
 extension Tude.RewardedVideoAd : GoogleMobileAds.GADFullScreenContentDelegate {
   @objc final public func ad(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)

@@ -312,6 +312,7 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 + (void)initialize:(void (^ _Nonnull)(void))onInitialized;
 + (void)initializeWithoutCallback;
 + (void)cmdWithCommand:(void (^ _Nonnull)(AditudeWrapper * _Nonnull))command;
++ (void)setGlobalTargeting:(NSDictionary<NSString *, NSString *> * _Nonnull)targeting;
 - (void)renderBannerAds:(UIViewController * _Nonnull)vc;
 - (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)adSlot SWIFT_WARN_UNUSED_RESULT;
 - (RewardedVideoAd * _Nullable)getRewardedVideoAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
@@ -334,6 +335,7 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)load:(UIViewController * _Nonnull)vc;
+- (void)setTargeting:(NSDictionary<NSString *, NSString *> * _Nonnull)targeting;
 @end
 
 @class GADBannerView;
@@ -361,6 +363,7 @@ SWIFT_CLASS("_TtC4Tude14InterstitialAd")
 - (void)preload;
 - (void)preloadOnAdLoaded:(void (^ _Nonnull)(InterstitialAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
+- (void)setTargeting:(NSDictionary<NSString *, NSString *> * _Nonnull)targeting;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -401,6 +404,7 @@ SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 - (void)preloadOnAdLoaded:(void (^ _Nonnull)(RewardedVideoAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
 - (void)render:(UIViewController * _Nonnull)vc rewardHandler:(void (^ _Nonnull)(RewardItem * _Nonnull))rewardHandler;
+- (void)setTargeting:(NSDictionary<NSString *, NSString *> * _Nonnull)targeting;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
