@@ -218,7 +218,11 @@ public let PBMMediationAdNativeResponseKey: Swift.String
 public let PBMMediationVideoAdConfiguration: Swift.String
 public let PBMMediationVideoParameters: Swift.String
 public let PrebidLocalCacheIdKey: Swift.String
-public let PREBID_VERSION: Swift.String
+@_inheritsConvenienceInitializers @objc public class Constants : ObjectiveC.NSObject {
+  @objc public static let PREBID_VERSION: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class PrebidConstants : ObjectiveC.NSObject {
   @objc public static var supportedRenderingBannerAPISignals: [PrebidMobile.Signals.Api] {
     @objc get
@@ -1451,6 +1455,7 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
 }
 @objc @objcMembers public class PrebidRequest : ObjectiveC.NSObject {
   @objc public init(bannerParameters: PrebidMobile.BannerParameters? = nil, videoParameters: PrebidMobile.VideoParameters? = nil, nativeParameters: PrebidMobile.NativeParameters? = nil, isInterstitial: Swift.Bool = false, isRewarded: Swift.Bool = false)
+  @objc public func setGPID(_ gpid: Swift.String?)
   @objc public func addExtData(key: Swift.String, value: Swift.String)
   @objc public func updateExtData(key: Swift.String, value: Swift.Set<Swift.String>)
   @objc public func removeExtData(forKey: Swift.String)
@@ -1460,12 +1465,10 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public func removeExtKeyword(_ element: Swift.String)
   @objc public func clearExtKeywords()
   @objc public func setAppContent(_ appContentObject: PrebidMobile.PBMORTBAppContent)
-  @objc public func getAppContent() -> PrebidMobile.PBMORTBAppContent?
   @objc public func clearAppContent()
   @objc public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
   @objc public func removeAppContentData(_ dataObject: PrebidMobile.PBMORTBContentData)
   @objc public func clearAppContentData()
-  @objc public func getUserData() -> [PrebidMobile.PBMORTBContentData]?
   @objc public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
   @objc public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
   @objc public func clearUserData()
@@ -1570,6 +1573,8 @@ extension Foundation.NSString {
   @objc public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
   @objc public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
   @objc public func clearUserData()
+  @objc public func setGPID(_ gpid: Swift.String?)
+  @objc public func getGPID() -> Swift.String?
   @objc public func setAutoRefreshMillis(time: Swift.Double)
   @objc public func stopAutoRefresh()
   @objc public func resumeAutoRefresh()
@@ -1749,6 +1754,7 @@ public let refreshIntervalDefault: Swift.Double
     @objc get
     @objc set
   }
+  @objc public var gpid: Swift.String?
   @objc convenience public init(configId: Swift.String)
   @objc public init(configId: Swift.String, size: CoreFoundation.CGSize)
   @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
@@ -1814,6 +1820,8 @@ public let refreshIntervalDefault: Swift.Double
   @objc optional func rewardedAdDidClickAd(_ rewardedAd: PrebidMobile.RewardedAdUnit)
 }
 @objcMembers @objc(PBMBidInfo) public class BidInfo : ObjectiveC.NSObject {
+  @objc public static let EVENT_WIN: Swift.String
+  @objc public static let EVENT_IMP: Swift.String
   @objc public var resultCode: PrebidMobile.ResultCode {
     get
   }
@@ -1826,7 +1834,11 @@ public let refreshIntervalDefault: Swift.Double
   @objc public var nativeAdCacheId: Swift.String? {
     get
   }
-  public init(resultCode: PrebidMobile.ResultCode, targetingKeywords: [Swift.String : Swift.String]? = nil, exp: Swift.Double? = nil, nativeAdCacheId: Swift.String? = nil)
+  @objc public var events: [Swift.String : Swift.String] {
+    get
+  }
+  public init(resultCode: PrebidMobile.ResultCode, targetingKeywords: [Swift.String : Swift.String]? = nil, exp: Swift.Double? = nil, nativeAdCacheId: Swift.String? = nil, events: [Swift.String : Swift.String] = [:])
+  @objc public func getExp() -> Foundation.NSNumber?
   @objc deinit
 }
 @objc(PBMHiddenWebViewManager) @objcMembers public class HiddenWebViewManager : ObjectiveC.NSObject {

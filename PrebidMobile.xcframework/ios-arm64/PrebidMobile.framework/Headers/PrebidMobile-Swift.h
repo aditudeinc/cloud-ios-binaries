@@ -458,6 +458,8 @@ SWIFT_CLASS("_TtC12PrebidMobile6AdUnit")
 - (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects;
 - (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject;
 - (void)clearUserData;
+- (void)setGPID:(NSString * _Nullable)gpid;
+- (NSString * _Nullable)getGPID SWIFT_WARN_UNUSED_RESULT;
 /// This method allows to set the auto refresh period for the demand
 /// \param time refresh time interval
 ///
@@ -484,6 +486,7 @@ SWIFT_CLASS("_TtC12PrebidMobile12AdUnitConfig")
 @property (nonatomic, strong) PBMNativeAdConfiguration * _Nullable nativeAdConfiguration;
 @property (nonatomic, copy) NSArray<NSValue *> * _Nullable additionalSizes;
 @property (nonatomic) NSTimeInterval refreshInterval;
+@property (nonatomic, copy) NSString * _Nullable gpid;
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId;
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId size:(CGSize)size OBJC_DESIGNATED_INITIALIZER;
 - (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
@@ -901,9 +904,17 @@ SWIFT_CLASS("_TtC12PrebidMobile3Bid")
 
 SWIFT_CLASS_NAMED("BidInfo")
 @interface PBMBidInfo : NSObject
+/// Key to get Prebid win event from <code>events</code>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVENT_WIN;)
++ (NSString * _Nonnull)EVENT_WIN SWIFT_WARN_UNUSED_RESULT;
+/// Key to get Prebid imp event from <code>events</code>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVENT_IMP;)
++ (NSString * _Nonnull)EVENT_IMP SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) enum ResultCode resultCode;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable targetingKeywords;
 @property (nonatomic, readonly, copy) NSString * _Nullable nativeAdCacheId;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull events;
+- (NSNumber * _Nullable)getExp SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -946,6 +957,14 @@ typedef SWIFT_ENUM_NAMED(NSInteger, PBMClickbrowserType, "ClickbrowserType", ope
   PBMClickbrowserTypeEmbedded = 0,
   PBMClickbrowserTypeNative = 1,
 };
+
+
+SWIFT_CLASS("_TtC12PrebidMobile9Constants")
+@interface Constants : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PREBID_VERSION;)
++ (NSString * _Nonnull)PREBID_VERSION SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC12PrebidMobile18SingleContainerInt")
@@ -2154,6 +2173,7 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile23PrebidMediationDelegate_")
 SWIFT_CLASS("_TtC12PrebidMobile13PrebidRequest")
 @interface PrebidRequest : NSObject
 - (nonnull instancetype)initWithBannerParameters:(BannerParameters * _Nullable)bannerParameters videoParameters:(VideoParameters * _Nullable)videoParameters nativeParameters:(NativeParameters * _Nullable)nativeParameters isInterstitial:(BOOL)isInterstitial isRewarded:(BOOL)isRewarded OBJC_DESIGNATED_INITIALIZER;
+- (void)setGPID:(NSString * _Nullable)gpid;
 /// This method obtains the ext data keyword & value for adunit targeting
 /// if the key already exists the value will be appended to the list. No duplicates will be added
 - (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
@@ -2175,12 +2195,10 @@ SWIFT_CLASS("_TtC12PrebidMobile13PrebidRequest")
 /// This method allows to remove all keywords from the set of adunit targeting
 - (void)clearExtKeywords;
 - (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContentObject;
-- (PBMORTBAppContent * _Nullable)getAppContent SWIFT_WARN_UNUSED_RESULT;
 - (void)clearAppContent;
 - (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects;
 - (void)removeAppContentData:(PBMORTBContentData * _Nonnull)dataObject;
 - (void)clearAppContentData;
-- (NSArray<PBMORTBContentData *> * _Nullable)getUserData SWIFT_WARN_UNUSED_RESULT;
 - (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects;
 - (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject;
 - (void)clearUserData;

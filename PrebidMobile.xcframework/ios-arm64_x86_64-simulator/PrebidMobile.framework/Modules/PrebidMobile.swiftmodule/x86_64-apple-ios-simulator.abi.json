@@ -9368,33 +9368,14 @@
         ]
       },
       {
-        "kind": "Var",
-        "name": "PREBID_VERSION",
-        "printedName": "PREBID_VERSION",
+        "kind": "TypeDecl",
+        "name": "Constants",
+        "printedName": "Constants",
         "children": [
           {
-            "kind": "TypeNominal",
-            "name": "String",
-            "printedName": "Swift.String",
-            "usr": "s:SS"
-          }
-        ],
-        "declKind": "Var",
-        "usr": "s:12PrebidMobile14PREBID_VERSIONSSvp",
-        "mangledName": "$s12PrebidMobile14PREBID_VERSIONSSvp",
-        "moduleName": "PrebidMobile",
-        "declAttributes": [
-          "HasInitialValue",
-          "HasStorage",
-          "AccessControl"
-        ],
-        "isLet": true,
-        "hasStorage": true,
-        "accessors": [
-          {
-            "kind": "Accessor",
-            "name": "Get",
-            "printedName": "Get()",
+            "kind": "Var",
+            "name": "PREBID_VERSION",
+            "printedName": "PREBID_VERSION",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9403,12 +9384,136 @@
                 "usr": "s:SS"
               }
             ],
-            "declKind": "Accessor",
-            "usr": "s:12PrebidMobile14PREBID_VERSIONSSvg",
-            "mangledName": "$s12PrebidMobile14PREBID_VERSIONSSvg",
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)Constants(cpy)PREBID_VERSION",
+            "mangledName": "$s12PrebidMobile9ConstantsC14PREBID_VERSIONSSvpZ",
             "moduleName": "PrebidMobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)Constants(cm)PREBID_VERSION",
+                "mangledName": "$s12PrebidMobile9ConstantsC14PREBID_VERSIONSSvgZ",
+                "moduleName": "PrebidMobile",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Constants",
+                "printedName": "PrebidMobile.Constants",
+                "usr": "c:@M@PrebidMobile@objc(cs)Constants"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PrebidMobile@objc(cs)Constants(im)init",
+            "mangledName": "$s12PrebidMobile9ConstantsCACycfc",
+            "moduleName": "PrebidMobile",
+            "overriding": true,
             "implicit": true,
-            "accessorKind": "get"
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PrebidMobile@objc(cs)Constants",
+        "mangledName": "$s12PrebidMobile9ConstantsC",
+        "moduleName": "PrebidMobile",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -52175,6 +52280,42 @@
           },
           {
             "kind": "Function",
+            "name": "setGPID",
+            "printedName": "setGPID(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrebidMobile@objc(cs)PrebidRequest(im)setGPID:",
+            "mangledName": "$s12PrebidMobile0A7RequestC7setGPIDyySSSgF",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "addExtData",
             "printedName": "addExtData(key:value:)",
             "children": [
@@ -52443,36 +52584,6 @@
           },
           {
             "kind": "Function",
-            "name": "getAppContent",
-            "printedName": "getAppContent()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "PrebidMobile.PBMORTBAppContent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PBMORTBAppContent",
-                    "printedName": "PrebidMobile.PBMORTBAppContent",
-                    "usr": "c:objc(cs)PBMORTBAppContent"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PrebidMobile@objc(cs)PrebidRequest(im)getAppContent",
-            "mangledName": "$s12PrebidMobile0A7RequestC13getAppContentSo010PBMORTBAppF0CSgyF",
-            "moduleName": "PrebidMobile",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "clearAppContent",
             "printedName": "clearAppContent()",
             "children": [
@@ -52577,45 +52688,6 @@
           },
           {
             "kind": "Function",
-            "name": "getUserData",
-            "printedName": "getUserData()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[PrebidMobile.PBMORTBContentData]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[PrebidMobile.PBMORTBContentData]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PBMORTBContentData",
-                        "printedName": "PrebidMobile.PBMORTBContentData",
-                        "usr": "c:objc(cs)PBMORTBContentData"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PrebidMobile@objc(cs)PrebidRequest(im)getUserData",
-            "mangledName": "$s12PrebidMobile0A7RequestC11getUserDataSaySo014PBMORTBContentF0CGSgyF",
-            "moduleName": "PrebidMobile",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "addUserData",
             "printedName": "addUserData(_:)",
             "children": [
@@ -52645,6 +52717,7 @@
             "moduleName": "PrebidMobile",
             "declAttributes": [
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -55755,6 +55828,72 @@
             "declKind": "Func",
             "usr": "c:@M@PrebidMobile@objc(cs)AdUnit(im)clearUserData",
             "mangledName": "$s12PrebidMobile6AdUnitC13clearUserDatayyF",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setGPID",
+            "printedName": "setGPID(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrebidMobile@objc(cs)AdUnit(im)setGPID:",
+            "mangledName": "$s12PrebidMobile6AdUnitC7setGPIDyySSSgF",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGPID",
+            "printedName": "getGPID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrebidMobile@objc(cs)AdUnit(im)getGPID",
+            "mangledName": "$s12PrebidMobile6AdUnitC7getGPIDSSSgyF",
             "moduleName": "PrebidMobile",
             "declAttributes": [
               "AccessControl",
@@ -63731,6 +63870,123 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "gpid",
+            "printedName": "gpid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)AdUnitConfig(py)gpid",
+            "mangledName": "$s12PrebidMobile12AdUnitConfigC4gpidSSSgvp",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)AdUnitConfig(im)gpid",
+                "mangledName": "$s12PrebidMobile12AdUnitConfigC4gpidSSSgvg",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)AdUnitConfig(im)setGpid:",
+                "mangledName": "$s12PrebidMobile12AdUnitConfigC4gpidSSSgvs",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PrebidMobile12AdUnitConfigC4gpidSSSgvM",
+                "mangledName": "$s12PrebidMobile12AdUnitConfigC4gpidSSSgvM",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(configId:)",
@@ -65442,6 +65698,114 @@
         "children": [
           {
             "kind": "Var",
+            "name": "EVENT_WIN",
+            "printedName": "EVENT_WIN",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)PBMBidInfo(cpy)EVENT_WIN",
+            "mangledName": "$s12PrebidMobile7BidInfoC9EVENT_WINSSvpZ",
+            "moduleName": "PrebidMobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMBidInfo(cm)EVENT_WIN",
+                "mangledName": "$s12PrebidMobile7BidInfoC9EVENT_WINSSvgZ",
+                "moduleName": "PrebidMobile",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "EVENT_IMP",
+            "printedName": "EVENT_IMP",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)PBMBidInfo(cpy)EVENT_IMP",
+            "mangledName": "$s12PrebidMobile7BidInfoC9EVENT_IMPSSvpZ",
+            "moduleName": "PrebidMobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMBidInfo(cm)EVENT_IMP",
+                "mangledName": "$s12PrebidMobile7BidInfoC9EVENT_IMPSSvgZ",
+                "moduleName": "PrebidMobile",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "resultCode",
             "printedName": "resultCode",
             "children": [
@@ -65708,9 +66072,85 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "events",
+            "printedName": "events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)PBMBidInfo(py)events",
+            "mangledName": "$s12PrebidMobile7BidInfoC6eventsSDyS2SGvp",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMBidInfo(im)events",
+                "mangledName": "$s12PrebidMobile7BidInfoC6eventsSDyS2SGvg",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(resultCode:targetingKeywords:exp:nativeAdCacheId:)",
+            "printedName": "init(resultCode:targetingKeywords:exp:nativeAdCacheId:events:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -65782,16 +66222,68 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12PrebidMobile7BidInfoC10resultCode17targetingKeywords3exp15nativeAdCacheIdAcA06ResultF0O_SDyS2SGSgSdSgSSSgtcfc",
-            "mangledName": "$s12PrebidMobile7BidInfoC10resultCode17targetingKeywords3exp15nativeAdCacheIdAcA06ResultF0O_SDyS2SGSgSdSgSSSgtcfc",
+            "usr": "s:12PrebidMobile7BidInfoC10resultCode17targetingKeywords3exp15nativeAdCacheId6eventsAcA06ResultF0O_SDyS2SGSgSdSgSSSgAKtcfc",
+            "mangledName": "$s12PrebidMobile7BidInfoC10resultCode17targetingKeywords3exp15nativeAdCacheId6eventsAcA06ResultF0O_SDyS2SGSgSdSgSSSgAKtcfc",
             "moduleName": "PrebidMobile",
             "declAttributes": [
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getExp",
+            "printedName": "getExp()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrebidMobile@objc(cs)PBMBidInfo(im)getExp",
+            "mangledName": "$s12PrebidMobile7BidInfoC6getExpSo8NSNumberCSgyF",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -80817,7 +81309,7 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/CacheManagement\/CacheManager.swift",
       "kind": "StringLiteral",
-      "offset": 1337,
+      "offset": 1453,
       "length": 9,
       "value": "\"Prebid_\""
     },
@@ -81566,672 +82058,672 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 674,
+      "offset": 733,
       "length": 7,
-      "value": "\"2.1.5\""
+      "value": "\"2.2.0\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 733,
+      "offset": 794,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 772,
+      "offset": 833,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 881,
+      "offset": 942,
       "length": 12,
       "value": "\"DFPRequest\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 934,
+      "offset": 995,
       "length": 13,
       "value": "\"DFPNRequest\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 984,
+      "offset": 1045,
       "length": 13,
       "value": "\"DFPORequest\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1032,
+      "offset": 1093,
       "length": 12,
       "value": "\"GADRequest\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1081,
+      "offset": 1142,
       "length": 13,
       "value": "\"GADNRequest\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1133,
+      "offset": 1194,
       "length": 12,
       "value": "\"GAMRequest\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1182,
+      "offset": 1243,
       "length": 10,
       "value": "\"MPAdView\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1235,
+      "offset": 1296,
       "length": 28,
       "value": "\"MPInterstitialAdController\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1305,
+      "offset": 1366,
       "length": 19,
       "value": "\"MPNativeAdRequest\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1381,
+      "offset": 1442,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1623,
+      "offset": 1684,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1715,
+      "offset": 1776,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1864,
+      "offset": 1925,
       "length": 9,
       "value": "\"iPod5,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1914,
+      "offset": 1975,
       "length": 14,
       "value": "\"iPod Touch 5\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 2003,
       "length": 9,
       "value": "\"iPod7,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1992,
+      "offset": 2053,
       "length": 14,
       "value": "\"iPod Touch 6\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2020,
+      "offset": 2081,
       "length": 11,
       "value": "\"iPhone3,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2033,
+      "offset": 2094,
       "length": 11,
       "value": "\"iPhone3,2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2046,
+      "offset": 2107,
       "length": 11,
       "value": "\"iPhone3,3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2070,
+      "offset": 2131,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2094,
+      "offset": 2155,
       "length": 11,
       "value": "\"iPhone4,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2144,
+      "offset": 2205,
       "length": 11,
       "value": "\"iPhone 4s\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2169,
+      "offset": 2230,
       "length": 11,
       "value": "\"iPhone5,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2182,
+      "offset": 2243,
       "length": 11,
       "value": "\"iPhone5,2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2219,
+      "offset": 2280,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2243,
+      "offset": 2304,
       "length": 11,
       "value": "\"iPhone5,3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2256,
+      "offset": 2317,
       "length": 11,
       "value": "\"iPhone5,4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2293,
+      "offset": 2354,
       "length": 11,
       "value": "\"iPhone 5c\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2318,
+      "offset": 2379,
       "length": 11,
       "value": "\"iPhone6,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2331,
+      "offset": 2392,
       "length": 11,
       "value": "\"iPhone6,2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2368,
+      "offset": 2429,
       "length": 11,
       "value": "\"iPhone 5s\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2393,
+      "offset": 2454,
       "length": 11,
       "value": "\"iPhone7,2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2443,
+      "offset": 2504,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2467,
+      "offset": 2528,
       "length": 11,
       "value": "\"iPhone7,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2517,
+      "offset": 2578,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2546,
+      "offset": 2607,
       "length": 11,
       "value": "\"iPhone8,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2596,
+      "offset": 2657,
       "length": 11,
       "value": "\"iPhone 6s\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2621,
+      "offset": 2682,
       "length": 11,
       "value": "\"iPhone8,2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2671,
+      "offset": 2732,
       "length": 16,
       "value": "\"iPhone 6s Plus\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2701,
+      "offset": 2762,
       "length": 11,
       "value": "\"iPhone9,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2714,
+      "offset": 2775,
       "length": 11,
       "value": "\"iPhone9,3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2751,
+      "offset": 2812,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2775,
+      "offset": 2836,
       "length": 11,
       "value": "\"iPhone9,2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2788,
+      "offset": 2849,
       "length": 11,
       "value": "\"iPhone9,4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2825,
+      "offset": 2886,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2854,
+      "offset": 2915,
       "length": 11,
       "value": "\"iPhone8,4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2904,
+      "offset": 2965,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2929,
+      "offset": 2990,
       "length": 9,
       "value": "\"iPad2,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2940,
+      "offset": 3001,
       "length": 9,
       "value": "\"iPad2,2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2951,
+      "offset": 3012,
       "length": 9,
       "value": "\"iPad2,3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2962,
+      "offset": 3023,
       "length": 9,
       "value": "\"iPad2,4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2979,
+      "offset": 3040,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3001,
+      "offset": 3062,
       "length": 9,
       "value": "\"iPad3,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3012,
+      "offset": 3073,
       "length": 9,
       "value": "\"iPad3,2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3023,
+      "offset": 3084,
       "length": 9,
       "value": "\"iPad3,3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3051,
+      "offset": 3112,
       "length": 8,
       "value": "\"iPad 3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3073,
+      "offset": 3134,
       "length": 9,
       "value": "\"iPad3,4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3084,
+      "offset": 3145,
       "length": 9,
       "value": "\"iPad3,5\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3095,
+      "offset": 3156,
       "length": 9,
       "value": "\"iPad3,6\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3123,
+      "offset": 3184,
       "length": 8,
       "value": "\"iPad 4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3145,
+      "offset": 3206,
       "length": 9,
       "value": "\"iPad4,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3156,
+      "offset": 3217,
       "length": 9,
       "value": "\"iPad4,2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3167,
+      "offset": 3228,
       "length": 9,
       "value": "\"iPad4,3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3195,
+      "offset": 3256,
       "length": 10,
       "value": "\"iPad Air\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3219,
+      "offset": 3280,
       "length": 9,
       "value": "\"iPad5,3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3230,
+      "offset": 3291,
       "length": 9,
       "value": "\"iPad5,4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3269,
+      "offset": 3330,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3295,
+      "offset": 3356,
       "length": 9,
       "value": "\"iPad2,5\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3306,
+      "offset": 3367,
       "length": 9,
       "value": "\"iPad2,6\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3317,
+      "offset": 3378,
       "length": 9,
       "value": "\"iPad2,7\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3345,
+      "offset": 3406,
       "length": 11,
       "value": "\"iPad Mini\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3370,
+      "offset": 3431,
       "length": 9,
       "value": "\"iPad4,4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3381,
+      "offset": 3442,
       "length": 9,
       "value": "\"iPad4,5\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3392,
+      "offset": 3453,
       "length": 9,
       "value": "\"iPad4,6\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3420,
+      "offset": 3481,
       "length": 13,
       "value": "\"iPad Mini 2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3447,
+      "offset": 3508,
       "length": 9,
       "value": "\"iPad4,7\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3458,
+      "offset": 3519,
       "length": 9,
       "value": "\"iPad4,8\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3469,
+      "offset": 3530,
       "length": 9,
       "value": "\"iPad4,9\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3497,
+      "offset": 3558,
       "length": 13,
       "value": "\"iPad Mini 3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3524,
+      "offset": 3585,
       "length": 9,
       "value": "\"iPad5,1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3535,
+      "offset": 3596,
       "length": 9,
       "value": "\"iPad5,2\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3574,
+      "offset": 3635,
       "length": 13,
       "value": "\"iPad Mini 4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3601,
+      "offset": 3662,
       "length": 9,
       "value": "\"iPad6,3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3612,
+      "offset": 3673,
       "length": 9,
       "value": "\"iPad6,4\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3623,
+      "offset": 3684,
       "length": 9,
       "value": "\"iPad6,7\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3634,
+      "offset": 3695,
       "length": 9,
       "value": "\"iPad6,8\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3651,
+      "offset": 3712,
       "length": 10,
       "value": "\"iPad Pro\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3675,
+      "offset": 3736,
       "length": 12,
       "value": "\"AppleTV5,3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3725,
+      "offset": 3786,
       "length": 10,
       "value": "\"Apple TV\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3749,
+      "offset": 3810,
       "length": 6,
       "value": "\"i386\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3757,
+      "offset": 3818,
       "length": 8,
       "value": "\"x86_64\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3799,
+      "offset": 3860,
       "length": 11,
       "value": "\"Simulator\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4201,
+      "offset": 4262,
       "length": 330,
       "value": "\"<html>\n    <body>\n        <div id=\"ad\" align=\"center\">\n            <a href=\"%@\">\n                <img src=\"%@\" align=\"center\" style=\"max-width:100%vw; width:auto; max-height:100%vh\">\n                    <\/a>\n        <\/div>\n    <\/body>\n<\/html>\""
     },
@@ -84646,14 +85138,14 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/UIViewExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 1391,
+      "offset": 1392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/UIViewExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 1599,
+      "offset": 1600,
       "length": 3,
       "value": "0.5"
     },
@@ -85045,210 +85537,217 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6052,
+      "offset": 5958,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6176,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6349,
+      "offset": 6483,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 6872,
+      "offset": 7006,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 6934,
+      "offset": 7068,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 6991,
+      "offset": 7125,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7021,
+      "offset": 7155,
       "length": 147,
       "value": "\"\n\trequiredAmountOfSimultaneousViewableEvents=\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7114,
+      "offset": 7248,
       "length": 1,
       "value": "\" \n\ttargetViewabilityValue=\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7167,
+      "offset": 7301,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7309,
+      "offset": 7443,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7446,
+      "offset": 7580,
       "length": 47,
       "value": "\"FAILED TO ACQUIRE strongSelf viewabilityTimer\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7687,
+      "offset": 7923,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7739,
+      "offset": 7975,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7746,
+      "offset": 7982,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 7750,
+      "offset": 7986,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7870,
+      "offset": 8106,
       "length": 135,
       "value": "\"\n\tviewabilityValue=\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7911,
+      "offset": 8147,
       "length": 1,
       "value": "\" \n\tself.targetViewabilityValue=\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 7969,
+      "offset": 8205,
       "length": 1,
       "value": "\" \n\tisIABViewable=\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 8004,
+      "offset": 8240,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 8183,
+      "offset": 8419,
       "length": 28,
       "value": "\"Firing impression trackers\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 8392,
+      "offset": 8628,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 8525,
+      "offset": 8761,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 8802,
+      "offset": 9038,
       "length": 52,
       "value": "\"FAILED TO ACQUIRE strongSelf for fireEventTrackers\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 9287,
+      "offset": 9523,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 9627,
+      "offset": 9863,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 11196,
+      "offset": 11432,
       "length": 39,
       "value": "\"Could not open click URL: \""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 11234,
+      "offset": 11470,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 11380,
+      "offset": 11616,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "Dictionary",
-      "offset": 11697,
+      "offset": 11933,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 11745,
+      "offset": 11981,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/Native\/NativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 11786,
+      "offset": 12022,
       "length": 5,
       "value": "false"
     },
@@ -85731,14 +86230,14 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/MultiformatAdUnit\/PrebidRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1374,
+      "offset": 1414,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/MultiformatAdUnit\/PrebidRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1400,
+      "offset": 1440,
       "length": 5,
       "value": "false"
     },
@@ -85864,133 +86363,133 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 1331,
+      "offset": 1339,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 1600,
+      "offset": 1608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 1753,
+      "offset": 1761,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 1977,
+      "offset": 1985,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 2406,
+      "offset": 2414,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "IntegerLiteral",
-      "offset": 3056,
+      "offset": 3331,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "IntegerLiteral",
-      "offset": 3777,
+      "offset": 4052,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "IntegerLiteral",
-      "offset": 3794,
+      "offset": 4069,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 4549,
+      "offset": 4824,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 4632,
+      "offset": 4907,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 4666,
+      "offset": 4941,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 4919,
+      "offset": 5194,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 6047,
+      "offset": 6058,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 7301,
+      "offset": 7312,
       "length": 66,
       "value": "\"Error saving bid content to cache: \""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 7366,
+      "offset": 7377,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 14134,
+      "offset": 14338,
       "length": 105,
       "value": "\"auto refresh not set as the refresh time is less than to \""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 14230,
+      "offset": 14434,
       "length": 7,
       "value": "\" seconds\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 15518,
+      "offset": 15722,
       "length": 19,
       "value": "\"Dispatcher is nil\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 15721,
+      "offset": 15925,
       "length": 19,
       "value": "\"Dispatcher is nil\""
     },
@@ -87047,14 +87546,14 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/PBMCore\/AdUnitConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2853,
+      "offset": 2887,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/PBMCore\/AdUnitConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 10159,
+      "offset": 10193,
       "length": 1,
       "value": "0"
     },
@@ -87092,6 +87591,27 @@
       "offset": 1555,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/MultiformatAdUnit\/BidInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 739,
+      "length": 23,
+      "value": "\"ext.prebid.events.win\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/MultiformatAdUnit\/BidInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 852,
+      "length": 23,
+      "value": "\"ext.prebid.events.imp\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/MultiformatAdUnit\/BidInfo.swift",
+      "kind": "Dictionary",
+      "offset": 1328,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/MultiformatAdUnit\/BidInfo.swift",
