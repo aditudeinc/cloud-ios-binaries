@@ -46,6 +46,9 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc final public var onAdDidRecordImpression: (() -> Swift.Void)?
   @objc final public var onAdWillPresentFullScreenContent: (() -> Swift.Void)?
   @objc final public var onAdWillDismissFullScreenContent: (() -> Swift.Void)?
+  @objc final public var slotName: Swift.String {
+    @objc get
+  }
   @objc deinit
   @objc final public func preload()
   @objc final public func preload(onAdLoaded: @escaping (Tude.InterstitialAd) -> Swift.Void)
@@ -72,6 +75,9 @@ extension Tude.InterstitialAd : GoogleMobileAds.GADFullScreenContentDelegate {
   @objc @_Concurrency.MainActor(unsafe) final public var onAdImpression: (() -> Swift.Void)?
   @objc @_Concurrency.MainActor(unsafe) final public var onAdOpened: (() -> Swift.Void)?
   @objc @_Concurrency.MainActor(unsafe) final public var onAdClosed: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var slotName: Swift.String? {
+    @objc get
+  }
   @objc @_Concurrency.MainActor(unsafe) final public var adSlot: Swift.String? {
     @objc get
     @objc set
@@ -100,6 +106,9 @@ extension Tude.BannerAdView : GoogleMobileAds.GADBannerViewDelegate {
   @objc final public var onAdWillPresentFullScreenContent: (() -> Swift.Void)?
   @objc final public var onAdWillDismissFullScreenContent: (() -> Swift.Void)?
   @objc final public var onAdEarnedReward: ((Tude.RewardItem) -> Swift.Void)?
+  @objc final public var slotName: Swift.String {
+    @objc get
+  }
   @objc deinit
   @objc final public func preload()
   @objc final public func preload(onAdLoaded: @escaping (Tude.RewardedVideoAd) -> Swift.Void)

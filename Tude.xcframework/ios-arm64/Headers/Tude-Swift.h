@@ -331,6 +331,7 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 @property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
+@property (nonatomic, readonly, copy) NSString * _Nullable slotName;
 @property (nonatomic, copy) NSString * _Nullable adSlot;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
@@ -360,6 +361,7 @@ SWIFT_CLASS("_TtC4Tude14InterstitialAd")
 @property (nonatomic, copy) void (^ _Nullable onAdDidRecordImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
+@property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
 - (void)preload;
 - (void)preloadOnAdLoaded:(void (^ _Nonnull)(InterstitialAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
@@ -400,6 +402,7 @@ SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 @property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdEarnedReward)(RewardItem * _Nonnull);
+@property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
 - (void)preload;
 - (void)preloadOnAdLoaded:(void (^ _Nonnull)(RewardedVideoAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
