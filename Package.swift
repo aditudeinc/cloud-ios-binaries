@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: "11.1.0")
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: "11.2.0")
     ],
     targets: [
         .target(
@@ -24,7 +24,10 @@ let package = Package(
                 "DTBiOSSDK",
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
             ],
-            path: "Tude"
+            path: "Tude",
+            resources: [
+                .copy("PrivacyInfo.xcprivacy")
+            ]
         ),
         .binaryTarget(
             name: "Tude",
