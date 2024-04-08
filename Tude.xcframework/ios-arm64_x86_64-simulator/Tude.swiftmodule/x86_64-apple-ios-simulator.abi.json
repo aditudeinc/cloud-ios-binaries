@@ -7646,72 +7646,93 @@
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 2435,
+      "offset": 2507,
       "length": 52,
       "value": "\"An error occurred during Prebid SDK initialization\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
-      "offset": 2526,
+      "offset": 2598,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 2684,
+      "offset": 2756,
       "length": 37,
       "value": "\"Prebid SDK successfully initialized\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
-      "offset": 2764,
+      "offset": 2836,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 2865,
+      "offset": 2937,
       "length": 71,
       "value": "\"An error occurred during Prebid SDK initialization with failed status\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
-      "offset": 2979,
+      "offset": 3051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 3094,
+      "offset": 3166,
       "length": 72,
       "value": "\"An error occurred during Prebid SDK initialization serverStatusWarning\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
-      "offset": 3209,
+      "offset": 3281,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 3315,
+      "offset": 3387,
       "length": 60,
       "value": "\"An unknown error occurred during Prebid SDK initialization\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
-      "offset": 3418,
+      "offset": 3490,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
+      "kind": "StringLiteral",
+      "offset": 3779,
+      "length": 11,
+      "value": "\"\/id(\\d+)\""
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
+      "kind": "StringLiteral",
+      "offset": 3956,
+      "length": 5,
+      "value": "\"\/id\""
+    },
+    {
+      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
+      "kind": "StringLiteral",
+      "offset": 3969,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/BannerAdConfig.swift",
