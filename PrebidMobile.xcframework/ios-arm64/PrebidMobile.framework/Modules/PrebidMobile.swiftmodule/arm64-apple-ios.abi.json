@@ -11193,6 +11193,118 @@
           },
           {
             "kind": "Var",
+            "name": "ortbConfig",
+            "printedName": "ortbConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)MediationBaseInterstitialAdUnit(py)ortbConfig",
+            "mangledName": "$s12PrebidMobile31MediationBaseInterstitialAdUnitC10ortbConfigSSSgvp",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)MediationBaseInterstitialAdUnit(im)ortbConfig",
+                "mangledName": "$s12PrebidMobile31MediationBaseInterstitialAdUnitC10ortbConfigSSSgvg",
+                "moduleName": "PrebidMobile",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)MediationBaseInterstitialAdUnit(im)setOrtbConfig:",
+                "mangledName": "$s12PrebidMobile31MediationBaseInterstitialAdUnitC10ortbConfigSSSgvs",
+                "moduleName": "PrebidMobile",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PrebidMobile31MediationBaseInterstitialAdUnitC10ortbConfigSSSgvM",
+                "mangledName": "$s12PrebidMobile31MediationBaseInterstitialAdUnitC10ortbConfigSSSgvM",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "configId",
             "printedName": "configId",
             "children": [
@@ -35490,6 +35602,118 @@
           },
           {
             "kind": "Var",
+            "name": "ortbConfig",
+            "printedName": "ortbConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)BaseInterstitialAdUnit(py)ortbConfig",
+            "mangledName": "$s12PrebidMobile22BaseInterstitialAdUnitC10ortbConfigSSSgvp",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)BaseInterstitialAdUnit(im)ortbConfig",
+                "mangledName": "$s12PrebidMobile22BaseInterstitialAdUnitC10ortbConfigSSSgvg",
+                "moduleName": "PrebidMobile",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)BaseInterstitialAdUnit(im)setOrtbConfig:",
+                "mangledName": "$s12PrebidMobile22BaseInterstitialAdUnitC10ortbConfigSSSgvs",
+                "moduleName": "PrebidMobile",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PrebidMobile22BaseInterstitialAdUnitC10ortbConfigSSSgvM",
+                "mangledName": "$s12PrebidMobile22BaseInterstitialAdUnitC10ortbConfigSSSgvM",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isReady",
             "printedName": "isReady",
             "children": [
@@ -40555,6 +40779,119 @@
                 "declKind": "Accessor",
                 "usr": "s:12PrebidMobile10BannerViewC10adPositionAA02AdF0OvM",
                 "mangledName": "$s12PrebidMobile10BannerViewC10adPositionAA02AdF0OvM",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ortbConfig",
+            "printedName": "ortbConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)BannerView(py)ortbConfig",
+            "mangledName": "$s12PrebidMobile10BannerViewC10ortbConfigSSSgvp",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)BannerView(im)ortbConfig",
+                "mangledName": "$s12PrebidMobile10BannerViewC10ortbConfigSSSgvg",
+                "moduleName": "PrebidMobile",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)BannerView(im)setOrtbConfig:",
+                "mangledName": "$s12PrebidMobile10BannerViewC10ortbConfigSSSgvs",
+                "moduleName": "PrebidMobile",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PrebidMobile10BannerViewC10ortbConfigSSSgvM",
+                "mangledName": "$s12PrebidMobile10BannerViewC10ortbConfigSSSgvM",
                 "moduleName": "PrebidMobile",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -47082,6 +47419,71 @@
           },
           {
             "kind": "Function",
+            "name": "getOrtbConfig",
+            "printedName": "getOrtbConfig()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrebidMobile@objc(cs)MediationNativeAdUnit(im)getOrtbConfig",
+            "mangledName": "$s12PrebidMobile21MediationNativeAdUnitC13getOrtbConfigSSSgyF",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOrtbConfig",
+            "printedName": "setOrtbConfig(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrebidMobile@objc(cs)MediationNativeAdUnit(im)setOrtbConfig:",
+            "mangledName": "$s12PrebidMobile21MediationNativeAdUnitC13setOrtbConfigyySSSgF",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setAppContent",
             "printedName": "setAppContent(_:)",
             "children": [
@@ -50561,6 +50963,118 @@
                 "declKind": "Accessor",
                 "usr": "s:12PrebidMobile21MediationBannerAdUnitC15additionalSizesSaySo6CGSizeVGSgvM",
                 "mangledName": "$s12PrebidMobile21MediationBannerAdUnitC15additionalSizesSaySo6CGSizeVGSgvM",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ortbConfig",
+            "printedName": "ortbConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)MediationBannerAdUnit(py)ortbConfig",
+            "mangledName": "$s12PrebidMobile21MediationBannerAdUnitC10ortbConfigSSSgvp",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)MediationBannerAdUnit(im)ortbConfig",
+                "mangledName": "$s12PrebidMobile21MediationBannerAdUnitC10ortbConfigSSSgvg",
+                "moduleName": "PrebidMobile",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)MediationBannerAdUnit(im)setOrtbConfig:",
+                "mangledName": "$s12PrebidMobile21MediationBannerAdUnitC10ortbConfigSSSgvs",
+                "moduleName": "PrebidMobile",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PrebidMobile21MediationBannerAdUnitC10ortbConfigSSSgvM",
+                "mangledName": "$s12PrebidMobile21MediationBannerAdUnitC10ortbConfigSSSgvM",
                 "moduleName": "PrebidMobile",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -55894,6 +56408,72 @@
             "declKind": "Func",
             "usr": "c:@M@PrebidMobile@objc(cs)AdUnit(im)getGPID",
             "mangledName": "$s12PrebidMobile6AdUnitC7getGPIDSSSgyF",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOrtbConfig",
+            "printedName": "setOrtbConfig(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrebidMobile@objc(cs)AdUnit(im)setOrtbConfig:",
+            "mangledName": "$s12PrebidMobile6AdUnitC13setOrtbConfigyySSSgF",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getOrtbConfig",
+            "printedName": "getOrtbConfig()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrebidMobile@objc(cs)AdUnit(im)getOrtbConfig",
+            "mangledName": "$s12PrebidMobile6AdUnitC13getOrtbConfigSSSgyF",
             "moduleName": "PrebidMobile",
             "declAttributes": [
               "AccessControl",
@@ -63980,6 +64560,118 @@
                 "declKind": "Accessor",
                 "usr": "s:12PrebidMobile12AdUnitConfigC4gpidSSSgvM",
                 "mangledName": "$s12PrebidMobile12AdUnitConfigC4gpidSSSgvM",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ortbConfig",
+            "printedName": "ortbConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)AdUnitConfig(py)ortbConfig",
+            "mangledName": "$s12PrebidMobile12AdUnitConfigC04ortbE0SSSgvp",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)AdUnitConfig(im)ortbConfig",
+                "mangledName": "$s12PrebidMobile12AdUnitConfigC04ortbE0SSSgvg",
+                "moduleName": "PrebidMobile",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)AdUnitConfig(im)setOrtbConfig:",
+                "mangledName": "$s12PrebidMobile12AdUnitConfigC04ortbE0SSSgvs",
+                "moduleName": "PrebidMobile",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PrebidMobile12AdUnitConfigC04ortbE0SSSgvM",
+                "mangledName": "$s12PrebidMobile12AdUnitConfigC04ortbE0SSSgvM",
                 "moduleName": "PrebidMobile",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -77264,6 +77956,166 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "ortbConfig",
+            "printedName": "ortbConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)PBMAdConfiguration(py)ortbConfig",
+            "mangledName": "$s12PrebidMobile15AdConfigurationC10ortbConfigSSSgvp",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMAdConfiguration(im)ortbConfig",
+                "mangledName": "$s12PrebidMobile15AdConfigurationC10ortbConfigSSSgvg",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMAdConfiguration(im)setOrtbConfig:",
+                "mangledName": "$s12PrebidMobile15AdConfigurationC10ortbConfigSSSgvs",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12PrebidMobile15AdConfigurationC10ortbConfigSSSgvM",
+                "mangledName": "$s12PrebidMobile15AdConfigurationC10ortbConfigSSSgvM",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getCheckedOrtbConfig",
+            "printedName": "getCheckedOrtbConfig()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrebidMobile@objc(cs)PBMAdConfiguration(im)getCheckedOrtbConfig",
+            "mangledName": "$s12PrebidMobile15AdConfigurationC20getCheckedOrtbConfigSDySSypGSgyF",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -82060,7 +82912,7 @@
       "kind": "StringLiteral",
       "offset": 733,
       "length": 7,
-      "value": "\"2.2.0\""
+      "value": "\"2.2.1\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
@@ -82898,14 +83750,14 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationBaseInterstitialAdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 2331,
+      "offset": 2466,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationBaseInterstitialAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 9187,
+      "offset": 9322,
       "length": 40,
       "value": "\"The winning bid is absent in response!\""
     },
@@ -83164,63 +84016,63 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidGAMVersionChecker.swift",
       "kind": "StringLiteral",
-      "offset": 1255,
+      "offset": 1254,
       "length": 3,
       "value": "\"v\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidGAMVersionChecker.swift",
       "kind": "StringLiteral",
-      "offset": 1289,
+      "offset": 1288,
       "length": 47,
       "value": "\"Error occured during GMA SDK version parsing.\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidGAMVersionChecker.swift",
       "kind": "StringLiteral",
-      "offset": 1826,
+      "offset": 1825,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidGAMVersionChecker.swift",
       "kind": "IntegerLiteral",
-      "offset": 1918,
+      "offset": 1917,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidGAMVersionChecker.swift",
       "kind": "StringLiteral",
-      "offset": 1949,
+      "offset": 1948,
       "length": 47,
       "value": "\"Error occured during GMA SDK version parsing.\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidGAMVersionChecker.swift",
       "kind": "IntegerLiteral",
-      "offset": 2075,
+      "offset": 2074,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidGAMVersionChecker.swift",
       "kind": "IntegerLiteral",
-      "offset": 2098,
+      "offset": 2097,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidGAMVersionChecker.swift",
       "kind": "IntegerLiteral",
-      "offset": 2121,
+      "offset": 2120,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidGAMVersionChecker.swift",
       "kind": "StringLiteral",
-      "offset": 2561,
+      "offset": 2560,
       "length": 149,
       "value": "\"The current version of Prebid SDK is not validated with the latest version of GMA SDK. Please update the Prebid SDK or post a ticket on the github.\""
     },
@@ -84613,91 +85465,91 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 6559,
+      "offset": 6527,
       "length": 36,
       "value": "\"Response is not an HTTPURLResponse\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 6935,
+      "offset": 6903,
       "length": 8,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 6942,
+      "offset": 6910,
       "length": 6,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 6947,
+      "offset": 6915,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 6956,
+      "offset": 6924,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 7338,
+      "offset": 7306,
       "length": 21,
       "value": "\"No data from server\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 8027,
+      "offset": 7995,
       "length": 58,
       "value": "\"JSON Parsing Error: \""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 8084,
+      "offset": 8052,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 9051,
+      "offset": 9019,
       "length": 37,
       "value": "\"No resource URL string was provided\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 9205,
+      "offset": 9173,
       "length": 43,
       "value": "\"URL creation failed for string: \""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 9247,
+      "offset": 9215,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 9485,
+      "offset": 9453,
       "length": 6,
       "value": "\"True\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "IntegerLiteral",
-      "offset": 9663,
+      "offset": 9631,
       "length": 1,
       "value": "0"
     },
@@ -85026,63 +85878,63 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BaseInterstitialAdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 1801,
+      "offset": 1946,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BaseInterstitialAdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 3508,
+      "offset": 3653,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BaseInterstitialAdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 4557,
+      "offset": 4702,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BaseInterstitialAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 5851,
+      "offset": 5996,
       "length": 47,
       "value": "\"Expected to only be called on the main thread\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BaseInterstitialAdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 11575,
+      "offset": 11720,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BaseInterstitialAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 12154,
+      "offset": 12299,
       "length": 47,
       "value": "\"Expected to only be called on the main thread\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BaseInterstitialAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 12385,
+      "offset": 12530,
       "length": 47,
       "value": "\"Expected to only be called on the main thread\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BaseInterstitialAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 12619,
+      "offset": 12764,
       "length": 47,
       "value": "\"Expected to only be called on the main thread\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BaseInterstitialAdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 14542,
+      "offset": 14687,
       "length": 5,
       "value": "false"
     },
@@ -85222,161 +86074,161 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2481,
+      "offset": 2622,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2508,
+      "offset": 2649,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2715,
+      "offset": 2856,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2801,
+      "offset": 2942,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2907,
+      "offset": 3048,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2948,
+      "offset": 3089,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3143,
+      "offset": 3284,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4322,
+      "offset": 4463,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4845,
+      "offset": 4986,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4952,
+      "offset": 5093,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5557,
+      "offset": 5698,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5636,
+      "offset": 5777,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6123,
+      "offset": 6264,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6540,
+      "offset": 6681,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12047,
+      "offset": 12188,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12649,
+      "offset": 12790,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12884,
+      "offset": 13025,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "StringLiteral",
-      "offset": 15476,
+      "offset": 15617,
       "length": 15,
       "value": "\"Unknown Error\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15650,
+      "offset": 15791,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15971,
+      "offset": 16112,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16015,
+      "offset": 16156,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16315,
+      "offset": 16456,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/GAM\/BannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16328,
+      "offset": 16469,
       "length": 1,
       "value": "0"
     },
@@ -85901,42 +86753,42 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationNativeAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 6804,
+      "offset": 7013,
       "length": 56,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationNativeAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 6832,
+      "offset": 7041,
       "length": 1,
       "value": "\": no cache in kvResultDict.\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationNativeAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 7033,
+      "offset": 7242,
       "length": 57,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationNativeAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 7061,
+      "offset": 7270,
       "length": 1,
       "value": "\": no bid for given cache id.\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationNativeAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 7263,
+      "offset": 7472,
       "length": 75,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationNativeAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 7291,
+      "offset": 7500,
       "length": 1,
       "value": "\": parsing bid string to bid dictionary failed.\""
     },
@@ -86104,35 +86956,35 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationBannerAdUnit.swift",
       "kind": "IntegerLiteral",
-      "offset": 6641,
+      "offset": 6776,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationBannerAdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 6803,
+      "offset": 6938,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationBannerAdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 7736,
+      "offset": 7871,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationBannerAdUnit.swift",
       "kind": "BooleanLiteral",
-      "offset": 10051,
+      "offset": 10186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/Integrations\/MediationAPI\/MediationBannerAdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 11026,
+      "offset": 11161,
       "length": 40,
       "value": "\"The winning bid is absent in response!\""
     },
@@ -86230,14 +87082,14 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/MultiformatAdUnit\/PrebidRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1414,
+      "offset": 1455,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/MultiformatAdUnit\/PrebidRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1440,
+      "offset": 1481,
       "length": 5,
       "value": "false"
     },
@@ -86468,28 +87320,28 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 14338,
+      "offset": 14580,
       "length": 105,
       "value": "\"auto refresh not set as the refresh time is less than to \""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 14434,
+      "offset": 14676,
       "length": 7,
       "value": "\" seconds\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 15722,
+      "offset": 15964,
       "length": 19,
       "value": "\"Dispatcher is nil\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/AdUnits\/AdUnit.swift",
       "kind": "StringLiteral",
-      "offset": 15925,
+      "offset": 16167,
       "length": 19,
       "value": "\"Dispatcher is nil\""
     },
@@ -87546,14 +88398,14 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/PBMCore\/AdUnitConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2887,
+      "offset": 3028,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Prebid\/PBMCore\/AdUnitConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 10193,
+      "offset": 10334,
       "length": 1,
       "value": "0"
     },
@@ -88438,6 +89290,27 @@
       "offset": 3112,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/AdTypes\/AdView\/AdConfiguration.swift",
+      "kind": "Array",
+      "offset": 4038,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/AdTypes\/AdView\/AdConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 4115,
+      "length": 71,
+      "value": "\"The provided ortbConfig object is not valid JSON and will be ignored.\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/AdTypes\/AdView\/AdConfiguration.swift",
+      "kind": "Dictionary",
+      "offset": 4245,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Assets\/PrebidImagesRepository.swift",

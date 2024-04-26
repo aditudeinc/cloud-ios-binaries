@@ -285,6 +285,10 @@ public class VideoAdUnit : PrebidMobile.AdUnit {
     @objc get
     @objc set
   }
+  @objc public var ortbConfig: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc public var configId: Swift.String {
     @objc get
   }
@@ -921,6 +925,10 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
     @objc get
     @objc set
   }
+  @objc public var ortbConfig: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc public var isReady: Swift.Bool {
     @objc get
   }
@@ -1082,6 +1090,10 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
     @objc set
   }
   @objc @_Concurrency.MainActor(unsafe) public var adPosition: PrebidMobile.AdPosition {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var ortbConfig: Swift.String? {
     @objc get
     @objc set
   }
@@ -1265,6 +1277,8 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public func setDURLSupport(_ dURLSupport: Swift.Int)
   @objc public func setPrivacy(_ privacy: Swift.Int)
   @objc public func setExt(_ ext: [Swift.String : Any])
+  @objc public func getOrtbConfig() -> Swift.String?
+  @objc public func setOrtbConfig(_ ortbConfig: Swift.String?)
   @objc public func setAppContent(_ appContent: PrebidMobile.PBMORTBAppContent)
   @objc public func clearAppContent()
   @objc public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
@@ -1391,6 +1405,10 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
     @objc set
   }
   @objc public var additionalSizes: [CoreFoundation.CGSize]? {
+    @objc get
+    @objc set
+  }
+  @objc public var ortbConfig: Swift.String? {
     @objc get
     @objc set
   }
@@ -1575,6 +1593,8 @@ extension Foundation.NSString {
   @objc public func clearUserData()
   @objc public func setGPID(_ gpid: Swift.String?)
   @objc public func getGPID() -> Swift.String?
+  @objc public func setOrtbConfig(_ ortbObject: Swift.String?)
+  @objc public func getOrtbConfig() -> Swift.String?
   @objc public func setAutoRefreshMillis(time: Swift.Double)
   @objc public func stopAutoRefresh()
   @objc public func resumeAutoRefresh()
@@ -1755,6 +1775,10 @@ public let refreshIntervalDefault: Swift.Double
     @objc set
   }
   @objc public var gpid: Swift.String?
+  @objc public var ortbConfig: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc convenience public init(configId: Swift.String)
   @objc public init(configId: Swift.String, size: CoreFoundation.CGSize)
   @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
@@ -2133,6 +2157,8 @@ public let refreshIntervalDefault: Swift.Double
     set
   }
   @objc public var clickHandlerOverride: ((() -> Swift.Void) -> Swift.Void)?
+  @objc public var ortbConfig: Swift.String?
+  @objc public func getCheckedOrtbConfig() -> [Swift.String : Any]?
   @objc override dynamic public init()
   @objc deinit
 }
