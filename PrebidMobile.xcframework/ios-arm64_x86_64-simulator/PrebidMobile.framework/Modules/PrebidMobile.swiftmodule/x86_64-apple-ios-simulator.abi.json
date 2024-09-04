@@ -32426,14 +32426,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PBMUserAgentService",
-                "printedName": "PrebidMobile.PBMUserAgentService",
-                "usr": "c:objc(cs)PBMUserAgentService"
+                "name": "UserAgentService",
+                "printedName": "PrebidMobile.UserAgentService",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@PrebidMobile@objc(cs)PrebidServerConnection(py)userAgentService",
-            "mangledName": "$s12PrebidMobile0A16ServerConnectionC16userAgentServiceSo07PBMUserfG0Cvp",
+            "mangledName": "$s12PrebidMobile0A16ServerConnectionC16userAgentServiceAA04UserfG0Cvp",
             "moduleName": "PrebidMobile",
             "objc_name": "userAgentService",
             "declAttributes": [
@@ -32453,14 +32453,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "PBMUserAgentService",
-                    "printedName": "PrebidMobile.PBMUserAgentService",
-                    "usr": "c:objc(cs)PBMUserAgentService"
+                    "name": "UserAgentService",
+                    "printedName": "PrebidMobile.UserAgentService",
+                    "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@PrebidMobile@objc(cs)PrebidServerConnection(im)userAgentService",
-                "mangledName": "$s12PrebidMobile0A16ServerConnectionC16userAgentServiceSo07PBMUserfG0Cvg",
+                "mangledName": "$s12PrebidMobile0A16ServerConnectionC16userAgentServiceAA04UserfG0Cvg",
                 "moduleName": "PrebidMobile",
                 "implicit": true,
                 "objc_name": "userAgentService",
@@ -32917,14 +32917,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "PBMUserAgentService",
-                "printedName": "PrebidMobile.PBMUserAgentService",
-                "usr": "c:objc(cs)PBMUserAgentService"
+                "name": "UserAgentService",
+                "printedName": "PrebidMobile.UserAgentService",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@PrebidMobile@objc(cs)PrebidServerConnection(im)initWithUserAgentService:",
-            "mangledName": "$s12PrebidMobile0A16ServerConnectionC16userAgentServiceACSo07PBMUserfG0C_tcfc",
+            "mangledName": "$s12PrebidMobile0A16ServerConnectionC16userAgentServiceAcA04UserfG0C_tcfc",
             "moduleName": "PrebidMobile",
             "declAttributes": [
               "Convenience",
@@ -38685,6 +38685,240 @@
         "mangledName": "$s12PrebidMobile21NativeAdConfigurationC",
         "moduleName": "PrebidMobile",
         "objc_name": "PBMNativeAdConfiguration",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PrebidMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserAgentService",
+        "printedName": "UserAgentService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserAgentService",
+                "printedName": "PrebidMobile.UserAgentService",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService(cpy)shared",
+            "mangledName": "$s12PrebidMobile16UserAgentServiceC6sharedACvpZ",
+            "moduleName": "PrebidMobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAgentService",
+                    "printedName": "PrebidMobile.UserAgentService",
+                    "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService(cm)shared",
+                "mangledName": "$s12PrebidMobile16UserAgentServiceC6sharedACvgZ",
+                "moduleName": "PrebidMobile",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userAgent",
+            "printedName": "userAgent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService(py)userAgent",
+            "mangledName": "$s12PrebidMobile16UserAgentServiceC04userD0SSvp",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService(im)userAgent",
+                "mangledName": "$s12PrebidMobile16UserAgentServiceC04userD0SSvg",
+                "moduleName": "PrebidMobile",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fetchUserAgent",
+            "printedName": "fetchUserAgent(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService(im)fetchUserAgentWithCompletion:",
+            "mangledName": "$s12PrebidMobile16UserAgentServiceC05fetchcD010completionyySScSg_tF",
+            "moduleName": "PrebidMobile",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService",
+        "mangledName": "$s12PrebidMobile16UserAgentServiceC",
+        "moduleName": "PrebidMobile",
+        "objc_name": "PBMUserAgentService",
         "declAttributes": [
           "AccessControl",
           "ObjCMembers",
@@ -79655,14 +79889,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PBMUserAgentService",
-                "printedName": "PrebidMobile.PBMUserAgentService",
-                "usr": "c:objc(cs)PBMUserAgentService"
+                "name": "UserAgentService",
+                "printedName": "PrebidMobile.UserAgentService",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@PrebidMobile@objc(pl)PrebidServerConnectionProtocol(py)userAgentService",
-            "mangledName": "$s12PrebidMobile0A24ServerConnectionProtocolP16userAgentServiceSo07PBMUsergH0Cvp",
+            "mangledName": "$s12PrebidMobile0A24ServerConnectionProtocolP16userAgentServiceAA04UsergH0Cvp",
             "moduleName": "PrebidMobile",
             "protocolReq": true,
             "declAttributes": [
@@ -79676,14 +79910,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "PBMUserAgentService",
-                    "printedName": "PrebidMobile.PBMUserAgentService",
-                    "usr": "c:objc(cs)PBMUserAgentService"
+                    "name": "UserAgentService",
+                    "printedName": "PrebidMobile.UserAgentService",
+                    "usr": "c:@M@PrebidMobile@objc(cs)PBMUserAgentService"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@PrebidMobile@objc(pl)PrebidServerConnectionProtocol(im)userAgentService",
-                "mangledName": "$s12PrebidMobile0A24ServerConnectionProtocolP16userAgentServiceSo07PBMUsergH0Cvg",
+                "mangledName": "$s12PrebidMobile0A24ServerConnectionProtocolP16userAgentServiceAA04UsergH0Cvg",
                 "moduleName": "PrebidMobile",
                 "genericSig": "<τ_0_0 where τ_0_0 : PrebidMobile.PrebidServerConnectionProtocol>",
                 "sugared_genericSig": "<Self where Self : PrebidMobile.PrebidServerConnectionProtocol>",
@@ -82658,49 +82892,49 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidSDKInitializer.swift",
       "kind": "StringLiteral",
-      "offset": 1362,
+      "offset": 1393,
       "length": 38,
       "value": "\"GADMobileAds object is not provided.\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidSDKInitializer.swift",
       "kind": "StringLiteral",
-      "offset": 1498,
+      "offset": 1529,
       "length": 12,
       "value": "\"sdkVersion\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidSDKInitializer.swift",
       "kind": "StringLiteral",
-      "offset": 1542,
+      "offset": 1573,
       "length": 57,
       "value": "\"There is no sdkVersion property in GADMobileAds object.\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidSDKInitializer.swift",
       "kind": "StringLiteral",
-      "offset": 1694,
+      "offset": 1725,
       "length": 12,
       "value": "\"sdkVersion\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidSDKInitializer.swift",
       "kind": "StringLiteral",
-      "offset": 2059,
+      "offset": 2090,
       "length": 46,
       "value": "\"GADMobileAds version string is not provided.\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidSDKInitializer.swift",
       "kind": "StringLiteral",
-      "offset": 2625,
+      "offset": 2656,
       "length": 53,
       "value": "\"Current GMA SDK version has not been extracted yet.\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/ConfigurationAndTargeting\/PrebidSDKInitializer.swift",
       "kind": "StringLiteral",
-      "offset": 2866,
+      "offset": 2897,
       "length": 108,
       "value": "\"Please, use `initializeSDK(gadMobileAdsVersion:, _ completion:)` method in order to initialize Prebid SDK.\""
     },
@@ -82912,7 +83146,7 @@
       "kind": "StringLiteral",
       "offset": 733,
       "length": 7,
-      "value": "\"2.2.1\""
+      "value": "\"2.2.3\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/Constants.swift",
@@ -85402,154 +85636,154 @@
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "Array",
-      "offset": 1028,
+      "offset": 1025,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 1156,
+      "offset": 1153,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 1235,
+      "offset": 1232,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 1316,
+      "offset": 1313,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 1512,
+      "offset": 1509,
       "length": 17,
       "value": "\"PBMConnectionID\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 1707,
+      "offset": 1704,
       "length": 17,
       "value": "\"PBMIsPBMRequest\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "BooleanLiteral",
-      "offset": 2707,
+      "offset": 2701,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "IntegerLiteral",
-      "offset": 2812,
+      "offset": 2806,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "BooleanLiteral",
-      "offset": 2928,
+      "offset": 2922,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 6527,
+      "offset": 6521,
       "length": 36,
       "value": "\"Response is not an HTTPURLResponse\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 6903,
+      "offset": 6897,
       "length": 8,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 6910,
+      "offset": 6904,
       "length": 6,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 6915,
+      "offset": 6909,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 6924,
+      "offset": 6918,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 7306,
+      "offset": 7300,
       "length": 21,
       "value": "\"No data from server\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 7995,
+      "offset": 7989,
       "length": 58,
       "value": "\"JSON Parsing Error: \""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 8052,
+      "offset": 8046,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 9019,
+      "offset": 9013,
       "length": 37,
       "value": "\"No resource URL string was provided\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 9173,
+      "offset": 9167,
       "length": 43,
       "value": "\"URL creation failed for string: \""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 9215,
+      "offset": 9209,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "StringLiteral",
-      "offset": 9453,
+      "offset": 9438,
       "length": 6,
       "value": "\"True\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Networking\/PrebidServerConnection.swift",
       "kind": "IntegerLiteral",
-      "offset": 9631,
+      "offset": 9616,
       "length": 1,
       "value": "0"
     },
@@ -85951,6 +86185,34 @@
       "offset": 790,
       "length": 5,
       "value": "\"1.2\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Utilities\/UserAgentService.swift",
+      "kind": "StringLiteral",
+      "offset": 806,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Utilities\/UserAgentService.swift",
+      "kind": "StringLiteral",
+      "offset": 1322,
+      "length": 21,
+      "value": "\"navigator.userAgent\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Utilities\/UserAgentService.swift",
+      "kind": "StringLiteral",
+      "offset": 1674,
+      "length": 11,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/PrebidMobileRendering\/Utilities\/UserAgentService.swift",
+      "kind": "StringLiteral",
+      "offset": 1684,
+      "length": 1,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/maksymdanylov\/Development\/prebid-mobile-ios\/PrebidMobile\/UIViewExtension.swift",

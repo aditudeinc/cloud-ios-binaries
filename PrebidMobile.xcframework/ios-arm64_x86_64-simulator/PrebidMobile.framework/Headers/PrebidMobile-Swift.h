@@ -2765,6 +2765,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 
 
 
+SWIFT_CLASS_NAMED("UserAgentService")
+@interface PBMUserAgentService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBMUserAgentService * _Nonnull shared;)
++ (PBMUserAgentService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly, copy) NSString * _Nonnull userAgent;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)fetchUserAgentWithCompletion:(void (^ _Nullable)(NSString * _Nonnull))completion;
+@end
+
+
 
 SWIFT_CLASS("_TtC12PrebidMobile5Utils")
 @interface Utils : NSObject
@@ -5647,6 +5658,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 
 
 
+
+
+SWIFT_CLASS_NAMED("UserAgentService")
+@interface PBMUserAgentService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBMUserAgentService * _Nonnull shared;)
++ (PBMUserAgentService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly, copy) NSString * _Nonnull userAgent;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)fetchUserAgentWithCompletion:(void (^ _Nullable)(NSString * _Nonnull))completion;
+@end
 
 
 

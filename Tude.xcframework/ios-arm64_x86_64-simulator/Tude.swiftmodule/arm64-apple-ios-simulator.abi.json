@@ -441,6 +441,42 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "getNativeBannerAd",
+            "printedName": "getNativeBannerAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Tude.NativeBannerAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NativeBannerAd",
+                    "printedName": "Tude.NativeBannerAd",
+                    "usr": "c:@M@Tude@objc(cs)NativeBannerAd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(im)getNativeBannerAd:",
+            "mangledName": "$s4Tude14AditudeWrapperC17getNativeBannerAdyAA0efG0CSgSSF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -1010,6 +1046,900 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "Tude"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NativeBannerAd",
+        "printedName": "NativeBannerAd",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isLoaded",
+            "printedName": "isLoaded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)NativeBannerAd(py)isLoaded",
+            "mangledName": "$s4Tude14NativeBannerAdC8isLoadedSbvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)isLoaded",
+                "mangledName": "$s4Tude14NativeBannerAdC8isLoadedSbvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onNativeAdLoaded",
+            "printedName": "onNativeAdLoaded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GoogleMobileAds.GADNativeAd) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GADNativeAd",
+                    "printedName": "GoogleMobileAds.GADNativeAd",
+                    "usr": "c:objc(cs)GADNativeAd"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)NativeBannerAd(py)onNativeAdLoaded",
+            "mangledName": "$s4Tude14NativeBannerAdC02onbD6LoadedyySo09GADNativeD0Ccvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GoogleMobileAds.GADNativeAd) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GADNativeAd",
+                        "printedName": "GoogleMobileAds.GADNativeAd",
+                        "usr": "c:objc(cs)GADNativeAd"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)onNativeAdLoaded",
+                "mangledName": "$s4Tude14NativeBannerAdC02onbD6LoadedyySo09GADNativeD0Ccvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GoogleMobileAds.GADNativeAd) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GADNativeAd",
+                        "printedName": "GoogleMobileAds.GADNativeAd",
+                        "usr": "c:objc(cs)GADNativeAd"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)setOnNativeAdLoaded:",
+                "mangledName": "$s4Tude14NativeBannerAdC02onbD6LoadedyySo09GADNativeD0Ccvs",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Tude14NativeBannerAdC02onbD6LoadedyySo09GADNativeD0CcvM",
+                "mangledName": "$s4Tude14NativeBannerAdC02onbD6LoadedyySo09GADNativeD0CcvM",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onCustomFormatNativeAdLoaded",
+            "printedName": "onCustomFormatNativeAdLoaded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GoogleMobileAds.GADCustomNativeAd) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GADCustomNativeAd",
+                    "printedName": "GoogleMobileAds.GADCustomNativeAd",
+                    "usr": "c:objc(cs)GADCustomNativeAd"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)NativeBannerAd(py)onCustomFormatNativeAdLoaded",
+            "mangledName": "$s4Tude14NativeBannerAdC014onCustomFormatbD6LoadedyySo09GADCustombD0Ccvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GoogleMobileAds.GADCustomNativeAd) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GADCustomNativeAd",
+                        "printedName": "GoogleMobileAds.GADCustomNativeAd",
+                        "usr": "c:objc(cs)GADCustomNativeAd"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)onCustomFormatNativeAdLoaded",
+                "mangledName": "$s4Tude14NativeBannerAdC014onCustomFormatbD6LoadedyySo09GADCustombD0Ccvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GoogleMobileAds.GADCustomNativeAd) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GADCustomNativeAd",
+                        "printedName": "GoogleMobileAds.GADCustomNativeAd",
+                        "usr": "c:objc(cs)GADCustomNativeAd"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)setOnCustomFormatNativeAdLoaded:",
+                "mangledName": "$s4Tude14NativeBannerAdC014onCustomFormatbD6LoadedyySo09GADCustombD0Ccvs",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Tude14NativeBannerAdC014onCustomFormatbD6LoadedyySo09GADCustombD0CcvM",
+                "mangledName": "$s4Tude14NativeBannerAdC014onCustomFormatbD6LoadedyySo09GADCustombD0CcvM",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onNativeAdFailedToLoad",
+            "printedName": "onNativeAdFailedToLoad",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tude.AdFailedToLoadError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdFailedToLoadError",
+                    "printedName": "Tude.AdFailedToLoadError",
+                    "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)NativeBannerAd(py)onNativeAdFailedToLoad",
+            "mangledName": "$s4Tude14NativeBannerAdC02onbD12FailedToLoadyyAA0dfgH5ErrorCcvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Tude.AdFailedToLoadError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdFailedToLoadError",
+                        "printedName": "Tude.AdFailedToLoadError",
+                        "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)onNativeAdFailedToLoad",
+                "mangledName": "$s4Tude14NativeBannerAdC02onbD12FailedToLoadyyAA0dfgH5ErrorCcvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Tude.AdFailedToLoadError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdFailedToLoadError",
+                        "printedName": "Tude.AdFailedToLoadError",
+                        "usr": "c:@M@Tude@objc(cs)AdFailedToLoadError"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)setOnNativeAdFailedToLoad:",
+                "mangledName": "$s4Tude14NativeBannerAdC02onbD12FailedToLoadyyAA0dfgH5ErrorCcvs",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Tude14NativeBannerAdC02onbD12FailedToLoadyyAA0dfgH5ErrorCcvM",
+                "mangledName": "$s4Tude14NativeBannerAdC02onbD12FailedToLoadyyAA0dfgH5ErrorCcvM",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "slotName",
+            "printedName": "slotName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)NativeBannerAd(py)slotName",
+            "mangledName": "$s4Tude14NativeBannerAdC8slotNameSSvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)slotName",
+                "mangledName": "$s4Tude14NativeBannerAdC8slotNameSSvg",
+                "moduleName": "Tude",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "preload",
+            "printedName": "preload()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)preload",
+            "mangledName": "$s4Tude14NativeBannerAdC7preloadyyF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "preload",
+            "printedName": "preload(onPreload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)preloadOnPreload:",
+            "mangledName": "$s4Tude14NativeBannerAdC7preload9onPreloadyyyc_tF",
+            "moduleName": "Tude",
+            "objc_name": "preloadOnPreload:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTargeting",
+            "printedName": "setTargeting(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)setTargeting:",
+            "mangledName": "$s4Tude14NativeBannerAdC12setTargetingyySDyS2SGF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)load:",
+            "mangledName": "$s4Tude14NativeBannerAdC4loadyySo16UIViewControllerCF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativeBannerAd",
+                "printedName": "Tude.NativeBannerAd",
+                "usr": "c:@M@Tude@objc(cs)NativeBannerAd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Tude@objc(cs)NativeBannerAd(im)init",
+            "mangledName": "$s4Tude14NativeBannerAdCACycfc",
+            "moduleName": "Tude",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoader",
+            "printedName": "adLoader(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADAdLoader",
+                "printedName": "GoogleMobileAds.GADAdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADNativeAd",
+                "printedName": "GoogleMobileAds.GADNativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)NativeBannerAd(im)adLoader:didReceiveNativeAd:",
+            "mangledName": "$s4Tude14NativeBannerAdC8adLoader_10didReceiveySo05GADAdF0C_So09GADNativeD0CtF",
+            "moduleName": "Tude",
+            "objc_name": "adLoader:didReceiveNativeAd:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoader",
+            "printedName": "adLoader(_:didFailToReceiveAdWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADAdLoader",
+                "printedName": "GoogleMobileAds.GADAdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)NativeBannerAd(im)adLoader:didFailToReceiveAdWithError:",
+            "mangledName": "$s4Tude14NativeBannerAdC8adLoader_016didFailToReceiveD9WithErrorySo05GADAdF0C_s0L0_ptF",
+            "moduleName": "Tude",
+            "objc_name": "adLoader:didFailToReceiveAdWithError:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoader",
+            "printedName": "adLoader(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADAdLoader",
+                "printedName": "GoogleMobileAds.GADAdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADCustomNativeAd",
+                "printedName": "GoogleMobileAds.GADCustomNativeAd",
+                "usr": "c:objc(cs)GADCustomNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)NativeBannerAd(im)adLoader:didReceiveCustomNativeAd:",
+            "mangledName": "$s4Tude14NativeBannerAdC8adLoader_10didReceiveySo05GADAdF0C_So09GADCustombD0CtF",
+            "moduleName": "Tude",
+            "objc_name": "adLoader:didReceiveCustomNativeAd:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "customNativeAdFormatIDs",
+            "printedName": "customNativeAdFormatIDs(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADAdLoader",
+                "printedName": "GoogleMobileAds.GADAdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)NativeBannerAd(im)customNativeAdFormatIDsForAdLoader:",
+            "mangledName": "$s4Tude14NativeBannerAdC06custombD9FormatIDs3forSaySSGSo11GADAdLoaderC_tF",
+            "moduleName": "Tude",
+            "objc_name": "customNativeAdFormatIDsForAdLoader:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Tude@objc(cs)NativeBannerAd",
+        "mangledName": "$s4Tude14NativeBannerAdC",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
         "declKind": "Import",
@@ -1435,12 +2365,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Error) -> ())?",
+                "printedName": "((any Swift.Error) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> ()",
+                    "printedName": "(any Swift.Error) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1450,7 +2380,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -1480,12 +2410,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.Error) -> ())?",
+                    "printedName": "((any Swift.Error) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Error) -> ()",
+                        "printedName": "(any Swift.Error) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1495,7 +2425,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ]
@@ -1528,12 +2458,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.Error) -> ())?",
+                    "printedName": "((any Swift.Error) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Error) -> ()",
+                        "printedName": "(any Swift.Error) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1543,7 +2473,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ]
@@ -2429,13 +3359,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -2465,7 +3395,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -2495,7 +3425,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -2525,7 +3455,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -2555,7 +3485,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -2585,7 +3515,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -2899,6 +3829,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "GoogleMobileAds",
         "printedName": "GoogleMobileAds",
         "declKind": "Import",
@@ -2995,8 +3935,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -3153,8 +4093,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -3312,8 +4252,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -3469,8 +4409,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -3626,8 +4566,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -3783,8 +4723,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -3992,8 +4932,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -4212,7 +5152,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -4422,6 +5362,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -4835,12 +5782,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Error) -> ())?",
+                "printedName": "((any Swift.Error) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> ()",
+                    "printedName": "(any Swift.Error) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -4850,7 +5797,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -4880,12 +5827,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.Error) -> ())?",
+                    "printedName": "((any Swift.Error) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Error) -> ()",
+                        "printedName": "(any Swift.Error) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -4895,7 +5842,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ]
@@ -4928,12 +5875,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.Error) -> ())?",
+                    "printedName": "((any Swift.Error) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Error) -> ()",
+                        "printedName": "(any Swift.Error) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -4943,7 +5890,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ]
@@ -6034,13 +6981,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -6070,7 +7017,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -6100,7 +7047,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -6130,7 +7077,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -6160,7 +7107,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -6190,7 +7137,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GADFullScreenPresentingAd",
-                "printedName": "GoogleMobileAds.GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -6441,1821 +7388,508 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "Array",
       "offset": 458,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 733,
+      "offset": 805,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 776,
+      "offset": 848,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2063,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3483,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 5305,
-      "length": 18,
-      "value": "\"Starting wrapper\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 5429,
-      "length": 65,
-      "value": "\"Aditude wrapper is initializing, will run command when complete\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 5544,
-      "length": 89,
-      "value": "\"  Cannot start Aditude wrapper without initializing first\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 5848,
-      "length": 63,
-      "value": "\"Cannot initialize Aditude wrapper without setting the api key\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 6039,
-      "length": 62,
-      "value": "\"Cannot initialize Aditude wrapper without setting the app ID\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 6433,
-      "length": 43,
-      "value": "\"Wrapper is in the process of initializing\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 6559,
-      "length": 22,
-      "value": "\"Initializing wrapper\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6610,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 7550,
-      "length": 32,
-      "value": "\"Running without Amazon bidding\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7719,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7763,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 8173,
-      "length": 32,
-      "value": "\"Running without Prebid bidding\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 8824,
-      "length": 27,
-      "value": "\"Initialized Aditude fetch\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 8967,
-      "length": 17,
-      "value": "\"Initialized GAM\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 9439,
-      "length": 20,
-      "value": "\"Initialized Prebid\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 9732,
-      "length": 20,
-      "value": "\"Initialized Amazon\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 9981,
-      "length": 45,
-      "value": "\"Searching for adConfig for adSlot=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 10025,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 10264,
-      "length": 37,
-      "value": "\"Found adConfig for adSlot=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 10300,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 10726,
-      "length": 47,
-      "value": "\"Could not find adConfig for adSlot: \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 10772,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10875,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11457,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
-      "kind": "Array",
-      "offset": 11572,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
       "offset": 284,
       "length": 14,
       "value": "\"Tude.AditudeWrapper\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/FetchConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Fetch\/FetchConfig.swift",
       "kind": "Dictionary",
-      "offset": 635,
+      "offset": 728,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/InterstitialAdConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/InterstitialAdConfig.swift",
       "kind": "Dictionary",
       "offset": 558,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/InterstitialAdConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/InterstitialAdConfig.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 20,
       "value": "\"Tude.InterstitialAdConfig\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 216,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "StringLiteral",
       "offset": 288,
       "length": 52,
       "value": "\"https:\/\/aditude.prebid-server.com\/openrtb2\/auction\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 376,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 415,
       "length": 4,
       "value": "3000"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 469,
       "length": 4,
       "value": "3000"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "StringLiteral",
       "offset": 508,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 541,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 595,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 786,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1006,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 11,
       "value": "\"accountId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 11,
       "value": "\"accountId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1236,
+      "offset": 1340,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1271,
+      "offset": 1375,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1306,
+      "offset": 1410,
       "length": 10,
       "value": "\"amazonId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1345,
+      "offset": 1449,
       "length": 14,
       "value": "\"targetingMap\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1236,
+      "offset": 1340,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1271,
+      "offset": 1375,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1306,
+      "offset": 1410,
       "length": 10,
       "value": "\"amazonId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1345,
+      "offset": 1449,
       "length": 14,
       "value": "\"targetingMap\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1554,
+      "offset": 1716,
+      "length": 10,
+      "value": "\"adUnitId\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1751,
+      "length": 10,
+      "value": "\"formatId\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1790,
+      "length": 14,
+      "value": "\"targetingMap\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1716,
+      "length": 10,
+      "value": "\"adUnitId\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1751,
+      "length": 10,
+      "value": "\"formatId\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1790,
+      "length": 14,
+      "value": "\"targetingMap\""
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1999,
       "length": 17,
       "value": "\"storedRequestId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
-      "offset": 1554,
+      "offset": 1999,
       "length": 17,
       "value": "\"storedRequestId\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdEvents\/AdFailedToLoadError.swift",
-      "kind": "StringLiteral",
-      "offset": 537,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdEvents\/AdFailedToLoadError.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdEvents\/AdFailedToLoadError.swift",
       "kind": "StringLiteral",
       "offset": 206,
       "length": 19,
       "value": "\"Tude.AdFailedToLoadError\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
       "kind": "Dictionary",
       "offset": 439,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 484,
-      "length": 21,
-      "value": "\"Setting device type\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 649,
-      "length": 37,
-      "value": "\"Device type: \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 685,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/VideoConfigs.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/VideoConfigs.swift",
       "kind": "Dictionary",
       "offset": 402,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/VideoConfigs.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/VideoConfigs.swift",
       "kind": "Dictionary",
       "offset": 472,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdTypes\/NativeBannerAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 781,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdTypes\/NativeBannerAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 810,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdTypes\/NativeBannerAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 867,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdTypes\/NativeBannerAd.swift",
       "kind": "StringLiteral",
-      "offset": 1773,
-      "length": 36,
-      "value": "\"Integrating Prebid into ad request\""
+      "offset": 479,
+      "length": 14,
+      "value": "\"Tude.NativeBannerAd\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 1962,
-      "length": 97,
-      "value": "\"Fetch ad status code=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 2002,
-      "length": 6,
-      "value": "\" reason=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 2026,
-      "length": 3,
-      "value": "\" for adUnitId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 2058,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 2254,
-      "length": 36,
-      "value": "\"Integrating Amazon into ad request\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2639,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 3512,
-      "length": 53,
-      "value": "\"Amazon ad request success bidId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 3564,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "Dictionary",
-      "offset": 3683,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 3918,
-      "length": 72,
-      "value": "\"Amazon ad load error status code \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/BidderDemandFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 3969,
-      "length": 7,
-      "value": "\" falling back to GAM\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "BooleanLiteral",
       "offset": 462,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1117,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1244,
-      "length": 163,
-      "value": "\"    Creating new interstitial ad configId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1320,
-      "length": 1,
-      "value": "\",\n    w=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1355,
-      "length": 1,
-      "value": "\",\n    h=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1391,
-      "length": 5439,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1678,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2177,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 2221,
-      "length": 56,
-      "value": "\"Loaded interstitial ad for adUnitId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 2276,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2441,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 2646,
-      "length": 63,
-      "value": "\"Interstitial ad failed to load: \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 2708,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4003,
-      "length": 96,
-      "value": "\"Created new interstitial ad configId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4059,
-      "length": 1,
-      "value": "\", w=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4078,
-      "length": 1,
-      "value": "\", h=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4098,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4375,
-      "length": 42,
-      "value": "\"Setting custom targeting for \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4410,
-      "length": 1,
-      "value": "\"=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4416,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4813,
-      "length": 26,
-      "value": "\"Configuring video params\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "Array",
-      "offset": 4894,
-      "length": 28,
-      "value": "[\"video\/x-flv\", \"video\/mp4\"]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5092,
-      "length": 4,
-      "value": "1500"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5125,
-      "length": 3,
-      "value": "300"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5158,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5190,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "StringLiteral",
       "offset": 231,
       "length": 14,
       "value": "\"Tude.InterstitialAd\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6248,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdEvents\/RewardedItem.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdEvents\/RewardedItem.swift",
       "kind": "StringLiteral",
       "offset": 192,
       "length": 10,
       "value": "\"Tude.RewardItem\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/NativeBannerAdConfig.swift",
+      "kind": "Dictionary",
+      "offset": 381,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/NativeBannerAdConfig.swift",
       "kind": "StringLiteral",
-      "offset": 365,
-      "length": 91,
-      "value": "\"Creating new banner ad configId=\""
+      "offset": 187,
+      "length": 20,
+      "value": "\"Tude.NativeBannerAdConfig\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 416,
-      "length": 1,
-      "value": "\", w=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 435,
-      "length": 1,
-      "value": "\", h=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 455,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 531,
-      "length": 90,
-      "value": "\"Created new banner ad configId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 581,
-      "length": 1,
-      "value": "\", w=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 600,
-      "length": 1,
-      "value": "\", h=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 620,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 897,
-      "length": 82,
-      "value": "\"Set refresh time seconds on configId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 953,
-      "length": 2,
-      "value": "\" to \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 978,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1029,
-      "length": 56,
-      "value": "\"No refresh time seconds on configId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/BannerAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1084,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 1577,
-      "length": 17,
-      "value": "\"No config found\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 1652,
-      "length": 71,
-      "value": "\"Initialize adUnitId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 1690,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 1693,
-      "length": 1,
-      "value": "\", configId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 1722,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 2033,
-      "length": 42,
-      "value": "\"Setting custom targeting for \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 2068,
-      "length": 1,
-      "value": "\"=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 2074,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 3541,
-      "length": 25,
-      "value": "\"Building banner ad unit\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3852,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "BooleanLiteral",
       "offset": 461,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1179,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1294,
-      "length": 99,
-      "value": "\"Creating new rewarded video ad configId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1353,
-      "length": 1,
-      "value": "\", w=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1372,
-      "length": 1,
-      "value": "\", h=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1392,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1656,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1698,
-      "length": 59,
-      "value": "\"Loading rewarded video ad for adUnitId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1756,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2223,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 2267,
-      "length": 58,
-      "value": "\"Loaded rewarded video ad for adUnitId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 2324,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 2588,
-      "length": 65,
-      "value": "\"Rewarded video ad failed to load: \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 2652,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4175,
-      "length": 98,
-      "value": "\"Created new rewarded video ad configId=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4233,
-      "length": 1,
-      "value": "\", w=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4252,
-      "length": 1,
-      "value": "\", h=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4272,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4540,
-      "length": 42,
-      "value": "\"Setting custom targeting for \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4575,
-      "length": 1,
-      "value": "\"=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4581,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "Array",
-      "offset": 4930,
-      "length": 13,
-      "value": "[\"video\/mp4\"]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
       "offset": 232,
       "length": 15,
       "value": "\"Tude.RewardedVideoAd\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5984,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "StringLiteral",
       "offset": 272,
       "length": 16,
       "value": "\"Aditude Prebid\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
       "kind": "BooleanLiteral",
       "offset": 357,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 484,
-      "length": 17,
-      "value": "\"Starting prebid\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 630,
-      "length": 73,
-      "value": "\"Setting server account ID config.account=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 702,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 858,
-      "length": 31,
-      "value": "\"Running prebid in debug mode.\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "BooleanLiteral",
-      "offset": 928,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 997,
-      "length": 68,
-      "value": "\"Setting server host config.host=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 1064,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 1255,
-      "length": 30,
-      "value": "\"setCustomPrebidServer failed\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 1360,
-      "length": 75,
-      "value": "\"Setting timeout config.timeout=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 1434,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 1553,
-      "length": 55,
-      "value": "\"Setting share geo location=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 1607,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 1779,
-      "length": 25,
-      "value": "\"Setting custom headers)\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 1984,
-      "length": 32,
-      "value": "\"Setting storeURL = \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 2015,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 2507,
-      "length": 52,
-      "value": "\"An error occurred during Prebid SDK initialization\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2598,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 2756,
-      "length": 37,
-      "value": "\"Prebid SDK successfully initialized\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2836,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 2937,
-      "length": 71,
-      "value": "\"An error occurred during Prebid SDK initialization with failed status\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3051,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 3166,
-      "length": 72,
-      "value": "\"An error occurred during Prebid SDK initialization serverStatusWarning\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3281,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 3387,
-      "length": 60,
-      "value": "\"An unknown error occurred during Prebid SDK initialization\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3490,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 3779,
-      "length": 11,
-      "value": "\"\/id(\\d+)\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 3956,
-      "length": 5,
-      "value": "\"\/id\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 3969,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/BannerAdConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/BannerAdConfig.swift",
       "kind": "StringLiteral",
       "offset": 181,
       "length": 14,
       "value": "\"Tude.BannerAdConfig\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 331,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonConfig.swift",
       "kind": "StringLiteral",
       "offset": 354,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 374,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 404,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/DisplayConfigs.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/DisplayConfigs.swift",
       "kind": "Dictionary",
       "offset": 378,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/DisplayConfigs.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/DisplayConfigs.swift",
       "kind": "Dictionary",
       "offset": 448,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 363,
-      "length": 9,
-      "value": "\"general\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 541,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 630,
-      "length": 12,
-      "value": "\"%{public}@\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 708,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 797,
-      "length": 12,
-      "value": "\"%{public}@\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 880,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 969,
-      "length": 12,
-      "value": "\"%{public}@\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 1202,
-      "length": 20,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 1209,
-      "length": 1,
-      "value": "\": \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 1221,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/FetchUtils.swift",
-      "kind": "Array",
-      "offset": 455,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/FetchUtils.swift",
-      "kind": "Array",
-      "offset": 518,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/FetchUtils.swift",
-      "kind": "Array",
-      "offset": 568,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/FetchUtils.swift",
-      "kind": "Array",
-      "offset": 627,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/FetchUtils.swift",
-      "kind": "Dictionary",
-      "offset": 696,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/AdConfigs\/BaseAdConfig.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/BaseAdConfig.swift",
       "kind": "Dictionary",
       "offset": 506,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
       "kind": "StringLiteral",
       "offset": 232,
       "length": 13,
       "value": "\"Tude Amazon\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 372,
-      "length": 28,
-      "value": "\"Creating new Amazon bidder\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 574,
-      "length": 26,
-      "value": "\"Setting up Amazon bidder\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 705,
-      "length": 44,
-      "value": "\"Getting instance for appID=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 748,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 884,
-      "length": 52,
-      "value": "\"Setting useGeoLocation to \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 935,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 1072,
-      "length": 41,
-      "value": "\"Setting debug logs to \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 1112,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonWrapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1340,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 10,
       "value": "\"Tude GAM\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 325,
-      "length": 18,
-      "value": "\"Initializing GAM\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 464,
-      "length": 27,
-      "value": "\"Finished initializing GAM\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 662,
-      "length": 34,
-      "value": "\"Gam status=\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 695,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 713,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 33,
       "value": "\"https:\/\/cache.prebid-server.com\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 733,
-      "length": 73,
-      "value": "\"\/prebid\/cache\/\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 760,
-      "length": 1,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 769,
-      "length": 1,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 792,
-      "length": 1,
-      "value": "\"\/current.json\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 832,
-      "length": 16,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 840,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 847,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 876,
-      "length": 38,
-      "value": "\"Starting request for \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 905,
-      "length": 7,
-      "value": "\" configs\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 1223,
-      "length": 40,
-      "value": "\"Success requesting for \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 1254,
-      "length": 7,
-      "value": "\" configs\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 1390,
-      "length": 95,
-      "value": "\"Error fetching configs for device \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 1452,
-      "length": 1,
-      "value": "\". Setting to mobile and retrying\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 1641,
-      "length": 151,
-      "value": "\"Error fetching configs for pubKey: \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 1694,
-      "length": 5,
-      "value": "\" appID: \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 1715,
-      "length": 3,
-      "value": "\" and device \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 1754,
-      "length": 5,
-      "value": "\" error: \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 1791,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 2123,
-      "length": 97,
-      "value": "\"Config results are empty for device \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 2187,
-      "length": 1,
-      "value": "\". Setting to mobile and retrying\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 2375,
-      "length": 116,
-      "value": "\"Config results are empty for pubKey: \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 2430,
-      "length": 5,
-      "value": "\" appID: \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 2451,
-      "length": 3,
-      "value": "\" and device \""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 2490,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 8,
       "value": "\"mobile\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
       "kind": "StringLiteral",
       "offset": 236,
       "length": 8,
       "value": "\"tablet\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 8,
       "value": "\"mobile\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
       "kind": "StringLiteral",
       "offset": 236,
       "length": 8,
       "value": "\"tablet\""
     },
     {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
-      "kind": "BooleanLiteral",
-      "offset": 370,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 412,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
-      "kind": "BooleanLiteral",
-      "offset": 453,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
-      "kind": "BooleanLiteral",
-      "offset": 512,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
+      "filePath": "\/Users\/maksymdanylov\/Development\/cloud-wrapper-ios\/Tude\/AdConfigs\/NativeConfigs.swift",
       "kind": "Dictionary",
-      "offset": 1035,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
-      "kind": "Dictionary",
-      "offset": 1650,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/maximdanilov\/Development\/Sigma\/Aditude\/cloud-wrapper-ios\/Tude\/Utils\/ConfigUtils.swift",
-      "kind": "Dictionary",
-      "offset": 2284,
+      "offset": 317,
       "length": 3,
       "value": "[]"
     }

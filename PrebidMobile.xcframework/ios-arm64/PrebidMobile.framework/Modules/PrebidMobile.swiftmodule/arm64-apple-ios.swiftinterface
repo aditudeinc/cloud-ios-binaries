@@ -826,7 +826,7 @@ extension UIKit.UIView {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PrebidServerConnection : ObjectiveC.NSObject, PrebidMobile.PrebidServerConnectionProtocol, Foundation.URLSessionDelegate {
-  @objc public var userAgentService: PrebidMobile.PBMUserAgentService {
+  @objc public var userAgentService: PrebidMobile.UserAgentService {
     get
   }
   @objc public var protocolClasses: [Foundation.URLProtocol.Type]
@@ -846,7 +846,7 @@ extension UIKit.UIView {
   @objc public static var isPBMRequestKey: Swift.String {
     @objc get
   }
-  @objc convenience public init(userAgentService: PrebidMobile.PBMUserAgentService)
+  @objc convenience public init(userAgentService: PrebidMobile.UserAgentService)
   @objc public func fireAndForget(_ resourceURL: Swift.String?)
   @objc public func head(_ resourceURL: Swift.String?, timeout: Foundation.TimeInterval, callback: @escaping (PrebidMobile.PrebidServerResponse) -> Swift.Void)
   @objc public func get(_ resourceURL: Swift.String?, timeout: Foundation.TimeInterval = 0, callback: @escaping (PrebidMobile.PrebidServerResponse) -> Swift.Void)
@@ -1033,6 +1033,14 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
   @objc public var version: Swift.String
   @objc public var markupRequestObject: PrebidMobile.NativeMarkupRequestObject
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(PBMUserAgentService) @objcMembers public class UserAgentService : ObjectiveC.NSObject {
+  @objc public static let shared: PrebidMobile.UserAgentService
+  @objc public var userAgent: Swift.String {
+    get
+  }
+  @objc public func fetchUserAgent(completion: ((Swift.String) -> Swift.Void)? = nil)
   @objc deinit
 }
 @objc public class RewardedVideoAdUnit : PrebidMobile.AdUnit, PrebidMobile.VideoBasedAdUnitProtocol {
@@ -2201,7 +2209,7 @@ public let refreshIntervalDefault: Swift.Double
 }
 public typealias PrebidServerResponseCallback = (PrebidMobile.PrebidServerResponse) -> Swift.Void
 @objc public protocol PrebidServerConnectionProtocol {
-  @objc var userAgentService: PrebidMobile.PBMUserAgentService { get }
+  @objc var userAgentService: PrebidMobile.UserAgentService { get }
   @objc func fireAndForget(_ resourceURL: Swift.String?)
   @objc func head(_ resourceURL: Swift.String?, timeout: Foundation.TimeInterval, callback: @escaping PrebidMobile.PrebidServerResponseCallback)
   @objc func get(_ resourceURL: Swift.String?, timeout: Foundation.TimeInterval, callback: @escaping PrebidMobile.PrebidServerResponseCallback)
