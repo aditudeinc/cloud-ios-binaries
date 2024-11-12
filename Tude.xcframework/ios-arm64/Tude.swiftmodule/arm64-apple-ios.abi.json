@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "Tude",
-    "printedName": "Tude",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -591,20 +591,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1044,20 +1030,6 @@
             "printedName": "CustomNSError",
             "usr": "s:10Foundation13CustomNSErrorP",
             "mangledName": "$s10Foundation13CustomNSErrorP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3481,20 +3453,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5156,20 +5114,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5388,20 +5332,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5569,9 +5499,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -5728,9 +5657,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -5888,9 +5816,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -6046,9 +5973,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -6204,9 +6130,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -6362,9 +6287,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -6508,7 +6432,6 @@
             "moduleName": "Tude",
             "declAttributes": [
               "Final",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -6573,9 +6496,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -6694,7 +6616,6 @@
             "moduleName": "Tude",
             "declAttributes": [
               "Final",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -6739,7 +6660,6 @@
             "moduleName": "Tude",
             "declAttributes": [
               "Final",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -6771,7 +6691,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6809,7 +6728,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6841,7 +6759,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6873,7 +6790,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6905,7 +6821,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6937,7 +6852,6 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -6950,7 +6864,6 @@
         "mangledName": "$s4Tude12BannerAdViewC",
         "moduleName": "Tude",
         "declAttributes": [
-          "Preconcurrency",
           "Custom",
           "AccessControl",
           "Final",
@@ -6965,20 +6878,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8837,20 +8736,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9121,6 +9006,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 14,
+      "value": "\"Tude.AditudeWrapper\""
+    },
+    {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Fetch\/FetchConfig.swift",
       "kind": "Dictionary",
       "offset": 635,
@@ -9133,6 +9025,13 @@
       "offset": 558,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdConfigs\/InterstitialAdConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 20,
+      "value": "\"Tude.InterstitialAdConfig\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Bidders\/PrebidConfig.swift",
@@ -9200,6 +9099,48 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
+      "offset": 344,
+      "length": 11,
+      "value": "\"accountId\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 380,
+      "length": 10,
+      "value": "\"configId\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1386,
+      "length": 10,
+      "value": "\"adUnitId\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1421,
+      "length": 10,
+      "value": "\"configId\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1456,
+      "length": 10,
+      "value": "\"amazonId\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1495,
+      "length": 14,
+      "value": "\"targetingMap\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
       "offset": 1386,
       "length": 10,
       "value": "\"adUnitId\""
@@ -9256,9 +9197,51 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
       "kind": "StringLiteral",
+      "offset": 1923,
+      "length": 10,
+      "value": "\"adUnitId\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1958,
+      "length": 10,
+      "value": "\"configId\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1994,
+      "length": 11,
+      "value": "\"formatIds\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2034,
+      "length": 14,
+      "value": "\"targetingMap\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
       "offset": 2243,
       "length": 17,
       "value": "\"storedRequestId\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2243,
+      "length": 17,
+      "value": "\"storedRequestId\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdEvents\/AdFailedToLoadError.swift",
+      "kind": "StringLiteral",
+      "offset": 206,
+      "length": 19,
+      "value": "\"Tude.AdFailedToLoadError\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
@@ -9303,11 +9286,32 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/NativeAd.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 8,
+      "value": "\"Tude.NativeAd\""
+    },
+    {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
       "kind": "BooleanLiteral",
       "offset": 462,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",
+      "kind": "StringLiteral",
+      "offset": 231,
+      "length": 14,
+      "value": "\"Tude.InterstitialAd\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdEvents\/RewardedItem.swift",
+      "kind": "StringLiteral",
+      "offset": 192,
+      "length": 10,
+      "value": "\"Tude.RewardItem\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdConfigs\/NativeBannerAdConfig.swift",
@@ -9317,11 +9321,25 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdConfigs\/NativeBannerAdConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 20,
+      "value": "\"Tude.NativeBannerAdConfig\""
+    },
+    {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "BooleanLiteral",
       "offset": 461,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 15,
+      "value": "\"Tude.RewardedVideoAd\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Bidders\/Prebid.swift",
@@ -9336,6 +9354,13 @@
       "offset": 357,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdConfigs\/BannerAdConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 181,
+      "length": 14,
+      "value": "\"Tude.BannerAdConfig\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Bidders\/AmazonConfig.swift",
@@ -9457,6 +9482,20 @@
       "value": "\"tablet\""
     },
     {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
+      "kind": "StringLiteral",
+      "offset": 209,
+      "length": 8,
+      "value": "\"mobile\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
+      "kind": "StringLiteral",
+      "offset": 236,
+      "length": 8,
+      "value": "\"tablet\""
+    },
+    {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdConfigs\/NativeConfigs.swift",
       "kind": "Dictionary",
       "offset": 317,
@@ -9490,6 +9529,13 @@
       "offset": 837,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdConfigs\/NativeAdConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 14,
+      "value": "\"Tude.NativeAdConfig\""
     }
   ]
 }

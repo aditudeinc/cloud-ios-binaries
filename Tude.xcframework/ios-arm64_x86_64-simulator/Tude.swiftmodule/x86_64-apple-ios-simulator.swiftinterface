@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Tude
 import DTBiOSSDK
 import Foundation
@@ -131,31 +131,31 @@ extension Tude.InterstitialAd : GoogleMobileAds.GADFullScreenContentDelegate {
   @objc final public let amount: Swift.Double
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class BannerAdView : UIKit.UIView {
-  @objc @_Concurrency.MainActor @preconcurrency final public var onAdLoaded: (() -> Swift.Void)?
-  @objc @_Concurrency.MainActor @preconcurrency final public var onAdFailedToLoad: Tude.LoadErrorListener?
-  @objc @_Concurrency.MainActor @preconcurrency final public var onAdClicked: (() -> Swift.Void)?
-  @objc @_Concurrency.MainActor @preconcurrency final public var onAdImpression: (() -> Swift.Void)?
-  @objc @_Concurrency.MainActor @preconcurrency final public var onAdOpened: (() -> Swift.Void)?
-  @objc @_Concurrency.MainActor @preconcurrency final public var onAdClosed: (() -> Swift.Void)?
-  @objc @_Concurrency.MainActor @preconcurrency final public var slotName: Swift.String? {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class BannerAdView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdLoaded: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdFailedToLoad: Tude.LoadErrorListener?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdClicked: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdImpression: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdOpened: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdClosed: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var slotName: Swift.String? {
     @objc get
   }
-  @objc @_Concurrency.MainActor @preconcurrency final public var adSlot: Swift.String? {
+  @objc @_Concurrency.MainActor(unsafe) final public var adSlot: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor @preconcurrency final public func load(_ vc: UIKit.UIViewController)
-  @objc @_Concurrency.MainActor @preconcurrency final public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Swift.String>)
+  @objc @_Concurrency.MainActor(unsafe) final public func load(_ vc: UIKit.UIViewController)
+  @objc @_Concurrency.MainActor(unsafe) final public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Swift.String>)
   @objc deinit
 }
 extension Tude.BannerAdView : GoogleMobileAds.GADBannerViewDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidReceiveAd(_ bannerView: GoogleMobileAds.GADBannerView)
-  @_Concurrency.MainActor @preconcurrency @objc final public func bannerView(_ bannerView: GoogleMobileAds.GADBannerView, didFailToReceiveAdWithError error: any Swift.Error)
-  @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.GADBannerView)
-  @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.GADBannerView)
-  @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.GADBannerView)
-  @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.GADBannerView)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerViewDidReceiveAd(_ bannerView: GoogleMobileAds.GADBannerView)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerView(_ bannerView: GoogleMobileAds.GADBannerView, didFailToReceiveAdWithError error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.GADBannerView)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.GADBannerView)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.GADBannerView)
+  @_Concurrency.MainActor(unsafe) @objc final public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.GADBannerView)
 }
 @objc @_hasMissingDesignatedInitializers final public class RewardedVideoAd : ObjectiveC.NSObject {
   @objc final public var isLoaded: Swift.Bool {
