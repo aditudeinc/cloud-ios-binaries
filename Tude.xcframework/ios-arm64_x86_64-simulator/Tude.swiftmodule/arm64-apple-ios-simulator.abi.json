@@ -388,6 +388,61 @@
           },
           {
             "kind": "Function",
+            "name": "setPersonalizedAds",
+            "printedName": "setPersonalizedAds(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)setPersonalizedAds:",
+            "mangledName": "$s4Tude14AditudeWrapperC18setPersonalizedAdsyySbFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isShowingPersonalizedAds",
+            "printedName": "isShowingPersonalizedAds()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)isShowingPersonalizedAds",
+            "mangledName": "$s4Tude14AditudeWrapperC24isShowingPersonalizedAdsSbyFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "renderBannerAds",
             "printedName": "renderBannerAds(_:)",
             "children": [
@@ -9886,6 +9941,13 @@
       "offset": 447,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 521,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdConfigs\/VideoConfigs.swift",

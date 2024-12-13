@@ -359,6 +359,14 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 /// returns:
 /// If previously set the method returns the PPID used for audience segmentation and targeting.
 + (NSString * _Nullable)getPublisherProvidedId SWIFT_WARN_UNUSED_RESULT;
+/// Sets the personalized ads flag.
+/// \param enabled Flag that enables/disables personalized ads. If true the SDK requests personalized ads, if false
+/// the SDK will request non-personalized ads.
+///
++ (void)setPersonalizedAds:(BOOL)enabled;
+/// Check if the SDK requests personalized ads
+/// Returns: Returns boolean indicating that SDK requests personalized ads if true.
++ (BOOL)isShowingPersonalizedAds SWIFT_WARN_UNUSED_RESULT;
 - (void)renderBannerAds:(UIViewController * _Nonnull)vc;
 - (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)adSlot SWIFT_WARN_UNUSED_RESULT;
 - (RewardedVideoAd * _Nullable)getRewardedVideoAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;

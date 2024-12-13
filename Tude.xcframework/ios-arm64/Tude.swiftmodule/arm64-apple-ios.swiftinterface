@@ -24,6 +24,8 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc public static func setGlobalTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
   @objc public static func setPublisherProvidedId(_ id: Swift.String)
   @objc public static func getPublisherProvidedId() -> Swift.String?
+  @objc public static func setPersonalizedAds(_ enabled: Swift.Bool)
+  @objc public static func isShowingPersonalizedAds() -> Swift.Bool
   @objc public func renderBannerAds(_ vc: UIKit.UIViewController)
   @objc public func createBannerAdView(_ vc: UIKit.UIViewController, _ adSlot: Swift.String) -> Tude.BannerAdView?
   @objc public func getRewardedVideoAd(_ slot: Swift.String) -> Tude.RewardedVideoAd?
