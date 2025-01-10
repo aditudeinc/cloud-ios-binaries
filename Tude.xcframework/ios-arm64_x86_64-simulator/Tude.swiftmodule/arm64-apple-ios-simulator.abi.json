@@ -10155,28 +10155,35 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 541,
+      "offset": 656,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 708,
+      "offset": 798,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 880,
+      "offset": 940,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1083,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdConfigs\/BaseAdConfig.swift",
       "kind": "Dictionary",
-      "offset": 585,
+      "offset": 659,
       "length": 3,
       "value": "[]"
     },
