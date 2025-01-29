@@ -834,8 +834,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
         "declKind": "Import",
         "moduleName": "Tude",
         "declAttributes": [
@@ -1148,6 +1148,116 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "gadErrorCode",
+            "printedName": "gadErrorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GoogleMobileAds.GADErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GADErrorCode",
+                    "printedName": "GoogleMobileAds.GADErrorCode",
+                    "usr": "c:@E@GADErrorCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Tude19AdFailedToLoadErrorC03gadF4CodeSo08GADErrorH0VSgvp",
+            "mangledName": "$s4Tude19AdFailedToLoadErrorC03gadF4CodeSo08GADErrorH0VSgvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GoogleMobileAds.GADErrorCode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GADErrorCode",
+                        "printedName": "GoogleMobileAds.GADErrorCode",
+                        "usr": "c:@E@GADErrorCode"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Tude19AdFailedToLoadErrorC03gadF4CodeSo08GADErrorH0VSgvg",
+                "mangledName": "$s4Tude19AdFailedToLoadErrorC03gadF4CodeSo08GADErrorH0VSgvg",
+                "moduleName": "Tude",
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Tude@objc(cs)AdFailedToLoadError(py)message",
+            "mangledName": "$s4Tude19AdFailedToLoadErrorC7messageSSvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Tude@objc(cs)AdFailedToLoadError(im)message",
+                "mangledName": "$s4Tude19AdFailedToLoadErrorC7messageSSvg",
+                "moduleName": "Tude",
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -5484,6 +5594,16 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -9931,7 +10051,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdEvents\/AdFailedToLoadError.swift",
       "kind": "StringLiteral",
-      "offset": 206,
+      "offset": 211,
       "length": 19,
       "value": "\"Tude.AdFailedToLoadError\""
     },
@@ -10004,6 +10124,111 @@
       "offset": 231,
       "length": 14,
       "value": "\"Tude.InterstitialAd\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 251,
+      "length": 24,
+      "value": "\"Ad request is invalid.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 304,
+      "length": 52,
+      "value": "\"Ad request was successful, but no ad was returned.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 38,
+      "value": "\"Error loading data from the network.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 463,
+      "length": 57,
+      "value": "\"Ad server experienced a failure processing the request.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 558,
+      "length": 60,
+      "value": "\"Current device's OS is below the minimum required version.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 648,
+      "length": 24,
+      "value": "\"The request timed out.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 713,
+      "length": 37,
+      "value": "\"The mediation response was invalid.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 794,
+      "length": 59,
+      "value": "\"Error finding or creating a mediation ad network adapter.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 898,
+      "length": 54,
+      "value": "\"Attempting to pass an invalid ad size to an adapter.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 990,
+      "length": 25,
+      "value": "\"Invalid argument error.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 1061,
+      "length": 28,
+      "value": "\"Received invalid response.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 1127,
+      "length": 127,
+      "value": "\"Mediation ad network adapter received an ad request, but did not fill. The adapter's error is included as an underlyingError.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 1290,
+      "length": 68,
+      "value": "\"Will not send request because the ad object has already been used.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 1409,
+      "length": 70,
+      "value": "\"Will not send request because the application identifier is missing.\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/ErrorMessages.swift",
+      "kind": "StringLiteral",
+      "offset": 1515,
+      "length": 16,
+      "value": "\"Internal error\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdEvents\/RewardedItem.swift",

@@ -315,6 +315,11 @@ SWIFT_CLASS("_TtC4Tude19AdFailedToLoadError")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+@interface AdFailedToLoadError (SWIFT_EXTENSION(Tude))
+@property (nonatomic, readonly, copy) NSString * _Nonnull message;
+@end
+
 @class UIViewController;
 @class BannerAdView;
 @class RewardedVideoAd;
@@ -519,17 +524,17 @@ SWIFT_CLASS("_TtC4Tude8NativeAd")
 
 
 @class GADAdLoader;
+
+@interface NativeAd (SWIFT_EXTENSION(Tude)) <GADCustomNativeAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveCustomNativeAd:(GADCustomNativeAd * _Nonnull)customNativeAd;
+- (NSArray<NSString *> * _Nonnull)customNativeAdFormatIDsForAdLoader:(GADAdLoader * _Nonnull)adLoader SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class NSValue;
 
 @interface NativeAd (SWIFT_EXTENSION(Tude)) <GAMBannerAdLoaderDelegate>
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveGAMBannerView:(GAMBannerView * _Nonnull)bannerView;
 - (NSArray<NSValue *> * _Nonnull)validBannerSizesForAdLoader:(GADAdLoader * _Nonnull)adLoader SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface NativeAd (SWIFT_EXTENSION(Tude)) <GADCustomNativeAdLoaderDelegate>
-- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveCustomNativeAd:(GADCustomNativeAd * _Nonnull)customNativeAd;
-- (NSArray<NSString *> * _Nonnull)customNativeAdFormatIDsForAdLoader:(GADAdLoader * _Nonnull)adLoader SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

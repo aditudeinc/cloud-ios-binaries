@@ -43,6 +43,14 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc final public let localizedDescription: Swift.String
   @objc deinit
 }
+extension Tude.AdFailedToLoadError {
+  final public var gadErrorCode: GoogleMobileAds.GADErrorCode? {
+    get
+  }
+  @objc final public var message: Swift.String {
+    @objc get
+  }
+}
 public typealias Listener = () -> Swift.Void
 public typealias PreloadListener = (GoogleMobileAds.GAMRequest) -> Swift.Void
 public typealias LoadErrorListener = (Tude.AdFailedToLoadError) -> Swift.Void
