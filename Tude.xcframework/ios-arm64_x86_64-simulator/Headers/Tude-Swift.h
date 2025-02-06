@@ -368,7 +368,12 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 /// \param enabled Flag that enables/disables personalized ads. If true the SDK requests personalized ads, if false
 /// the SDK will request non-personalized ads.
 ///
-+ (void)setPersonalizedAds:(BOOL)enabled;
++ (void)setPersonalizedAds:(BOOL)enabled SWIFT_AVAILABILITY(ios,deprecated=0.0.1,message="'setPersonalizedAds' has been renamed to 'setNonPersonalizedAdsFlag:': Use setNonPersonalizedAdsFlag method instead.");
+/// Instructs the SDK to request non-personalized ads if set to true.
+/// \param enabled Flag that enables/disables non-personalized ads. If true the SDK requests non-personalized ads, if false
+/// the SDK will request personalized ads as by default.
+///
++ (void)setNonPersonalizedAdsFlag:(BOOL)enabled;
 /// Check if the SDK requests personalized ads
 /// Returns: Returns boolean indicating that SDK requests personalized ads if true.
 + (BOOL)isShowingPersonalizedAds SWIFT_WARN_UNUSED_RESULT;
@@ -1032,7 +1037,12 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 /// \param enabled Flag that enables/disables personalized ads. If true the SDK requests personalized ads, if false
 /// the SDK will request non-personalized ads.
 ///
-+ (void)setPersonalizedAds:(BOOL)enabled;
++ (void)setPersonalizedAds:(BOOL)enabled SWIFT_AVAILABILITY(ios,deprecated=0.0.1,message="'setPersonalizedAds' has been renamed to 'setNonPersonalizedAdsFlag:': Use setNonPersonalizedAdsFlag method instead.");
+/// Instructs the SDK to request non-personalized ads if set to true.
+/// \param enabled Flag that enables/disables non-personalized ads. If true the SDK requests non-personalized ads, if false
+/// the SDK will request personalized ads as by default.
+///
++ (void)setNonPersonalizedAdsFlag:(BOOL)enabled;
 /// Check if the SDK requests personalized ads
 /// Returns: Returns boolean indicating that SDK requests personalized ads if true.
 + (BOOL)isShowingPersonalizedAds SWIFT_WARN_UNUSED_RESULT;

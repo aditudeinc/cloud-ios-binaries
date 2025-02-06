@@ -408,6 +408,38 @@
             "mangledName": "$s4Tude14AditudeWrapperC18setPersonalizedAdsyySbFZ",
             "moduleName": "Tude",
             "static": true,
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNonPersonalizedAdsFlag",
+            "printedName": "setNonPersonalizedAdsFlag(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)setNonPersonalizedAdsFlag:",
+            "mangledName": "$s4Tude14AditudeWrapperC25setNonPersonalizedAdsFlagyySbFZ",
+            "moduleName": "Tude",
+            "static": true,
             "declAttributes": [
               "Final",
               "AccessControl",
