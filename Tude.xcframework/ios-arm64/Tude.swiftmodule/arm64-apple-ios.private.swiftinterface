@@ -28,6 +28,8 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc public static func setPersonalizedAds(_ enabled: Swift.Bool)
   @objc public static func setNonPersonalizedAdsFlag(_ enabled: Swift.Bool)
   @objc public static func isShowingPersonalizedAds() -> Swift.Bool
+  @objc public static func refreshFlags(_ completion: Tude.Listener? = nil)
+  @objc public static func getFlags() -> [Foundation.NSString]
   @objc public func renderBannerAds(_ vc: UIKit.UIViewController)
   @objc public func createBannerAdView(_ vc: UIKit.UIViewController, _ adSlot: Swift.String) -> Tude.BannerAdView?
   @objc public func getRewardedVideoAd(_ slot: Swift.String) -> Tude.RewardedVideoAd?

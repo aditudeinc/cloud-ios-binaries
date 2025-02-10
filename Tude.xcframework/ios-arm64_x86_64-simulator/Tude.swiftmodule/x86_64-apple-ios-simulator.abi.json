@@ -475,6 +475,89 @@
           },
           {
             "kind": "Function",
+            "name": "refreshFlags",
+            "printedName": "refreshFlags(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)refreshFlags:",
+            "mangledName": "$s4Tude14AditudeWrapperC12refreshFlagsyyyycSgFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFlags",
+            "printedName": "getFlags()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSString]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)getFlags",
+            "mangledName": "$s4Tude14AditudeWrapperC8getFlagsSaySo8NSStringCGyFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "renderBannerAds",
             "printedName": "renderBannerAds(_:)",
             "children": [
@@ -812,6 +895,16 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -7744,6 +7837,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "GoogleMobileAds",
         "printedName": "GoogleMobileAds",
         "declKind": "Import",
@@ -9742,8 +9845,38 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "DTBiOSSDK",
         "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Tude",
         "declAttributes": [
@@ -9831,21 +9964,21 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "Array",
-      "offset": 458,
+      "offset": 477,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 805,
+      "offset": 824,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 848,
+      "offset": 867,
       "length": 5,
       "value": "false"
     },
@@ -9857,7 +9990,7 @@
       "value": "\"Tude.AditudeWrapper\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Fetch\/FetchConfig.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/FetchConfig.swift",
       "kind": "Dictionary",
       "offset": 651,
       "length": 3,
@@ -9927,156 +10060,163 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/FlagsClient.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 324,
+      "length": 14,
+      "value": "\"Tude.FlagsClientImp\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
       "length": 11,
       "value": "\"accountId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 380,
+      "offset": 388,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 352,
       "length": 11,
       "value": "\"accountId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 380,
+      "offset": 388,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1386,
+      "offset": 1394,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1421,
+      "offset": 1429,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1456,
+      "offset": 1464,
       "length": 10,
       "value": "\"amazonId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1495,
+      "offset": 1503,
       "length": 14,
       "value": "\"targetingMap\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1386,
+      "offset": 1394,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1421,
+      "offset": 1429,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1456,
+      "offset": 1464,
       "length": 10,
       "value": "\"amazonId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1495,
+      "offset": 1503,
       "length": 14,
       "value": "\"targetingMap\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1923,
+      "offset": 1931,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1958,
+      "offset": 1966,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1994,
+      "offset": 2002,
       "length": 11,
       "value": "\"formatIds\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2034,
+      "offset": 2042,
       "length": 14,
       "value": "\"targetingMap\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1923,
+      "offset": 1931,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1958,
+      "offset": 1966,
       "length": 10,
       "value": "\"configId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1994,
+      "offset": 2002,
       "length": 11,
       "value": "\"formatIds\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2034,
+      "offset": 2042,
       "length": 14,
       "value": "\"targetingMap\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2243,
+      "offset": 2251,
       "length": 17,
       "value": "\"storedRequestId\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/ConfigModel.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2243,
+      "offset": 2251,
       "length": 17,
       "value": "\"storedRequestId\""
     },
@@ -10089,15 +10229,22 @@
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 293,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
       "kind": "Dictionary",
-      "offset": 447,
+      "offset": 537,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 521,
+      "offset": 1053,
       "length": 4,
       "value": "true"
     },
@@ -10305,6 +10452,48 @@
       "value": "\"Tude.BannerAd\""
     },
     {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/Flag.swift",
+      "kind": "StringLiteral",
+      "offset": 199,
+      "length": 8,
+      "value": "\"NO_ADS\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/Flag.swift",
+      "kind": "StringLiteral",
+      "offset": 228,
+      "length": 11,
+      "value": "\"NO_PREBID\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/Flag.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 11,
+      "value": "\"NO_AMAZON\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/Flag.swift",
+      "kind": "StringLiteral",
+      "offset": 199,
+      "length": 8,
+      "value": "\"NO_ADS\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/Flag.swift",
+      "kind": "StringLiteral",
+      "offset": 228,
+      "length": 11,
+      "value": "\"NO_PREBID\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/Flag.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 11,
+      "value": "\"NO_AMAZON\""
+    },
+    {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/RewardedVideoAd.swift",
       "kind": "BooleanLiteral",
       "offset": 459,
@@ -10412,21 +10601,28 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 541,
+      "offset": 660,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 708,
+      "offset": 802,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 880,
+      "offset": 944,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Utils\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1087,
       "length": 2,
       "value": "\"\""
     },
@@ -10445,18 +10641,95 @@
       "value": "\"Tude Amazon\""
     },
     {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1992,
+      "length": 33,
+      "value": "\"https:\/\/cache.prebid-server.com\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 2045,
+      "length": 30,
+      "value": "\"https:\/\/cloud.aditude.io\/api\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1992,
+      "length": 33,
+      "value": "\"https:\/\/cache.prebid-server.com\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 2045,
+      "length": 30,
+      "value": "\"https:\/\/cloud.aditude.io\/api\""
+    },
+    {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Bidders\/GAMWrapper.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 10,
       "value": "\"Tude GAM\""
-    },
-    {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Fetch\/TudeFetch.swift",
-      "kind": "StringLiteral",
-      "offset": 219,
-      "length": 33,
-      "value": "\"https:\/\/cache.prebid-server.com\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Enums\/DeviceType.swift",
@@ -10492,6 +10765,20 @@
       "offset": 317,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ConfigClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 652,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Network\/ConfigClient.swift",
+      "kind": "StringLiteral",
+      "offset": 418,
+      "length": 15,
+      "value": "\"Tude.ConfigClientImp\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdConfigs\/NativeAdConfig.swift",

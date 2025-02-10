@@ -377,6 +377,55 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 /// Check if the SDK requests personalized ads
 /// Returns: Returns boolean indicating that SDK requests personalized ads if true.
 + (BOOL)isShowingPersonalizedAds SWIFT_WARN_UNUSED_RESULT;
+/// Refresh control flags
+/// This method updates control flags in the SDK. The control flags indicate if the SDK will serve ads or use
+/// certain features such as Prebid or Amazon bidding. The flags are updated based on the users device geolocation.
+/// You should update the flags when the user changes his geolocation. You are free to use this method when
+/// you think is necessary. One of the solutions could be updating the flags at some reasonable interval,
+/// for example one hour.
+/// warning:
+/// To avoid unexpected behaviour request ads after flags are updated using the completion block.
+/// \param completion A completion callback. Use it to request ads after the flags are updated and the SDK is ready
+/// to request ads.
+///
++ (void)refreshFlags:(void (^ _Nullable)(void))completion;
+/// Get Control Flags
+/// This method retrieves the control flags currently active in the SDK.
+/// Control flags indicate whether specific features or behaviours are enabled,
+/// such as serving ads, Prebid bidding, or Amazon bidding.
+/// Possible flag values:
+/// <ul>
+///   <li>
+///     <code>"NO_PREBID"</code>
+///   </li>
+///   <li>
+///     <code>"NO_AMAZON"</code>
+///   </li>
+///   <li>
+///     <code>"NO_ADS"</code>
+///   </li>
+/// </ul>
+/// Example of a valid method call:
+/// \code
+/// // 1. Make an enum with matching string raw values
+/// enum TudeFlag: NSString {
+///    case noPrebid = "NO_PREBID"
+///    case noAmazon = "NO_AMAZON"
+///    case noAds = "NO_ADS"
+/// }
+///
+/// // 2. In the code where you check the flags map their string values to your enum values
+/// let flags: [TudeFlag] = AditudeWrapper.getFlags().compactMap { TudeFlag(rawValue: $0) }
+///
+/// // 3. Check on active flags
+/// if flags.contains(.noAds) {
+///    // Handle no ads case
+/// }
+///
+/// \endcode
+/// returns:
+/// An array of strings representing the active flags.
++ (NSArray<NSString *> * _Nonnull)getFlags SWIFT_WARN_UNUSED_RESULT;
 - (void)renderBannerAds:(UIViewController * _Nonnull)vc;
 - (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)adSlot SWIFT_WARN_UNUSED_RESULT;
 - (RewardedVideoAd * _Nullable)getRewardedVideoAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
@@ -1046,6 +1095,55 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 /// Check if the SDK requests personalized ads
 /// Returns: Returns boolean indicating that SDK requests personalized ads if true.
 + (BOOL)isShowingPersonalizedAds SWIFT_WARN_UNUSED_RESULT;
+/// Refresh control flags
+/// This method updates control flags in the SDK. The control flags indicate if the SDK will serve ads or use
+/// certain features such as Prebid or Amazon bidding. The flags are updated based on the users device geolocation.
+/// You should update the flags when the user changes his geolocation. You are free to use this method when
+/// you think is necessary. One of the solutions could be updating the flags at some reasonable interval,
+/// for example one hour.
+/// warning:
+/// To avoid unexpected behaviour request ads after flags are updated using the completion block.
+/// \param completion A completion callback. Use it to request ads after the flags are updated and the SDK is ready
+/// to request ads.
+///
++ (void)refreshFlags:(void (^ _Nullable)(void))completion;
+/// Get Control Flags
+/// This method retrieves the control flags currently active in the SDK.
+/// Control flags indicate whether specific features or behaviours are enabled,
+/// such as serving ads, Prebid bidding, or Amazon bidding.
+/// Possible flag values:
+/// <ul>
+///   <li>
+///     <code>"NO_PREBID"</code>
+///   </li>
+///   <li>
+///     <code>"NO_AMAZON"</code>
+///   </li>
+///   <li>
+///     <code>"NO_ADS"</code>
+///   </li>
+/// </ul>
+/// Example of a valid method call:
+/// \code
+/// // 1. Make an enum with matching string raw values
+/// enum TudeFlag: NSString {
+///    case noPrebid = "NO_PREBID"
+///    case noAmazon = "NO_AMAZON"
+///    case noAds = "NO_ADS"
+/// }
+///
+/// // 2. In the code where you check the flags map their string values to your enum values
+/// let flags: [TudeFlag] = AditudeWrapper.getFlags().compactMap { TudeFlag(rawValue: $0) }
+///
+/// // 3. Check on active flags
+/// if flags.contains(.noAds) {
+///    // Handle no ads case
+/// }
+///
+/// \endcode
+/// returns:
+/// An array of strings representing the active flags.
++ (NSArray<NSString *> * _Nonnull)getFlags SWIFT_WARN_UNUSED_RESULT;
 - (void)renderBannerAds:(UIViewController * _Nonnull)vc;
 - (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)adSlot SWIFT_WARN_UNUSED_RESULT;
 - (RewardedVideoAd * _Nullable)getRewardedVideoAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
