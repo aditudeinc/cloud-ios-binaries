@@ -3298,7 +3298,7 @@
           {
             "kind": "Function",
             "name": "load",
-            "printedName": "load(_:)",
+            "printedName": "load(_:adLoaderOptions:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3319,11 +3319,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GoogleMobileAds.GADAdLoaderOptions]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GADAdLoaderOptions",
+                    "printedName": "GoogleMobileAds.GADAdLoaderOptions",
+                    "usr": "c:objc(cs)GADAdLoaderOptions"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@Tude@objc(cs)NativeAd(im)load:",
-            "mangledName": "$s4Tude8NativeAdC4loadyySo16UIViewControllerCSgF",
+            "usr": "c:@CM@Tude@objc(cs)NativeAd(im)load:adLoaderOptions:",
+            "mangledName": "$s4Tude8NativeAdC4load_15adLoaderOptionsySo16UIViewControllerCSg_SaySo05GADAdfG0CGtF",
             "moduleName": "Tude",
             "declAttributes": [
               "Final",
@@ -10289,6 +10304,13 @@
       "offset": 587,
       "length": 8,
       "value": "\"Tude.NativeAd\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/NativeAd.swift",
+      "kind": "Array",
+      "offset": 6653,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/InterstitialAd.swift",

@@ -597,6 +597,7 @@ SWIFT_CLASS("_TtC4Tude8NativeAd")
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
 @end
 
+@class GADAdLoaderOptions;
 
 @interface NativeAd (SWIFT_EXTENSION(Tude))
 - (void)preloadOnPreload:(void (^ _Nullable)(void))onPreload;
@@ -619,7 +620,7 @@ SWIFT_CLASS("_TtC4Tude8NativeAd")
 /// \param targeting A dictionary of targeting key-value pairs.
 ///
 - (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
-- (void)load:(UIViewController * _Nullable)vc;
+- (void)load:(UIViewController * _Nullable)vc adLoaderOptions:(NSArray<GADAdLoaderOptions *> * _Nonnull)adLoaderOptions;
 @end
 
 

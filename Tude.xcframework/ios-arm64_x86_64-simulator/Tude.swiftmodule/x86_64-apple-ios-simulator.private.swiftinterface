@@ -88,7 +88,7 @@ public typealias BannerAdLoadListener = (GoogleMobileAds.GAMBannerView) -> Swift
 extension Tude.NativeAd {
   @objc final public func preload(onPreload: (() -> Swift.Void)? = nil)
   @objc final public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
-  @objc final public func load(_ vc: UIKit.UIViewController? = nil)
+  @objc final public func load(_ vc: UIKit.UIViewController? = nil, adLoaderOptions: [GoogleMobileAds.GADAdLoaderOptions] = [])
 }
 extension Tude.NativeAd : GoogleMobileAds.GADNativeAdLoaderDelegate {
   @objc final public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didReceive nativeAd: GoogleMobileAds.GADNativeAd)
