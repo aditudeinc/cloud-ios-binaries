@@ -9870,6 +9870,13 @@
       },
       {
         "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "Tude"
+      },
+      {
+        "kind": "Import",
         "name": "DTBiOSSDK",
         "printedName": "DTBiOSSDK",
         "declKind": "Import",
@@ -10112,126 +10119,126 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1394,
+      "offset": 1438,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1429,
+      "offset": 1473,
       "length": 10,
       "value": "\"configId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1464,
+      "offset": 1508,
       "length": 10,
       "value": "\"amazonId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1503,
+      "offset": 1547,
       "length": 14,
       "value": "\"targetingMap\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1394,
+      "offset": 1438,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1429,
+      "offset": 1473,
       "length": 10,
       "value": "\"configId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1464,
+      "offset": 1508,
       "length": 10,
       "value": "\"amazonId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1503,
+      "offset": 1547,
       "length": 14,
       "value": "\"targetingMap\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1931,
+      "offset": 2146,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1966,
+      "offset": 2181,
       "length": 10,
       "value": "\"configId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2002,
+      "offset": 2217,
       "length": 11,
       "value": "\"formatIds\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2042,
+      "offset": 2257,
       "length": 14,
       "value": "\"targetingMap\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1931,
+      "offset": 2146,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1966,
+      "offset": 2181,
       "length": 10,
       "value": "\"configId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2002,
+      "offset": 2217,
       "length": 11,
       "value": "\"formatIds\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2042,
+      "offset": 2257,
       "length": 14,
       "value": "\"targetingMap\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2251,
+      "offset": 2466,
       "length": 17,
       "value": "\"storedRequestId\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2251,
+      "offset": 2466,
       "length": 17,
       "value": "\"storedRequestId\""
     },
@@ -10308,7 +10315,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/NativeAd.swift",
       "kind": "Array",
-      "offset": 6653,
+      "offset": 6795,
       "length": 2,
       "value": "[]"
     },
@@ -10651,7 +10658,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdConfigs\/BaseAdConfig.swift",
       "kind": "Dictionary",
-      "offset": 659,
+      "offset": 879,
       "length": 3,
       "value": "[]"
     },
