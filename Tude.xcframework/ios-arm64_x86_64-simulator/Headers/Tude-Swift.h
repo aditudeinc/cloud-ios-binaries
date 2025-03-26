@@ -320,11 +320,6 @@ SWIFT_CLASS("_TtC4Tude19AdFailedToLoadError")
 @property (nonatomic, readonly, copy) NSString * _Nonnull message;
 @end
 
-@class UIViewController;
-@class BannerAdView;
-@class RewardedVideoAd;
-@class InterstitialAd;
-@class NativeAd;
 
 SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 @interface AditudeWrapper : NSObject
@@ -426,33 +421,116 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 /// returns:
 /// An array of strings representing the active flags.
 + (NSArray<NSString *> * _Nonnull)getFlags SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIViewController;
+@class BannerAdView;
+@class BannerAd;
+@class RewardedVideoAd;
+@class InterstitialAd;
+@class NativeAd;
+
+@interface AditudeWrapper (SWIFT_EXTENSION(Tude))
+/// Render banner ads
+/// The method will search for BannerAdViews inside the view of the passed UIViewController. All of the found
+/// banners will be loaded.
+/// \param vc UIViewController that will be searched for BannerAdViews.
+///
 - (void)renderBannerAds:(UIViewController * _Nonnull)vc;
-- (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)adSlot SWIFT_WARN_UNUSED_RESULT;
+/// Make a BannerAdView
+/// THe method will create a BannerAdView for a given ad slot id.
+/// \param vc UIViewController that will serve as rootViewController for the GAMBannerView.
+///
+/// \param slot Ad slot id.
+///
+- (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
+/// Make a BannerAd
+/// The method will create an instance of BannerAd for a given ad slot id.
+/// note:
+/// Prefer this method over <code>createBannerAdView</code>.
+/// \param slot Ad slot id.
+///
+- (BannerAd * _Nullable)getBannerAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
+/// Make an anchored adaptive banner ad.
+/// The method will create an instance of BannerAd for a given ad slot id that will load anchored adaptive banners.
+/// \param slot Ad slot id.
+///
+/// \param width Desired width of the banner ad.
+///
+- (BannerAd * _Nullable)getAnchoredAdaptiveBannerAd:(NSString * _Nonnull)slot width:(CGFloat)width SWIFT_WARN_UNUSED_RESULT;
+/// Make an inline adaptive banner ad.
+/// The method will create an instance of BannerAd for a given ad slot id that will load inline adaptive banners.
+/// \param slot Ad slot id.
+///
+/// \param width Desired width of the banner ad.
+///
+/// \param maxHeight Max height of the banner ad.
+///
+- (BannerAd * _Nullable)getInlineAdaptiveBannerAd:(NSString * _Nonnull)slot width:(CGFloat)width maxHeight:(CGFloat)maxHeight SWIFT_WARN_UNUSED_RESULT;
 - (RewardedVideoAd * _Nullable)getRewardedVideoAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
 - (InterstitialAd * _Nullable)getInterstitialAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
 - (NativeAd * _Nullable)getGoogleNativeAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
 - (NativeAd * _Nullable)getCustomFormatNativeAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
 - (NativeAd * _Nullable)getMultiFormatAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC4Tude6BaseAd")
+@interface BaseAd : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+@class GAMBannerView;
+
+SWIFT_CLASS("_TtC4Tude8BannerAd")
+@interface BannerAd : BaseAd
+@property (nonatomic, readonly, strong) GAMBannerView * _Nonnull gamBannerView;
+@property (nonatomic, copy) void (^ _Nullable onAdLoaded)(GAMBannerView * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
+@end
+
+
+
+@interface BannerAd (SWIFT_EXTENSION(Tude))
+- (void)loadFrom:(UIViewController * _Nullable)viewController;
+- (void)resizeForPrebid;
+@end
+
+@class GADBannerView;
+
+@interface BannerAd (SWIFT_EXTENSION(Tude)) <GADAdSizeDelegate, GADBannerViewDelegate>
+- (void)bannerViewDidReceiveAd:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerView:(GADBannerView * _Nonnull)bannerView didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+- (void)bannerViewDidRecordClick:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerViewDidRecordImpression:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerViewWillPresentScreen:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerViewDidDismissScreen:(GADBannerView * _Nonnull)bannerView;
+- (void)adView:(GADBannerView * _Nonnull)bannerView willChangeAdSizeTo:(GADAdSize)size;
+@end
+
 
 @class NSCoder;
 
 SWIFT_CLASS("_TtC4Tude12BannerAdView")
 @interface BannerAdView : UIView
 @property (nonatomic, copy) void (^ _Nullable onAdLoaded)(void);
-@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
-@property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
-@property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
-@property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
-@property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
 @property (nonatomic, readonly, copy) NSString * _Nullable slotName;
 @property (nonatomic, readonly, copy) NSString * _Nullable adUnitId;
 @property (nonatomic, copy) NSString * _Nullable adSlot;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-- (void)load:(UIViewController * _Nonnull)vc;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+@interface BannerAdView (SWIFT_EXTENSION(Tude))
+- (void)load:(UIViewController * _Nullable)vc;
 /// Sets targeting specific to the ad slot.
 /// Example of a valid method call:
 /// \code
@@ -476,31 +554,21 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 
 
 @interface BannerAdView (SWIFT_EXTENSION(Tude))
-- (void)setContentURL:(NSString * _Nonnull)URL;
-- (void)setNeighboringContentURLs:(NSArray<NSString *> * _Nonnull)URLs;
+@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
 @end
 
-@class GADBannerView;
-
-@interface BannerAdView (SWIFT_EXTENSION(Tude)) <GADBannerViewDelegate>
-- (void)bannerViewDidReceiveAd:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerView:(GADBannerView * _Nonnull)bannerView didFailToReceiveAdWithError:(NSError * _Nonnull)error;
-- (void)bannerViewDidRecordClick:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerViewDidRecordImpression:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerViewWillPresentScreen:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerViewDidDismissScreen:(GADBannerView * _Nonnull)bannerView;
-@end
-
-
-SWIFT_CLASS("_TtC4Tude6BaseAd")
-@interface BaseAd : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 @interface BaseAd (SWIFT_EXTENSION(Tude))
+@property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
+@property (nonatomic, readonly, copy) NSString * _Nonnull adUnitId;
 - (void)setContentURL:(NSString * _Nonnull)URL;
 - (void)setNeighboringContentURLs:(NSArray<NSString *> * _Nonnull)URLs;
+- (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
 @end
 
 
@@ -514,32 +582,9 @@ SWIFT_CLASS("_TtC4Tude14InterstitialAd")
 @property (nonatomic, copy) void (^ _Nullable onAdDidRecordImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
-@property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull adUnitId;
 - (void)preload;
 - (void)preloadOnAdLoaded:(void (^ _Nonnull)(InterstitialAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
-/// Sets targeting specific to the ad slot.
-/// Example of a valid method call:
-/// \code
-/// ad.setTargeting(
-///    [
-///        "key_1": "value_1",
-///        "key_2": [
-///            "value_2",
-///            "value_3",
-///            "value_4"
-///        ]
-///    ]
-/// )
-///
-/// \endcodewarning:
-/// Only String and [String] type values will be parsed. Every other type will be ignored.
-/// \param targeting A dictionary of targeting key-value pairs.
-///
-- (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol GADFullScreenPresentingAd;
@@ -555,13 +600,10 @@ SWIFT_CLASS("_TtC4Tude14InterstitialAd")
 
 @class GADCustomNativeAd;
 @class GADNativeAd;
-@class GAMBannerView;
 
 SWIFT_CLASS("_TtC4Tude8NativeAd")
 @interface NativeAd : BaseAd
 @property (nonatomic, readonly) BOOL isLoaded;
-@property (nonatomic, readonly, copy) NSString * _Nonnull adUnitId;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable adSizes;
 @property (nonatomic, copy) void (^ _Nullable onCustomNativeAdLoaded)(GADCustomNativeAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onGoogleNativeAdLoaded)(GADNativeAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onBannerAdLoaded)(GAMBannerView * _Nonnull);
@@ -571,19 +613,17 @@ SWIFT_CLASS("_TtC4Tude8NativeAd")
 @property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdSwipeGestureClicked)(void);
-@property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class GADAdLoaderOptions;
+
+@interface NativeAd (SWIFT_EXTENSION(Tude))
+- (void)preloadOnPreload:(void (^ _Nullable)(void))onPreload;
+- (void)load:(UIViewController * _Nullable)vc adLoaderOptions:(NSArray<GADAdLoaderOptions *> * _Nonnull)adLoaderOptions;
 @end
 
 
 @class GADAdLoader;
-
-@interface NativeAd (SWIFT_EXTENSION(Tude)) <GADCustomNativeAdLoaderDelegate>
-- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveCustomNativeAd:(GADCustomNativeAd * _Nonnull)customNativeAd;
-- (NSArray<NSString *> * _Nonnull)customNativeAdFormatIDsForAdLoader:(GADAdLoader * _Nonnull)adLoader SWIFT_WARN_UNUSED_RESULT;
-@end
-
 @class NSValue;
 
 @interface NativeAd (SWIFT_EXTENSION(Tude)) <GAMBannerAdLoaderDelegate>
@@ -592,35 +632,15 @@ SWIFT_CLASS("_TtC4Tude8NativeAd")
 @end
 
 
+@interface NativeAd (SWIFT_EXTENSION(Tude)) <GADCustomNativeAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveCustomNativeAd:(GADCustomNativeAd * _Nonnull)customNativeAd;
+- (NSArray<NSString *> * _Nonnull)customNativeAdFormatIDsForAdLoader:(GADAdLoader * _Nonnull)adLoader SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 @interface NativeAd (SWIFT_EXTENSION(Tude)) <GADNativeAdLoaderDelegate>
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
-@end
-
-@class GADAdLoaderOptions;
-
-@interface NativeAd (SWIFT_EXTENSION(Tude))
-- (void)preloadOnPreload:(void (^ _Nullable)(void))onPreload;
-/// Sets targeting specific to the ad slot.
-/// Example of a valid method call:
-/// \code
-/// ad.setTargeting(
-///    [
-///        "key_1": "value_1",
-///        "key_2": [
-///            "value_2",
-///            "value_3",
-///            "value_4"
-///        ]
-///    ]
-/// )
-///
-/// \endcodewarning:
-/// Only String and [String] type values will be parsed. Every other type will be ignored.
-/// \param targeting A dictionary of targeting key-value pairs.
-///
-- (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
-- (void)load:(UIViewController * _Nullable)vc adLoaderOptions:(NSArray<GADAdLoaderOptions *> * _Nonnull)adLoaderOptions;
 @end
 
 
@@ -670,32 +690,10 @@ SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 @property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdEarnedReward)(RewardItem * _Nonnull);
-@property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
 - (void)preload;
 - (void)preloadOnAdLoaded:(void (^ _Nonnull)(RewardedVideoAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
 - (void)render:(UIViewController * _Nonnull)vc rewardHandler:(void (^ _Nonnull)(RewardItem * _Nonnull))rewardHandler;
-/// Sets targeting specific to the ad slot.
-/// Example of a valid method call:
-/// \code
-/// ad.setTargeting(
-///    [
-///        "key_1": "value_1",
-///        "key_2": [
-///            "value_2",
-///            "value_3",
-///            "value_4"
-///        ]
-///    ]
-/// )
-///
-/// \endcodewarning:
-/// Only String and [String] type values will be parsed. Every other type will be ignored.
-/// \param targeting A dictionary of targeting key-value pairs.
-///
-- (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -1039,11 +1037,6 @@ SWIFT_CLASS("_TtC4Tude19AdFailedToLoadError")
 @property (nonatomic, readonly, copy) NSString * _Nonnull message;
 @end
 
-@class UIViewController;
-@class BannerAdView;
-@class RewardedVideoAd;
-@class InterstitialAd;
-@class NativeAd;
 
 SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 @interface AditudeWrapper : NSObject
@@ -1145,33 +1138,116 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 /// returns:
 /// An array of strings representing the active flags.
 + (NSArray<NSString *> * _Nonnull)getFlags SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIViewController;
+@class BannerAdView;
+@class BannerAd;
+@class RewardedVideoAd;
+@class InterstitialAd;
+@class NativeAd;
+
+@interface AditudeWrapper (SWIFT_EXTENSION(Tude))
+/// Render banner ads
+/// The method will search for BannerAdViews inside the view of the passed UIViewController. All of the found
+/// banners will be loaded.
+/// \param vc UIViewController that will be searched for BannerAdViews.
+///
 - (void)renderBannerAds:(UIViewController * _Nonnull)vc;
-- (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)adSlot SWIFT_WARN_UNUSED_RESULT;
+/// Make a BannerAdView
+/// THe method will create a BannerAdView for a given ad slot id.
+/// \param vc UIViewController that will serve as rootViewController for the GAMBannerView.
+///
+/// \param slot Ad slot id.
+///
+- (BannerAdView * _Nullable)createBannerAdView:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
+/// Make a BannerAd
+/// The method will create an instance of BannerAd for a given ad slot id.
+/// note:
+/// Prefer this method over <code>createBannerAdView</code>.
+/// \param slot Ad slot id.
+///
+- (BannerAd * _Nullable)getBannerAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
+/// Make an anchored adaptive banner ad.
+/// The method will create an instance of BannerAd for a given ad slot id that will load anchored adaptive banners.
+/// \param slot Ad slot id.
+///
+/// \param width Desired width of the banner ad.
+///
+- (BannerAd * _Nullable)getAnchoredAdaptiveBannerAd:(NSString * _Nonnull)slot width:(CGFloat)width SWIFT_WARN_UNUSED_RESULT;
+/// Make an inline adaptive banner ad.
+/// The method will create an instance of BannerAd for a given ad slot id that will load inline adaptive banners.
+/// \param slot Ad slot id.
+///
+/// \param width Desired width of the banner ad.
+///
+/// \param maxHeight Max height of the banner ad.
+///
+- (BannerAd * _Nullable)getInlineAdaptiveBannerAd:(NSString * _Nonnull)slot width:(CGFloat)width maxHeight:(CGFloat)maxHeight SWIFT_WARN_UNUSED_RESULT;
 - (RewardedVideoAd * _Nullable)getRewardedVideoAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
 - (InterstitialAd * _Nullable)getInterstitialAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
 - (NativeAd * _Nullable)getGoogleNativeAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
 - (NativeAd * _Nullable)getCustomFormatNativeAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
 - (NativeAd * _Nullable)getMultiFormatAd:(NSString * _Nonnull)slot SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC4Tude6BaseAd")
+@interface BaseAd : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+@class GAMBannerView;
+
+SWIFT_CLASS("_TtC4Tude8BannerAd")
+@interface BannerAd : BaseAd
+@property (nonatomic, readonly, strong) GAMBannerView * _Nonnull gamBannerView;
+@property (nonatomic, copy) void (^ _Nullable onAdLoaded)(GAMBannerView * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
+@end
+
+
+
+@interface BannerAd (SWIFT_EXTENSION(Tude))
+- (void)loadFrom:(UIViewController * _Nullable)viewController;
+- (void)resizeForPrebid;
+@end
+
+@class GADBannerView;
+
+@interface BannerAd (SWIFT_EXTENSION(Tude)) <GADAdSizeDelegate, GADBannerViewDelegate>
+- (void)bannerViewDidReceiveAd:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerView:(GADBannerView * _Nonnull)bannerView didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+- (void)bannerViewDidRecordClick:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerViewDidRecordImpression:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerViewWillPresentScreen:(GADBannerView * _Nonnull)bannerView;
+- (void)bannerViewDidDismissScreen:(GADBannerView * _Nonnull)bannerView;
+- (void)adView:(GADBannerView * _Nonnull)bannerView willChangeAdSizeTo:(GADAdSize)size;
+@end
+
 
 @class NSCoder;
 
 SWIFT_CLASS("_TtC4Tude12BannerAdView")
 @interface BannerAdView : UIView
 @property (nonatomic, copy) void (^ _Nullable onAdLoaded)(void);
-@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
-@property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
-@property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
-@property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
-@property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
 @property (nonatomic, readonly, copy) NSString * _Nullable slotName;
 @property (nonatomic, readonly, copy) NSString * _Nullable adUnitId;
 @property (nonatomic, copy) NSString * _Nullable adSlot;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-- (void)load:(UIViewController * _Nonnull)vc;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+@interface BannerAdView (SWIFT_EXTENSION(Tude))
+- (void)load:(UIViewController * _Nullable)vc;
 /// Sets targeting specific to the ad slot.
 /// Example of a valid method call:
 /// \code
@@ -1195,31 +1271,21 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 
 
 @interface BannerAdView (SWIFT_EXTENSION(Tude))
-- (void)setContentURL:(NSString * _Nonnull)URL;
-- (void)setNeighboringContentURLs:(NSArray<NSString *> * _Nonnull)URLs;
+@property (nonatomic, copy) void (^ _Nullable onAdFailedToLoad)(AdFailedToLoadError * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onAdClicked)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
+@property (nonatomic, copy) void (^ _Nullable onAdClosed)(void);
 @end
 
-@class GADBannerView;
-
-@interface BannerAdView (SWIFT_EXTENSION(Tude)) <GADBannerViewDelegate>
-- (void)bannerViewDidReceiveAd:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerView:(GADBannerView * _Nonnull)bannerView didFailToReceiveAdWithError:(NSError * _Nonnull)error;
-- (void)bannerViewDidRecordClick:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerViewDidRecordImpression:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerViewWillPresentScreen:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerViewDidDismissScreen:(GADBannerView * _Nonnull)bannerView;
-@end
-
-
-SWIFT_CLASS("_TtC4Tude6BaseAd")
-@interface BaseAd : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 @interface BaseAd (SWIFT_EXTENSION(Tude))
+@property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
+@property (nonatomic, readonly, copy) NSString * _Nonnull adUnitId;
 - (void)setContentURL:(NSString * _Nonnull)URL;
 - (void)setNeighboringContentURLs:(NSArray<NSString *> * _Nonnull)URLs;
+- (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
 @end
 
 
@@ -1233,32 +1299,9 @@ SWIFT_CLASS("_TtC4Tude14InterstitialAd")
 @property (nonatomic, copy) void (^ _Nullable onAdDidRecordImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
-@property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull adUnitId;
 - (void)preload;
 - (void)preloadOnAdLoaded:(void (^ _Nonnull)(InterstitialAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
-/// Sets targeting specific to the ad slot.
-/// Example of a valid method call:
-/// \code
-/// ad.setTargeting(
-///    [
-///        "key_1": "value_1",
-///        "key_2": [
-///            "value_2",
-///            "value_3",
-///            "value_4"
-///        ]
-///    ]
-/// )
-///
-/// \endcodewarning:
-/// Only String and [String] type values will be parsed. Every other type will be ignored.
-/// \param targeting A dictionary of targeting key-value pairs.
-///
-- (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol GADFullScreenPresentingAd;
@@ -1274,13 +1317,10 @@ SWIFT_CLASS("_TtC4Tude14InterstitialAd")
 
 @class GADCustomNativeAd;
 @class GADNativeAd;
-@class GAMBannerView;
 
 SWIFT_CLASS("_TtC4Tude8NativeAd")
 @interface NativeAd : BaseAd
 @property (nonatomic, readonly) BOOL isLoaded;
-@property (nonatomic, readonly, copy) NSString * _Nonnull adUnitId;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable adSizes;
 @property (nonatomic, copy) void (^ _Nullable onCustomNativeAdLoaded)(GADCustomNativeAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onGoogleNativeAdLoaded)(GADNativeAd * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onBannerAdLoaded)(GAMBannerView * _Nonnull);
@@ -1290,19 +1330,17 @@ SWIFT_CLASS("_TtC4Tude8NativeAd")
 @property (nonatomic, copy) void (^ _Nullable onAdImpression)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdOpened)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdSwipeGestureClicked)(void);
-@property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class GADAdLoaderOptions;
+
+@interface NativeAd (SWIFT_EXTENSION(Tude))
+- (void)preloadOnPreload:(void (^ _Nullable)(void))onPreload;
+- (void)load:(UIViewController * _Nullable)vc adLoaderOptions:(NSArray<GADAdLoaderOptions *> * _Nonnull)adLoaderOptions;
 @end
 
 
 @class GADAdLoader;
-
-@interface NativeAd (SWIFT_EXTENSION(Tude)) <GADCustomNativeAdLoaderDelegate>
-- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveCustomNativeAd:(GADCustomNativeAd * _Nonnull)customNativeAd;
-- (NSArray<NSString *> * _Nonnull)customNativeAdFormatIDsForAdLoader:(GADAdLoader * _Nonnull)adLoader SWIFT_WARN_UNUSED_RESULT;
-@end
-
 @class NSValue;
 
 @interface NativeAd (SWIFT_EXTENSION(Tude)) <GAMBannerAdLoaderDelegate>
@@ -1311,35 +1349,15 @@ SWIFT_CLASS("_TtC4Tude8NativeAd")
 @end
 
 
+@interface NativeAd (SWIFT_EXTENSION(Tude)) <GADCustomNativeAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveCustomNativeAd:(GADCustomNativeAd * _Nonnull)customNativeAd;
+- (NSArray<NSString *> * _Nonnull)customNativeAdFormatIDsForAdLoader:(GADAdLoader * _Nonnull)adLoader SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 @interface NativeAd (SWIFT_EXTENSION(Tude)) <GADNativeAdLoaderDelegate>
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
-@end
-
-@class GADAdLoaderOptions;
-
-@interface NativeAd (SWIFT_EXTENSION(Tude))
-- (void)preloadOnPreload:(void (^ _Nullable)(void))onPreload;
-/// Sets targeting specific to the ad slot.
-/// Example of a valid method call:
-/// \code
-/// ad.setTargeting(
-///    [
-///        "key_1": "value_1",
-///        "key_2": [
-///            "value_2",
-///            "value_3",
-///            "value_4"
-///        ]
-///    ]
-/// )
-///
-/// \endcodewarning:
-/// Only String and [String] type values will be parsed. Every other type will be ignored.
-/// \param targeting A dictionary of targeting key-value pairs.
-///
-- (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
-- (void)load:(UIViewController * _Nullable)vc adLoaderOptions:(NSArray<GADAdLoaderOptions *> * _Nonnull)adLoaderOptions;
 @end
 
 
@@ -1389,32 +1407,10 @@ SWIFT_CLASS("_TtC4Tude15RewardedVideoAd")
 @property (nonatomic, copy) void (^ _Nullable onAdWillPresentFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdWillDismissFullScreenContent)(void);
 @property (nonatomic, copy) void (^ _Nullable onAdEarnedReward)(RewardItem * _Nonnull);
-@property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
 - (void)preload;
 - (void)preloadOnAdLoaded:(void (^ _Nonnull)(RewardedVideoAd * _Nonnull))onAdLoaded;
 - (void)render:(UIViewController * _Nonnull)vc;
 - (void)render:(UIViewController * _Nonnull)vc rewardHandler:(void (^ _Nonnull)(RewardItem * _Nonnull))rewardHandler;
-/// Sets targeting specific to the ad slot.
-/// Example of a valid method call:
-/// \code
-/// ad.setTargeting(
-///    [
-///        "key_1": "value_1",
-///        "key_2": [
-///            "value_2",
-///            "value_3",
-///            "value_4"
-///        ]
-///    ]
-/// )
-///
-/// \endcodewarning:
-/// Only String and [String] type values will be parsed. Every other type will be ignored.
-/// \param targeting A dictionary of targeting key-value pairs.
-///
-- (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
