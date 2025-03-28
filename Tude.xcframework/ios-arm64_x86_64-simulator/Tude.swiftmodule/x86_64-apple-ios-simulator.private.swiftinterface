@@ -22,6 +22,7 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc public static func isInitialized() -> Swift.Bool
   @objc public static func cmd(command: @escaping (Tude.AditudeWrapper) -> Swift.Void)
   @objc public static func setGlobalTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
+  @objc public static func appendGlobalTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool = false)
   @objc public static func setPublisherProvidedId(_ id: Swift.String)
   @objc public static func getPublisherProvidedId() -> Swift.String?
   @available(iOS, deprecated, renamed: "setNonPersonalizedAdsFlag", message: "Use setNonPersonalizedAdsFlag method instead.")
@@ -159,6 +160,7 @@ extension Tude.BaseAd {
   @objc dynamic public func setContentURL(_ URL: Swift.String)
   @objc dynamic public func setNeighboringContentURLs(_ URLs: [Swift.String])
   @objc dynamic public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
+  @objc dynamic public func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool = false)
 }
 @objc @_hasMissingDesignatedInitializers final public class BannerAd : Tude.BaseAd {
   @objc final public let gamBannerView: GoogleMobileAds.GAMBannerView
@@ -200,6 +202,7 @@ extension Tude.BannerAd : GoogleMobileAds.GADBannerViewDelegate, GoogleMobileAds
 extension Tude.BannerAdView {
   @objc @_Concurrency.MainActor(unsafe) final public func load(_ vc: UIKit.UIViewController?)
   @objc @_Concurrency.MainActor(unsafe) final public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
+  @objc @_Concurrency.MainActor(unsafe) final public func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool = false)
 }
 extension Tude.BannerAdView {
   @objc @_Concurrency.MainActor(unsafe) final public var onAdFailedToLoad: Tude.LoadErrorListener? {

@@ -325,6 +325,56 @@
           },
           {
             "kind": "Function",
+            "name": "appendGlobalTargeting",
+            "printedName": "appendGlobalTargeting(_:overwriteValues:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)appendGlobalTargeting:overwriteValues:",
+            "mangledName": "$s4Tude14AditudeWrapperC21appendGlobalTargeting_15overwriteValuesySDySSypG_SbtFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setPublisherProvidedId",
             "printedName": "setPublisherProvidedId(_:)",
             "children": [
@@ -6018,6 +6068,55 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "appendTargeting",
+            "printedName": "appendTargeting(_:overwriteValues:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)BaseAd(im)appendTargeting:overwriteValues:",
+            "mangledName": "$s4Tude6BaseAdC15appendTargeting_15overwriteValuesySDySSypG_SbtF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -8045,6 +8144,57 @@
             "declKind": "Func",
             "usr": "c:@CM@Tude@objc(cs)BannerAdView(im)setTargeting:",
             "mangledName": "$s4Tude12BannerAdViewC12setTargetingyySDySSypGF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "appendTargeting",
+            "printedName": "appendTargeting(_:overwriteValues:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)BannerAdView(im)appendTargeting:overwriteValues:",
+            "mangledName": "$s4Tude12BannerAdViewC15appendTargeting_15overwriteValuesySDySSypG_SbtF",
             "moduleName": "Tude",
             "declAttributes": [
               "Final",
@@ -10931,6 +11081,13 @@
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5872,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
       "offset": 284,
       "length": 14,
@@ -11240,14 +11397,21 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
       "kind": "Dictionary",
-      "offset": 537,
+      "offset": 543,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
+      "kind": "Dictionary",
+      "offset": 611,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapperConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1053,
+      "offset": 1127,
       "length": 4,
       "value": "true"
     },
@@ -11428,22 +11592,36 @@
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/BaseAd.swift",
+      "kind": "Dictionary",
+      "offset": 378,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/BaseAd.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 6,
       "value": "\"Tude.BaseAd\""
     },
     {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Extensions\/DictionaryExtension.swift",
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 683,
+      "offset": 2167,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Extensions\/DictionaryExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 1334,
+      "offset": 684,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Extensions\/DictionaryExtension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1338,
       "length": 5,
       "value": "false"
     },
@@ -11474,6 +11652,13 @@
       "offset": 230,
       "length": 12,
       "value": "\"Tude.BannerAdView\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5689,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/Flag.swift",
@@ -11583,14 +11768,14 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Extensions\/Dictionary+TargetingValueExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 739,
+      "offset": 742,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Extensions\/Dictionary+TargetingValueExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 1722,
+      "offset": 1729,
       "length": 5,
       "value": "false"
     },

@@ -331,10 +331,15 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 + (void)initializeWithoutCallback;
 + (BOOL)isInitialized SWIFT_WARN_UNUSED_RESULT;
 + (void)cmdWithCommand:(void (^ _Nonnull)(AditudeWrapper * _Nonnull))command;
-/// Sets global targeting. Allows the publisher to update/add to the default targeting for each ad.
+/// warning:
+/// Only String and [String] type values will be parsed. Every other type will be ignored.
+/// \param targeting A dictionary of targeting key-value pairs.
+///
++ (void)setGlobalTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
+/// Appends to the global targeting. Allows the publisher to add new targeting info.
 /// Example of a valid method call:
 /// \code
-/// AditudeWrapper.setGlobalTargeting(
+/// AditudeWrapper.appendGlobalTargeting(
 ///    [
 ///        "key_1": "value_1",
 ///        "key_2": [
@@ -342,14 +347,18 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 ///            "value_3",
 ///            "value_4"
 ///        ]
-///    ]
+///    ],
+///    overwriteValues: true
 /// )
 ///
 /// \endcodewarning:
 /// Only String and [String] type values will be parsed. Every other type will be ignored.
 /// \param targeting A dictionary of targeting key-value pairs.
 ///
-+ (void)setGlobalTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
+/// \param overwriteValues A bool that indicate weather the new targeting values will overwrite values for keys that
+/// already exist.
+///
++ (void)appendGlobalTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting overwriteValues:(BOOL)overwriteValues;
 /// Sets the publisher provided id.
 /// \param id Publisher provided id used for audience segmentation and targeting.
 ///
@@ -531,7 +540,10 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 
 @interface BannerAdView (SWIFT_EXTENSION(Tude))
 - (void)load:(UIViewController * _Nullable)vc;
-/// Sets targeting specific to the ad slot.
+/// Set targeting for the instance of an ad.
+/// note:
+/// This method will remove any previous targeting that is set to an ad instance and replace it with the
+/// one passed through the parameter.
 /// Example of a valid method call:
 /// \code
 /// ad.setTargeting(
@@ -545,11 +557,96 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 ///    ]
 /// )
 ///
+/// \endcodeAn ad slot can also have targeting from the config file.
+/// In that case setting the targeting to the specific ad instance will
+/// combine both without overriding values for duplicate keys.
+/// \code
+/// // Targeting from config:
+/// {
+///    "key_from_config_1": "value_from_config",
+///    "key_from_config_2" = "value_from_config"
+/// }
+///
+/// ad.setTargeting(
+///    [
+///        "key_1": "value_1",
+///        "key_2": [
+///            "value_2",
+///            "value_3",
+///        ],
+///        "key_from_config_1": "some_new_value",
+///    ]
+/// )
+///
+/// // Final targeting will be:
+/// [
+///    "key_1": "value_1",
+///    "key_2": [
+///        "value_2",
+///        "value_3",
+///    ],
+///    "key_from_config_1": "value_from_config",
+///    "key_from_config_2" = "value_from_config"
+/// ]
+///
+/// \endcodeFinal customTargeting set to the GAMRequest is a combination of
+/// global targeting and an ad slot instance specific targeting.
+/// If there is duplicate keys then the global targeting values will be overridden.
+/// Explanation:
+/// \code
+/// AditudeWrapper.setGlobalTargeting(
+///   [
+///       "key_1": "value_1"
+///   ]
+/// )
+///
+/// ad.setTargeting(
+///   [
+///       "key_1": "override",
+///       "key_2": [
+///           "value_2",
+///           "value_3",
+///       ]
+///   ]
+/// )
+///
+/// // Final targeting will be:
+/// [
+///   "key_1": "override",
+///   "key_2": [
+///       "value_2",
+///       "value_3",
+///   ]
+/// ]
+///
 /// \endcodewarning:
 /// Only String and [String] type values will be parsed. Every other type will be ignored.
 /// \param targeting A dictionary of targeting key-value pairs.
 ///
 - (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
+/// Append targeting for an ad instance.
+/// Example of a valid method call:
+/// \code
+/// ad.appendTargeting(
+///    [
+///        "key_1": "value_1",
+///        "key_2": [
+///            "value_2",
+///            "value_3",
+///            "value_4"
+///        ]
+///    ],
+///    overwriteValues: true
+/// )
+///
+/// \endcodewarning:
+/// Only String and [String] type values will be parsed. Every other type will be ignored.
+/// \param targeting A dictionary of targeting key-value pairs.
+///
+/// \param overwriteValues A bool that indicate weather the new targeting values will overwrite values for keys that
+/// already exist.
+///
+- (void)appendTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting overwriteValues:(BOOL)overwriteValues;
 @end
 
 
@@ -563,12 +660,14 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 
 
 
+
 @interface BaseAd (SWIFT_EXTENSION(Tude))
 @property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
 @property (nonatomic, readonly, copy) NSString * _Nonnull adUnitId;
 - (void)setContentURL:(NSString * _Nonnull)URL;
 - (void)setNeighboringContentURLs:(NSArray<NSString *> * _Nonnull)URLs;
 - (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
+- (void)appendTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting overwriteValues:(BOOL)overwriteValues;
 @end
 
 
@@ -1048,10 +1147,15 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 + (void)initializeWithoutCallback;
 + (BOOL)isInitialized SWIFT_WARN_UNUSED_RESULT;
 + (void)cmdWithCommand:(void (^ _Nonnull)(AditudeWrapper * _Nonnull))command;
-/// Sets global targeting. Allows the publisher to update/add to the default targeting for each ad.
+/// warning:
+/// Only String and [String] type values will be parsed. Every other type will be ignored.
+/// \param targeting A dictionary of targeting key-value pairs.
+///
++ (void)setGlobalTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
+/// Appends to the global targeting. Allows the publisher to add new targeting info.
 /// Example of a valid method call:
 /// \code
-/// AditudeWrapper.setGlobalTargeting(
+/// AditudeWrapper.appendGlobalTargeting(
 ///    [
 ///        "key_1": "value_1",
 ///        "key_2": [
@@ -1059,14 +1163,18 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 ///            "value_3",
 ///            "value_4"
 ///        ]
-///    ]
+///    ],
+///    overwriteValues: true
 /// )
 ///
 /// \endcodewarning:
 /// Only String and [String] type values will be parsed. Every other type will be ignored.
 /// \param targeting A dictionary of targeting key-value pairs.
 ///
-+ (void)setGlobalTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
+/// \param overwriteValues A bool that indicate weather the new targeting values will overwrite values for keys that
+/// already exist.
+///
++ (void)appendGlobalTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting overwriteValues:(BOOL)overwriteValues;
 /// Sets the publisher provided id.
 /// \param id Publisher provided id used for audience segmentation and targeting.
 ///
@@ -1248,7 +1356,10 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 
 @interface BannerAdView (SWIFT_EXTENSION(Tude))
 - (void)load:(UIViewController * _Nullable)vc;
-/// Sets targeting specific to the ad slot.
+/// Set targeting for the instance of an ad.
+/// note:
+/// This method will remove any previous targeting that is set to an ad instance and replace it with the
+/// one passed through the parameter.
 /// Example of a valid method call:
 /// \code
 /// ad.setTargeting(
@@ -1262,11 +1373,96 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 ///    ]
 /// )
 ///
+/// \endcodeAn ad slot can also have targeting from the config file.
+/// In that case setting the targeting to the specific ad instance will
+/// combine both without overriding values for duplicate keys.
+/// \code
+/// // Targeting from config:
+/// {
+///    "key_from_config_1": "value_from_config",
+///    "key_from_config_2" = "value_from_config"
+/// }
+///
+/// ad.setTargeting(
+///    [
+///        "key_1": "value_1",
+///        "key_2": [
+///            "value_2",
+///            "value_3",
+///        ],
+///        "key_from_config_1": "some_new_value",
+///    ]
+/// )
+///
+/// // Final targeting will be:
+/// [
+///    "key_1": "value_1",
+///    "key_2": [
+///        "value_2",
+///        "value_3",
+///    ],
+///    "key_from_config_1": "value_from_config",
+///    "key_from_config_2" = "value_from_config"
+/// ]
+///
+/// \endcodeFinal customTargeting set to the GAMRequest is a combination of
+/// global targeting and an ad slot instance specific targeting.
+/// If there is duplicate keys then the global targeting values will be overridden.
+/// Explanation:
+/// \code
+/// AditudeWrapper.setGlobalTargeting(
+///   [
+///       "key_1": "value_1"
+///   ]
+/// )
+///
+/// ad.setTargeting(
+///   [
+///       "key_1": "override",
+///       "key_2": [
+///           "value_2",
+///           "value_3",
+///       ]
+///   ]
+/// )
+///
+/// // Final targeting will be:
+/// [
+///   "key_1": "override",
+///   "key_2": [
+///       "value_2",
+///       "value_3",
+///   ]
+/// ]
+///
 /// \endcodewarning:
 /// Only String and [String] type values will be parsed. Every other type will be ignored.
 /// \param targeting A dictionary of targeting key-value pairs.
 ///
 - (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
+/// Append targeting for an ad instance.
+/// Example of a valid method call:
+/// \code
+/// ad.appendTargeting(
+///    [
+///        "key_1": "value_1",
+///        "key_2": [
+///            "value_2",
+///            "value_3",
+///            "value_4"
+///        ]
+///    ],
+///    overwriteValues: true
+/// )
+///
+/// \endcodewarning:
+/// Only String and [String] type values will be parsed. Every other type will be ignored.
+/// \param targeting A dictionary of targeting key-value pairs.
+///
+/// \param overwriteValues A bool that indicate weather the new targeting values will overwrite values for keys that
+/// already exist.
+///
+- (void)appendTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting overwriteValues:(BOOL)overwriteValues;
 @end
 
 
@@ -1280,12 +1476,14 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 
 
 
+
 @interface BaseAd (SWIFT_EXTENSION(Tude))
 @property (nonatomic, readonly, copy) NSString * _Nonnull slotName;
 @property (nonatomic, readonly, copy) NSString * _Nonnull adUnitId;
 - (void)setContentURL:(NSString * _Nonnull)URL;
 - (void)setNeighboringContentURLs:(NSArray<NSString *> * _Nonnull)URLs;
 - (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
+- (void)appendTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting overwriteValues:(BOOL)overwriteValues;
 @end
 
 
