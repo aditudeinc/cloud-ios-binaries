@@ -150,7 +150,7 @@ extension Tude.InterstitialAd : GoogleMobileAds.GADFullScreenContentDelegate {
 @objc @_hasMissingDesignatedInitializers public class BaseAd : ObjectiveC.NSObject {
   @objc deinit
 }
-extension Tude.BaseAd {
+extension Tude.BaseAd : Tude.TudeAd {
   @objc dynamic public var slotName: Swift.String {
     @objc get
   }
@@ -251,4 +251,12 @@ extension Tude.RewardedVideoAd : GoogleMobileAds.GADFullScreenContentDelegate {
   @objc final public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
   @objc final public func adWillDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
   @objc final public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+}
+public protocol TudeAd {
+  var slotName: Swift.String { get }
+  var adUnitId: Swift.String { get }
+  func setContentURL(_ URL: Swift.String)
+  func setNeighboringContentURLs(_ URLs: [Swift.String])
+  func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
+  func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool)
 }

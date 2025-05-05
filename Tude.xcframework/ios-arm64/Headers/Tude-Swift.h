@@ -331,7 +331,57 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 + (void)initializeWithoutCallback;
 + (BOOL)isInitialized SWIFT_WARN_UNUSED_RESULT;
 + (void)cmdWithCommand:(void (^ _Nonnull)(AditudeWrapper * _Nonnull))command;
-/// warning:
+/// Sets global targeting. Allows the publisher to set default targeting that will apply for each ad.
+/// note:
+/// This method will remove any previous global targeting that is set and replace it with the
+/// one passed through the parameter.
+/// Example of a valid method call:
+/// \code
+/// AditudeWrapper.setGlobalTargeting(
+///    [
+///        "key_1": "value_1",
+///        "key_2": [
+///            "value_2",
+///            "value_3",
+///            "value_4"
+///        ]
+///    ]
+/// )
+///
+/// \endcodeGlobal targeting can also be set from the config file. Final global targeting is a combination of both
+/// global targeting from config and global targeting set by the publisher. If there is any duplicate keys
+/// the SDK will take the value from the config targeting.
+/// Example:
+/// \code
+/// // Global targeting from config:
+/// {
+///    "key_from_config_1": "value_from_config",
+///    "key_from_config_2" = "value_from_config"
+/// }
+///
+/// AditudeWrapper.setTargeting(
+///    [
+///        "key_1": "value_1",
+///        "key_2": [
+///            "value_2",
+///            "value_3",
+///        ],
+///        "key_from_config_1": "some_new_value",
+///    ]
+/// )
+///
+/// // Final global targeting will be:
+/// [
+///    "key_1": "value_1",
+///    "key_2": [
+///        "value_2",
+///        "value_3",
+///    ],
+///    "key_from_config_1": "value_from_config",
+///    "key_from_config_2" = "value_from_config"
+/// ]
+///
+/// \endcodewarning:
 /// Only String and [String] type values will be parsed. Every other type will be ignored.
 /// \param targeting A dictionary of targeting key-value pairs.
 ///

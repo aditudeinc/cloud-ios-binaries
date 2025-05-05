@@ -4045,6 +4045,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TudeAd",
+            "printedName": "TudeAd",
+            "usr": "s:4Tude0A2AdP",
+            "mangledName": "$s4Tude0A2AdP"
           }
         ]
       },
@@ -5593,6 +5600,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TudeAd",
+            "printedName": "TudeAd",
+            "usr": "s:4Tude0A2AdP",
+            "mangledName": "$s4Tude0A2AdP"
           }
         ]
       },
@@ -6133,6 +6147,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TudeAd",
+            "printedName": "TudeAd",
+            "usr": "s:4Tude0A2AdP",
+            "mangledName": "$s4Tude0A2AdP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7591,6 +7612,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TudeAd",
+            "printedName": "TudeAd",
+            "usr": "s:4Tude0A2AdP",
+            "mangledName": "$s4Tude0A2AdP"
           }
         ]
       },
@@ -10809,6 +10837,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TudeAd",
+            "printedName": "TudeAd",
+            "usr": "s:4Tude0A2AdP",
+            "mangledName": "$s4Tude0A2AdP"
           }
         ]
       },
@@ -10920,6 +10955,265 @@
         "declKind": "Import",
         "moduleName": "Tude",
         "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TudeAd",
+        "printedName": "TudeAd",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "slotName",
+            "printedName": "slotName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Tude0A2AdP8slotNameSSvp",
+            "mangledName": "$s4Tude0A2AdP8slotNameSSvp",
+            "moduleName": "Tude",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Tude0A2AdP8slotNameSSvg",
+                "mangledName": "$s4Tude0A2AdP8slotNameSSvg",
+                "moduleName": "Tude",
+                "genericSig": "<τ_0_0 where τ_0_0 : Tude.TudeAd>",
+                "sugared_genericSig": "<Self where Self : Tude.TudeAd>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adUnitId",
+            "printedName": "adUnitId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Tude0A2AdP8adUnitIdSSvp",
+            "mangledName": "$s4Tude0A2AdP8adUnitIdSSvp",
+            "moduleName": "Tude",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Tude0A2AdP8adUnitIdSSvg",
+                "mangledName": "$s4Tude0A2AdP8adUnitIdSSvg",
+                "moduleName": "Tude",
+                "genericSig": "<τ_0_0 where τ_0_0 : Tude.TudeAd>",
+                "sugared_genericSig": "<Self where Self : Tude.TudeAd>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setContentURL",
+            "printedName": "setContentURL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Tude0A2AdP13setContentURLyySSF",
+            "mangledName": "$s4Tude0A2AdP13setContentURLyySSF",
+            "moduleName": "Tude",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tude.TudeAd>",
+            "sugared_genericSig": "<Self where Self : Tude.TudeAd>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNeighboringContentURLs",
+            "printedName": "setNeighboringContentURLs(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Tude0A2AdP25setNeighboringContentURLsyySaySSGF",
+            "mangledName": "$s4Tude0A2AdP25setNeighboringContentURLsyySaySSGF",
+            "moduleName": "Tude",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tude.TudeAd>",
+            "sugared_genericSig": "<Self where Self : Tude.TudeAd>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTargeting",
+            "printedName": "setTargeting(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Tude0A2AdP12setTargetingyySDySSypGF",
+            "mangledName": "$s4Tude0A2AdP12setTargetingyySDySSypGF",
+            "moduleName": "Tude",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tude.TudeAd>",
+            "sugared_genericSig": "<Self where Self : Tude.TudeAd>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "appendTargeting",
+            "printedName": "appendTargeting(_:overwriteValues:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Tude0A2AdP15appendTargeting_15overwriteValuesySDySSypG_SbtF",
+            "mangledName": "$s4Tude0A2AdP15appendTargeting_15overwriteValuesySDySSypG_SbtF",
+            "moduleName": "Tude",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tude.TudeAd>",
+            "sugared_genericSig": "<Self where Self : Tude.TudeAd>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:4Tude0A2AdP",
+        "mangledName": "$s4Tude0A2AdP",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -11082,7 +11376,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 5872,
+      "offset": 5879,
       "length": 5,
       "value": "false"
     },
