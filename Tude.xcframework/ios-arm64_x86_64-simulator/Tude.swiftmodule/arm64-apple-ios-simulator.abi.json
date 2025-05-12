@@ -29,6 +29,13 @@
         "moduleName": "Tude"
       },
       {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "Tude"
+      },
+      {
         "kind": "TypeDecl",
         "name": "AditudeWrapper",
         "printedName": "AditudeWrapper",
@@ -596,6 +603,44 @@
             "declKind": "Func",
             "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)getFlags",
             "mangledName": "$s4Tude14AditudeWrapperC8getFlagsSaySo8NSStringCGyFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setGlobalORTBConfig",
+            "printedName": "setGlobalORTBConfig(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)setGlobalORTBConfig:",
+            "mangledName": "$s4Tude14AditudeWrapperC19setGlobalORTBConfigyySSSgFZ",
             "moduleName": "Tude",
             "static": true,
             "declAttributes": [
@@ -6131,6 +6176,43 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setImpressionLevelORTBConfig",
+            "printedName": "setImpressionLevelORTBConfig(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)BaseAd(im)setImpressionLevelORTBConfig:",
+            "mangledName": "$s4Tude6BaseAdC28setImpressionLevelORTBConfigyySSSgF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -8185,8 +8267,8 @@
           },
           {
             "kind": "Function",
-            "name": "appendTargeting",
-            "printedName": "appendTargeting(_:overwriteValues:)",
+            "name": "setImpressionLevelORTBConfig",
+            "printedName": "setImpressionLevelORTBConfig(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8195,41 +8277,28 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
+                "name": "Optional",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
                   }
                 ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@Tude@objc(cs)BannerAdView(im)appendTargeting:overwriteValues:",
-            "mangledName": "$s4Tude12BannerAdViewC15appendTargeting_15overwriteValuesySDySSypG_SbtF",
+            "usr": "c:@CM@Tude@objc(cs)BannerAdView(im)setImpressionLevelORTBConfig:",
+            "mangledName": "$s4Tude12BannerAdViewC28setImpressionLevelORTBConfigyySSSgF",
             "moduleName": "Tude",
             "declAttributes": [
               "Final",
               "Custom",
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "ObjC"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -11206,6 +11275,44 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setImpressionLevelORTBConfig",
+            "printedName": "setImpressionLevelORTBConfig(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Tude0A2AdP28setImpressionLevelORTBConfigyySSSgF",
+            "mangledName": "$s4Tude0A2AdP28setImpressionLevelORTBConfigyySSSgF",
+            "moduleName": "Tude",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tude.TudeAd>",
+            "sugared_genericSig": "<Self where Self : Tude.TudeAd>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -11355,35 +11462,35 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "Array",
-      "offset": 477,
+      "offset": 497,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 824,
+      "offset": 844,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 867,
+      "offset": 887,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 5879,
+      "offset": 5899,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AditudeWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 284,
+      "offset": 304,
       "length": 14,
       "value": "\"Tude.AditudeWrapper\""
     },
@@ -11754,7 +11861,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/NativeAd.swift",
       "kind": "Array",
-      "offset": 5786,
+      "offset": 5830,
       "length": 2,
       "value": "[]"
     },
@@ -11901,7 +12008,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/AdTypes\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2167,
+      "offset": 2195,
       "length": 5,
       "value": "false"
     },
@@ -11946,13 +12053,6 @@
       "offset": 230,
       "length": 12,
       "value": "\"Tude.BannerAdView\""
-    },
-    {
-      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/View\/BannerAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5689,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Models\/Flag.swift",

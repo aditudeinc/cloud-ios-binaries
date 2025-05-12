@@ -480,6 +480,43 @@ SWIFT_CLASS("_TtC4Tude14AditudeWrapper")
 /// returns:
 /// An array of strings representing the active flags.
 + (NSArray<NSString *> * _Nonnull)getFlags SWIFT_WARN_UNUSED_RESULT;
+/// Sets the global OpenRTB configuration for all ad requests across the SDK.
+/// This static method applies OpenRTB 2.5+ configuration at the app level,
+/// affecting all subsequent ad requests. Use this for settings that should apply
+/// universally across all impressions.
+/// important:
+///
+/// <ul>
+///   <li>
+///     Configuration will persist across all ad requests until changed.
+///   </li>
+///   <li>
+///     Merges with (but is overridden by) impression-level config set via <code>setImpressionLevelORTBConfig(_:)</code>.
+///   </li>
+///   <li>
+///     Changes take effect immediately for all new requests.
+///   </li>
+/// </ul>
+/// <ul>
+///   <li>
+///     Example:
+///   </li>
+/// </ul>
+/// \code
+/// AditudeWrapper.setGlobalORTBConfig(
+///     """
+///     {
+///         "app": {
+///             "cat": ["IAB1", "IAB2"]
+///         }
+///     }
+///     """
+/// )
+///
+/// \endcode\param ortbConfig A string in JSON format containing OpenRTB 2.5+ compliant configuration for the impression.
+/// Pass <code>nil</code> to clear any previously set impression-level configuration.
+///
++ (void)setGlobalORTBConfig:(NSString * _Nullable)ortbConfig;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -674,29 +711,7 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 /// \param targeting A dictionary of targeting key-value pairs.
 ///
 - (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
-/// Append targeting for an ad instance.
-/// Example of a valid method call:
-/// \code
-/// ad.appendTargeting(
-///    [
-///        "key_1": "value_1",
-///        "key_2": [
-///            "value_2",
-///            "value_3",
-///            "value_4"
-///        ]
-///    ],
-///    overwriteValues: true
-/// )
-///
-/// \endcodewarning:
-/// Only String and [String] type values will be parsed. Every other type will be ignored.
-/// \param targeting A dictionary of targeting key-value pairs.
-///
-/// \param overwriteValues A bool that indicate weather the new targeting values will overwrite values for keys that
-/// already exist.
-///
-- (void)appendTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting overwriteValues:(BOOL)overwriteValues;
+- (void)setImpressionLevelORTBConfig:(NSString * _Nullable)ortbConfig;
 @end
 
 
@@ -718,6 +733,7 @@ SWIFT_CLASS("_TtC4Tude12BannerAdView")
 - (void)setNeighboringContentURLs:(NSArray<NSString *> * _Nonnull)URLs;
 - (void)setTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting;
 - (void)appendTargeting:(NSDictionary<NSString *, id> * _Nonnull)targeting overwriteValues:(BOOL)overwriteValues;
+- (void)setImpressionLevelORTBConfig:(NSString * _Nullable)ortbConfig;
 @end
 
 

@@ -31,6 +31,7 @@ public typealias OnLoadListener = (Tude.AditudeWrapper) -> Swift.Void
   @objc public static func isShowingPersonalizedAds() -> Swift.Bool
   @objc public static func refreshFlags(_ completion: Tude.Listener? = nil)
   @objc public static func getFlags() -> [Foundation.NSString]
+  @objc public static func setGlobalORTBConfig(_ ortbConfig: Swift.String?)
   @objc deinit
 }
 extension Tude.AditudeWrapper {
@@ -161,6 +162,7 @@ extension Tude.BaseAd : Tude.TudeAd {
   @objc dynamic public func setNeighboringContentURLs(_ URLs: [Swift.String])
   @objc dynamic public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
   @objc dynamic public func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool = false)
+  @objc dynamic public func setImpressionLevelORTBConfig(_ ortbConfig: Swift.String?)
 }
 @objc @_hasMissingDesignatedInitializers final public class BannerAd : Tude.BaseAd {
   @objc final public let gamBannerView: GoogleMobileAds.GAMBannerView
@@ -202,7 +204,7 @@ extension Tude.BannerAd : GoogleMobileAds.GADBannerViewDelegate, GoogleMobileAds
 extension Tude.BannerAdView {
   @objc @_Concurrency.MainActor(unsafe) final public func load(_ vc: UIKit.UIViewController?)
   @objc @_Concurrency.MainActor(unsafe) final public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
-  @objc @_Concurrency.MainActor(unsafe) final public func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) final public func setImpressionLevelORTBConfig(_ ortbConfig: Swift.String?)
 }
 extension Tude.BannerAdView {
   @objc @_Concurrency.MainActor(unsafe) final public var onAdFailedToLoad: Tude.LoadErrorListener? {
@@ -259,4 +261,5 @@ public protocol TudeAd {
   func setNeighboringContentURLs(_ URLs: [Swift.String])
   func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
   func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool)
+  func setImpressionLevelORTBConfig(_ ortbConfig: Swift.String?)
 }
