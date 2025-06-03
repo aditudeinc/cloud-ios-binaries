@@ -1,0 +1,314 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Tude
+import DTBiOSSDK
+import Foundation
+import GoogleMobileAds
+import OSLog
+import PrebidMobile
+import Swift
+@_exported import Tude
+import UIKit
+import UIKit.UIViewController
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+public enum TudeFlag : Swift.Int {
+  case noAds
+  case noPrebid
+  case noAmazon
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class BannerAdView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdLoaded: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) final public var slotName: Swift.String? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var adUnitId: Swift.String? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var adSlot: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+extension Tude.BannerAdView {
+  @objc @_Concurrency.MainActor(unsafe) final public func load(_ viewController: UIKit.UIViewController?)
+  @objc @_Concurrency.MainActor(unsafe) final public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
+  @objc @_Concurrency.MainActor(unsafe) final public func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool = false)
+}
+extension Tude.BannerAdView {
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdFailedToLoad: ((Tude.AdFailedToLoadError) -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdClicked: (() -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdImpression: (() -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdOpened: (() -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var onAdClosed: (() -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class BaseAd : ObjectiveC.NSObject {
+  @objc public var onAdFailedToLoad: ((Tude.AdFailedToLoadError) -> Swift.Void)?
+  @objc public var onAdClicked: (() -> Swift.Void)?
+  @objc public var onAdImpression: (() -> Swift.Void)?
+  @objc public var onAdOpened: (() -> Swift.Void)?
+  @objc public var onAdClosed: (() -> Swift.Void)?
+  @objc deinit
+}
+extension Tude.BaseAd {
+  @objc dynamic public var slotName: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var adUnitId: Swift.String {
+    @objc get
+  }
+  @objc dynamic public func setContentURL(_ URL: Swift.String)
+  @objc dynamic public func setNeighboringContentURLs(_ URLs: [Swift.String])
+  @objc dynamic public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
+  @objc dynamic public func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool = false)
+  @objc dynamic public func preload(_ completion: (() -> Swift.Void)? = nil)
+  @objc dynamic public func load(_ viewController: UIKit.UIViewController? = nil)
+}
+@objc public enum TudeInitializationStatus : Swift.Int, Swift.Error {
+  case succeeded
+  case publicApiKeyNotSet
+  case appIdNotSet
+  case initialized
+  case initializing
+  case noConfig
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum LogLevel : Swift.String, Swift.CaseIterable, Swift.Comparable {
+  case trace
+  case debug
+  case info
+  case notice
+  case warning
+  case error
+  case critical
+  public static func < (lhs: Tude.LogLevel, rhs: Tude.LogLevel) -> Swift.Bool
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [Tude.LogLevel]
+  public typealias RawValue = Swift.String
+  public static var allCases: [Tude.LogLevel] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers final public class InterstitialAd : Tude.BaseAd {
+  @objc final public var onAdDidDismissFullScreenContent: (() -> Swift.Void)?
+  @objc final public var onAdDidFailToPresentFullScreenWithError: ((any Swift.Error) -> Swift.Void)?
+  @objc final public var onAdDidRecordImpression: (() -> Swift.Void)?
+  @objc final public var onAdWillPresentFullScreenContent: (() -> Swift.Void)?
+  @objc final public var onAdWillDismissFullScreenContent: (() -> Swift.Void)?
+  @objc deinit
+  @objc override final public func preload(_ completion: (() -> Swift.Void)? = nil)
+  @objc final public func render(_ viewController: UIKit.UIViewController)
+  @objc override final public func load(_ viewController: UIKit.UIViewController?)
+}
+extension Tude.InterstitialAd : GoogleMobileAds.GADFullScreenContentDelegate {
+  @objc final public func ad(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
+  @objc final public func adDidRecordClick(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adDidRecordImpression(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adWillDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+}
+@objc @_hasMissingDesignatedInitializers final public class NativeAd : Tude.BaseAd {
+  @objc final public var onAdSwipeGesture: (() -> Swift.Void)?
+  @objc final public var onGoogleNativeAdLoaded: ((GoogleMobileAds.GADNativeAd) -> Swift.Void)?
+  @objc final public var onCustomNativeAdLoaded: ((GoogleMobileAds.GADCustomNativeAd) -> Swift.Void)?
+  @objc final public var onBannerAdLoaded: ((GoogleMobileAds.GAMBannerView) -> Swift.Void)?
+  @objc final public func setAdLoaderOptions(_ adLoaderOptions: [GoogleMobileAds.GADAdLoaderOptions]?)
+  @objc deinit
+}
+extension Tude.NativeAd : GoogleMobileAds.GADNativeAdLoaderDelegate {
+  @objc final public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didReceive nativeAd: GoogleMobileAds.GADNativeAd)
+  @objc final public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didFailToReceiveAdWithError error: any Swift.Error)
+}
+extension Tude.NativeAd : GoogleMobileAds.GADCustomNativeAdLoaderDelegate {
+  @objc final public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didReceive customNativeAd: GoogleMobileAds.GADCustomNativeAd)
+  @objc final public func customNativeAdFormatIDs(for adLoader: GoogleMobileAds.GADAdLoader) -> [Swift.String]
+}
+extension Tude.NativeAd : GoogleMobileAds.GAMBannerAdLoaderDelegate {
+  @objc final public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didReceive bannerView: GoogleMobileAds.GAMBannerView)
+  @objc final public func validBannerSizes(for adLoader: GoogleMobileAds.GADAdLoader) -> [Foundation.NSValue]
+}
+extension Tude.NativeAd : GoogleMobileAds.GADNativeAdDelegate {
+  @objc final public func nativeAdDidRecordClick(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @objc final public func nativeAdDidRecordSwipeGestureClick(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @objc final public func nativeAdDidRecordImpression(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @objc final public func nativeAdWillPresentScreen(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @objc final public func nativeAdDidDismissScreen(_ nativeAd: GoogleMobileAds.GADNativeAd)
+}
+extension Tude.NativeAd : GoogleMobileAds.GADCustomNativeAdDelegate {
+  @objc final public func customNativeAdDidRecordClick(_ nativeAd: GoogleMobileAds.GADCustomNativeAd)
+  @objc final public func customNativeAdDidRecordImpression(_ nativeAd: GoogleMobileAds.GADCustomNativeAd)
+  @objc final public func customNativeAdWillPresentScreen(_ nativeAd: GoogleMobileAds.GADCustomNativeAd)
+  @objc final public func customNativeAdDidDismissScreen(_ nativeAd: GoogleMobileAds.GADCustomNativeAd)
+}
+extension Tude.NativeAd : GoogleMobileAds.GADBannerViewDelegate {
+  @objc final public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.GADBannerView)
+  @objc final public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.GADBannerView)
+  @objc final public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.GADBannerView)
+  @objc final public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.GADBannerView)
+}
+@_inheritsConvenienceInitializers @objc final public class AditudeWrapper : ObjectiveC.NSObject {
+  @objc public static func setPublicApiKey(_ publicApiKey: Swift.String)
+  @objc public static func setAppId(_ appId: Swift.String)
+  @objc public static func setShareGeoLocation(_ flag: Swift.Bool)
+  @objc public static func setStoreURL(_ storeURL: Swift.String)
+  @objc public static func setGlobalTargeting(_ targeting: [Swift.String : Any])
+  @objc public static func appendGlobalTargeting(_ targeting: [Swift.String : Any], overwriteValues: Swift.Bool = false)
+  @objc public static func setPublisherProvidedId(_ id: Swift.String)
+  @objc public static func getPublisherProvidedId() -> Swift.String?
+  @objc public static func setNonPersonalizedAdsFlag(_ enabled: Swift.Bool)
+  @objc public static func isShowingPersonalizedAds() -> Swift.Bool
+  @objc public static func setGlobalORTBConfig(_ ortbConfig: Swift.String?)
+  @objc public static func refreshFlags(_ completion: @escaping (Tude.FlagsRefreshStatus) -> Swift.Void = { _ in })
+  @objc public static func getFlags() -> [Foundation.NSString]
+  public static func getFlags() -> [Tude.TudeFlag]
+  @objc public static func initialize(_ completion: @escaping (Tude.TudeInitializationStatus) -> Swift.Void = { _ in })
+  @objc public static func isInitialized() -> Swift.Bool
+  public static func addLogger(_ logger: any Tude.Logger)
+  public static func setLogLevel(_ logLevel: Tude.LogLevel)
+  @objc public static func cmd(command: @escaping (Tude.TudeWrapper) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers final public class TudeWrapper : ObjectiveC.NSObject {
+  @objc deinit
+}
+extension Tude.TudeWrapper {
+  @objc final public func renderBannerAds(_ viewController: UIKit.UIViewController)
+  @objc final public func createBannerAdView(_ viewController: UIKit.UIViewController, _ adSlotId: Swift.String) -> Tude.BannerAdView?
+  @objc final public func getBannerAd(_ adSlotId: Swift.String) -> Tude.BannerAd?
+  @objc final public func getAnchoredAdaptiveBannerAd(_ adSlotId: Swift.String, width: CoreFoundation.CGFloat) -> Tude.BannerAd?
+  final public func getInlineAdaptiveBannerAd(_ adSlotId: Swift.String, width: CoreFoundation.CGFloat, maxHeight: CoreFoundation.CGFloat? = nil) -> Tude.BannerAd?
+  @objc final public func getNativeAd(_ adSlotId: Swift.String) -> Tude.NativeAd?
+  @objc final public func getGoogleNativeAd(_ adSlotId: Swift.String) -> Tude.NativeAd?
+  @objc final public func getMultiformatAd(_ adSlotId: Swift.String) -> Tude.NativeAd?
+  @objc final public func getInterstitialAd(_ adSlotId: Swift.String) -> Tude.InterstitialAd?
+  @objc final public func getRewardedVideoAd(_ adSlotId: Swift.String) -> Tude.RewardedVideoAd?
+}
+public struct LogMetadata {
+  public init(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, context: [Swift.String : Any]? = nil, isPrivate: Swift.Bool = true)
+}
+@objc @_hasMissingDesignatedInitializers final public class BannerAd : Tude.BaseAd {
+  @objc final public let adManagerBannerView: GoogleMobileAds.GAMBannerView
+  @objc final public var onAdLoaded: ((GoogleMobileAds.GAMBannerView) -> Swift.Void)?
+  @objc deinit
+}
+extension Tude.BannerAd : GoogleMobileAds.GADBannerViewDelegate, GoogleMobileAds.GADAdSizeDelegate {
+  @objc final public func bannerViewDidReceiveAd(_ bannerView: GoogleMobileAds.GADBannerView)
+  @objc final public func bannerView(_ bannerView: GoogleMobileAds.GADBannerView, didFailToReceiveAdWithError error: any Swift.Error)
+  @objc final public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.GADBannerView)
+  @objc final public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.GADBannerView)
+  @objc final public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.GADBannerView)
+  @objc final public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.GADBannerView)
+  @objc final public func adView(_ bannerView: GoogleMobileAds.GADBannerView, willChangeAdSizeTo size: GoogleMobileAds.GADAdSize)
+}
+public protocol Logger {
+  func log(_ level: Tude.LogLevel, message: Swift.String, category: Swift.String, metadata: Tude.LogMetadata)
+}
+@objc public enum FlagsRefreshStatus : Swift.Int {
+  case appIdNotSet
+  case successful
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum TargetingValue {
+  case single(Swift.String)
+  case multiple([Swift.String])
+}
+extension Tude.TargetingValue : Swift.Equatable {
+  public static func == (lhs: Tude.TargetingValue, rhs: Tude.TargetingValue) -> Swift.Bool
+}
+@objc @_hasMissingDesignatedInitializers final public class RewardedVideoAd : Tude.BaseAd {
+  @objc final public var onAdDidDismissFullScreenContent: (() -> Swift.Void)?
+  @objc final public var onAdDidFailToPresentFullScreenWithError: ((any Swift.Error) -> Swift.Void)?
+  @objc final public var onAdDidRecordImpression: (() -> Swift.Void)?
+  @objc final public var onAdWillPresentFullScreenContent: (() -> Swift.Void)?
+  @objc final public var onAdWillDismissFullScreenContent: (() -> Swift.Void)?
+  @objc final public var onAdEarnedReward: ((Tude.RewardItem) -> Swift.Void)?
+  @objc deinit
+  @objc override final public func preload(_ completion: (() -> Swift.Void)? = nil)
+  @objc final public func render(_ viewController: UIKit.UIViewController, rewardHandler: ((Tude.RewardItem) -> Swift.Void)? = nil)
+  @objc override final public func load(_ viewController: UIKit.UIViewController?)
+}
+extension Tude.RewardedVideoAd : GoogleMobileAds.GADFullScreenContentDelegate {
+  @objc final public func ad(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
+  @objc final public func adDidRecordClick(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adDidRecordImpression(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adWillDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc final public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+}
+@_hasMissingDesignatedInitializers @objc final public class RewardItem : ObjectiveC.NSObject {
+  @objc final public let type: Swift.String
+  @objc final public let amount: Swift.Double
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class AdFailedToLoadError : ObjectiveC.NSObject, Foundation.CustomNSError {
+  @objc final public let domain: Swift.String
+  @objc final public let errorCode: Swift.Int
+  @objc final public let failureReason: Swift.String
+  @objc final public let errorUserInfo: [Swift.String : Any]
+  @objc final public let localizedDescription: Swift.String
+  @objc deinit
+}
+extension Tude.AdFailedToLoadError {
+  final public var gadErrorCode: GoogleMobileAds.GADErrorCode? {
+    get
+  }
+  @objc final public var message: Swift.String {
+    @objc get
+  }
+}
+extension GoogleMobileAds.GAMBannerView {
+  @_Concurrency.MainActor(unsafe) public func resizeForPrebid(fallbackSize: CoreFoundation.CGSize? = nil)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func resizeForPrebid()
+}
+extension Tude.TudeFlag : Swift.Equatable {}
+extension Tude.TudeFlag : Swift.Hashable {}
+extension Tude.TudeFlag : Swift.RawRepresentable {}
+extension Tude.TudeInitializationStatus : Swift.Equatable {}
+extension Tude.TudeInitializationStatus : Swift.Hashable {}
+extension Tude.TudeInitializationStatus : Swift.RawRepresentable {}
+extension Tude.LogLevel : Swift.Hashable {}
+extension Tude.LogLevel : Swift.RawRepresentable {}
+extension Tude.FlagsRefreshStatus : Swift.Equatable {}
+extension Tude.FlagsRefreshStatus : Swift.Hashable {}
+extension Tude.FlagsRefreshStatus : Swift.RawRepresentable {}

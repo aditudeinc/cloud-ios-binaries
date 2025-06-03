@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/PBMAbstractCreative.h</key>
 		<data>
-		wzJufg1T5Mp/z71T8W3Rn2lCWRY=
+		9RqL0vaTUO6nEAY9TWCwui7d/4k=
 		</data>
 		<key>Headers/PBMAdDetails.h</key>
 		<data>
@@ -96,6 +96,10 @@
 		<data>
 		BhYisBdlhPLN9PPby+fQf/7bZcs=
 		</data>
+		<key>Headers/PBMCreativeViewabilityTracker.h</key>
+		<data>
+		yEhC/7polgSxOtqLyVN9/IoBJ7g=
+		</data>
 		<key>Headers/PBMDeepLinkPlusHelper+PBMExternalLinkHandler.h</key>
 		<data>
 		QtvVcGdyyh7rpcUZz1+uIOS5uLw=
@@ -103,6 +107,10 @@
 		<key>Headers/PBMDeepLinkPlusHelper.h</key>
 		<data>
 		5Q4YiQyjpxr17qH95I2hBFvqkko=
+		</data>
+		<key>Headers/PBMDeviceAccessManager.h</key>
+		<data>
+		E/dcgww6XVCIaZ52Jr2I2cX5CWo=
 		</data>
 		<key>Headers/PBMDisplayView.h</key>
 		<data>
@@ -238,11 +246,15 @@
 		</data>
 		<key>Headers/PBMORTBBidExtPrebid.h</key>
 		<data>
-		Fjpn26WnJ+VNabQSR0LD6BaLlR0=
+		9VPShbd/hCHwtaoCdfDJt1og6yg=
 		</data>
 		<key>Headers/PBMORTBBidExtSkadn.h</key>
 		<data>
-		Z64TKk1ONrPkPsG2UL3fWxXIo6U=
+		ItJwCf3ARgF88bep+sy11PASu0I=
+		</data>
+		<key>Headers/PBMORTBBidExtSkadnSKOverlay.h</key>
+		<data>
+		UMuPoR1DkVx68zQnhuj2oTGbDbg=
 		</data>
 		<key>Headers/PBMORTBBidResponse+Internal.h</key>
 		<data>
@@ -374,7 +386,7 @@
 		</data>
 		<key>Headers/PBMTransaction.h</key>
 		<data>
-		pDn5Fs3MStJo/WUiIqDPkmGsSwI=
+		kUag+Cs3a7WmgXGPHvRlXPjUEZM=
 		</data>
 		<key>Headers/PBMTransactionFactory.h</key>
 		<data>
@@ -434,7 +446,7 @@
 		</data>
 		<key>Headers/PrebidMobile-Swift.h</key>
 		<data>
-		Lq5YMf/8pd9Fw6i/ip5OGLT7WHI=
+		GTdH03nIOQ21A8w141SHGyGpt7I=
 		</data>
 		<key>Headers/PrebidMobile.h</key>
 		<data>
@@ -450,51 +462,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xKDhGOrYPnsapkGQ4bwxcKfqpoQ=
+		1hfznFFoLtmwW7OJFA+/YlNAYTo=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ImlGVEQdjlbxuMFXo3RiTeelvqA=
+		AjBDrHEAbcE5kGtrEesHghE8jSw=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4tAyATBFotWTrpSLo9Fqcl371rw=
+		aTOV6zLC+FE8P4y01jk3cx2UXw4=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		djNh9AxPZxWrtEyh1a+obeM8egs=
+		yMx329DwBKx8qLAOZtjC28uOArM=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4tAyATBFotWTrpSLo9Fqcl371rw=
+		aTOV6zLC+FE8P4y01jk3cx2UXw4=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7i+xmKhplbl3l78FAdINzWJ+jX0=
+		Ua0zx8S1unYi3hIfj56veQKE/0w=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ImlGVEQdjlbxuMFXo3RiTeelvqA=
+		AjBDrHEAbcE5kGtrEesHghE8jSw=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		87W5EMOLwEkPpeou6JnSwcFeM7g=
+		5yb/aIY9g3t5wZm04+ia4qfE1eA=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		H8Vp3pEreYat/taO7LsgHrxPM60=
+		CzkJP9kGkA6m2WTmXXycQFGLbQE=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		87W5EMOLwEkPpeou6JnSwcFeM7g=
+		5yb/aIY9g3t5wZm04+ia4qfE1eA=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4YWYtFhKYIOU72nB6p0GEGGHkE4=
+		d4m/UNAqEe8gm1h1N7Daplkp75I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		FBCigmlgg0kbLY2qBn98B4b8pP0=
+		tMkUBGup76WRBefPMP1AWQ7673k=
 		</data>
 		<key>PrivateHeaders/OMSDKVersionProvider.h</key>
 		<data>
@@ -556,7 +568,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gktk8xuB8EmpYKpcRw/VN5ZyOKyFwO/bhGuRaamwZ1k=
+			viAmLjZcc1WW6HUNNA9OT2WUlPDWzdQw9pzS51w+26I=
 			</data>
 		</dict>
 		<key>Headers/PBMAdDetails.h</key>
@@ -664,6 +676,13 @@
 			VQy8YPZk8cnhMFHO1+6Jq8HQ7KSLR9PdeQs9636Gacs=
 			</data>
 		</dict>
+		<key>Headers/PBMCreativeViewabilityTracker.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B5B48t8/gOOgi/uHsGZehfMC1F5UcGA3tobw3gpj1tk=
+			</data>
+		</dict>
 		<key>Headers/PBMDeepLinkPlusHelper+PBMExternalLinkHandler.h</key>
 		<dict>
 			<key>hash2</key>
@@ -676,6 +695,13 @@
 			<key>hash2</key>
 			<data>
 			Ca6onTRcZmp8jsCwIdxUmcksZZLGAMkEMYlIVsFMZPQ=
+			</data>
+		</dict>
+		<key>Headers/PBMDeviceAccessManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uBBCUx3kBNBEtjtX1OIGudNznCZWHXYGhy+jVYtrkbY=
 			</data>
 		</dict>
 		<key>Headers/PBMDisplayView.h</key>
@@ -913,14 +939,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jyllCql0MvEoHTGFMBNCoVxSIQ8xVnydlMXRZiSnBzQ=
+			mhoXAQSK8P8jiAqqpBQn3VXb7xc4jYBLR30htneEQzI=
 			</data>
 		</dict>
 		<key>Headers/PBMORTBBidExtSkadn.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3c/cyIWTAg1kst6f7I9FxrHebZrOuc9wVxfVA9Wms38=
+			P1FmisKvLqAc5LqNBNyA7bhoefPc5h66GubwQaB2pmI=
+			</data>
+		</dict>
+		<key>Headers/PBMORTBBidExtSkadnSKOverlay.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s+HnGcDCH4YnkNwKbsmnPokfg8y4bi+BhQQkpiBgWJw=
 			</data>
 		</dict>
 		<key>Headers/PBMORTBBidResponse+Internal.h</key>
@@ -1151,7 +1184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MbJRa3dE97SKcYrtL3g2wvqfGwDwgFWvhdpUqlWrhY0=
+			QLixPmnWnecM1jrvs94JLjaXs1b4zJ0TcO/Ig2CHJbY=
 			</data>
 		</dict>
 		<key>Headers/PBMTransactionFactory.h</key>
@@ -1256,7 +1289,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			54tj9PGA78SNznNIJP+uG8IVANiI7SVGcbShcUflugA=
+			qMjMwH4/wbuJFxI/J6Lbixw5cOssfdszDc9m/+vg6Ck=
 			</data>
 		</dict>
 		<key>Headers/PrebidMobile.h</key>
@@ -1284,77 +1317,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4vBN7DHVTKR3eJ6zxGUYf88Q2RC0MA0x+Zn09hvmgx0=
+			DsJFtCOvPU40NgAug6D14rVTxCKcxiG9Mwz2Z2s4NDo=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MfAgr5CtFWscMrl8gebVUoXGrmbfmnpAZj7jNtrRiBY=
+			wycfvkEJi2eyc5xhkKM65ZFhggeoJd38AuMqF6Q3JYs=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YlU58z82ngAmc/m7JKrOXzg4uciDIMU6VSR6tMhQcbw=
+			5hkFELEwq4eOafCRjpAOic6WssgNcne+mzsNHF2pFho=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MfAgr5CtFWscMrl8gebVUoXGrmbfmnpAZj7jNtrRiBY=
+			wycfvkEJi2eyc5xhkKM65ZFhggeoJd38AuMqF6Q3JYs=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3M7O5qAXHKyVOEp6nlQUYeA3URa5cm8GYCJl8RkOU2A=
+			MNIyZfbud+21AsTPvCkHYxoHbRxGP+mNegbLLtACajI=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4vBN7DHVTKR3eJ6zxGUYf88Q2RC0MA0x+Zn09hvmgx0=
+			DsJFtCOvPU40NgAug6D14rVTxCKcxiG9Mwz2Z2s4NDo=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Js8VIjrXy+GJqvXSlu60aRLR20V/islHCMgsfJ/cMrw=
+			GQmJWY8ALBmmRn3iDg7aRIdWTjXHP63/ezHiMt0vYCU=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LMpxPW4lTxzSja92FTAHNhvsWp/AllR2HiFDYZSfnGY=
+			u5UIJ1UeJHeDhOaMeFPx3TQ7qrcO2g1P9diu8k3MG1Y=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Js8VIjrXy+GJqvXSlu60aRLR20V/islHCMgsfJ/cMrw=
+			GQmJWY8ALBmmRn3iDg7aRIdWTjXHP63/ezHiMt0vYCU=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mHblDYq9xAD0yFxDv6qV7yfV5DjV5tOrcua3ldeNEw0=
+			HggAWprP5kRgCGeWImC2XahqaNn84O7iFOCvzTw502s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f5lrVYOwb2+22QwfSQh5K2+D6ca1xesIyzwFIHVESzk=
+			T0OdkxPwkBIVD49S07G1I9UfI9i5Y/eoRPtxBfGugFE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/OMSDKVersionProvider.h</key>

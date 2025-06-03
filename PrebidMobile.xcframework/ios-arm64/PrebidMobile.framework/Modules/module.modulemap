@@ -72,6 +72,7 @@ framework module PrebidMobile {
     header "PBMAbstractCreative.h"
     header "PBMAdViewManager.h"
     header "PBMViewExposure.h"
+    header "PBMDeviceAccessManager.h"
     
     header "PBMBidRequester.h"
     header "Log+Extensions.h"
@@ -147,6 +148,7 @@ framework module PrebidMobile {
     header "PBMORTBAdConfiguration.h"
     header "PBMORTBSDKConfiguration.h"
     header "PBMORTBBidExtSkadn.h"
+    header "PBMORTBBidExtSkadnSKOverlay.h"
     header "PBMORTBSkadnFidelity.h"
     header "PBMORTBExtPrebidEvents.h"
     header "PBMORTBMacrosHelper.h"
@@ -177,6 +179,7 @@ framework module PrebidMobile {
     
     header "OMSDKVersionProvider.h"
     header "NSObject+PBMExtensions.h"
+    header "PBMCreativeViewabilityTracker.h"
 }
 
 module PrebidMobile.Swift {
