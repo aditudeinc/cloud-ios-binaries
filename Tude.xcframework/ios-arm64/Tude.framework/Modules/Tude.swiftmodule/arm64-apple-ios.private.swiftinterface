@@ -193,6 +193,9 @@ extension Tude.NativeAd : GoogleMobileAds.GADBannerViewDelegate {
   @objc public static func setNonPersonalizedAdsFlag(_ enabled: Swift.Bool)
   @objc public static func isShowingPersonalizedAds() -> Swift.Bool
   @objc public static func setGlobalORTBConfig(_ ortbConfig: Swift.String?)
+  @objc public static func setExternalUserIds(_ externalUserIds: [Tude.ExternalUserId]?)
+  @objc public static func setSendSharedId(_ sendSharedId: Swift.Bool)
+  @objc public static func resetSharedId()
   @objc public static func refreshFlags(_ completion: @escaping (Tude.FlagsRefreshStatus) -> Swift.Void = { _ in })
   @objc public static func getFlags() -> [Foundation.NSString]
   public static func getFlags() -> [Tude.TudeFlag]
@@ -202,6 +205,14 @@ extension Tude.NativeAd : GoogleMobileAds.GADBannerViewDelegate {
   public static func setLogLevel(_ logLevel: Tude.LogLevel)
   @objc public static func cmd(command: @escaping (Tude.TudeWrapper) -> Swift.Void)
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class ExternalUserId : ObjectiveC.NSObject {
+  public init(source: Swift.String, uniqueIds: [Tude.ExternalUserId.UniqueId], ext: [Swift.String : Any]? = nil)
+  @objc public class UniqueId : ObjectiveC.NSObject {
+    public init(id: Swift.String, aType: Foundation.NSNumber, ext: [Swift.String : Any]? = nil)
+    @objc deinit
+  }
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers final public class TudeWrapper : ObjectiveC.NSObject {

@@ -7081,6 +7081,106 @@
           },
           {
             "kind": "Function",
+            "name": "setExternalUserIds",
+            "printedName": "setExternalUserIds(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Tude.ExternalUserId]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Tude.ExternalUserId]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExternalUserId",
+                        "printedName": "Tude.ExternalUserId",
+                        "usr": "c:@M@Tude@objc(cs)ExternalUserId"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)setExternalUserIds:",
+            "mangledName": "$s4Tude14AditudeWrapperC18setExternalUserIdsyySayAA0eF2IdCGSgFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSendSharedId",
+            "printedName": "setSendSharedId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)setSendSharedId:",
+            "mangledName": "$s4Tude14AditudeWrapperC15setSendSharedIdyySbFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetSharedId",
+            "printedName": "resetSharedId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)resetSharedId",
+            "mangledName": "$s4Tude14AditudeWrapperC13resetSharedIdyyFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "refreshFlags",
             "printedName": "refreshFlags(_:)",
             "children": [
@@ -7395,6 +7495,339 @@
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExternalUserId",
+        "printedName": "ExternalUserId",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(source:uniqueIds:ext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExternalUserId",
+                "printedName": "Tude.ExternalUserId",
+                "usr": "c:@M@Tude@objc(cs)ExternalUserId"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Tude.ExternalUserId.UniqueId]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UniqueId",
+                    "printedName": "Tude.ExternalUserId.UniqueId",
+                    "usr": "s:4Tude14ExternalUserIdC06UniqueD0C"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Tude14ExternalUserIdC6source9uniqueIds3extACSS_SayAC06UniqueD0CGSDySSypGSgtcfc",
+            "mangledName": "$s4Tude14ExternalUserIdC6source9uniqueIds3extACSS_SayAC06UniqueD0CGSDySSypGSgtcfc",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "UniqueId",
+            "printedName": "UniqueId",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(id:aType:ext:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UniqueId",
+                    "printedName": "Tude.ExternalUserId.UniqueId",
+                    "usr": "s:4Tude14ExternalUserIdC06UniqueD0C"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:4Tude14ExternalUserIdC06UniqueD0C2id5aType3extAESS_So8NSNumberCSDySSypGSgtcfc",
+                "mangledName": "$s4Tude14ExternalUserIdC06UniqueD0C2id5aType3extAESS_So8NSNumberCSDySSypGSgtcfc",
+                "moduleName": "Tude",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UniqueId",
+                    "printedName": "Tude.ExternalUserId.UniqueId",
+                    "usr": "s:4Tude14ExternalUserIdC06UniqueD0C"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:4Tude14ExternalUserIdC06UniqueD0CAEycfc",
+                "mangledName": "$s4Tude14ExternalUserIdC06UniqueD0CAEycfc",
+                "moduleName": "Tude",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "init",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:4Tude14ExternalUserIdC06UniqueD0C",
+            "mangledName": "$s4Tude14ExternalUserIdC06UniqueD0C",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "superclassUsr": "c:objc(cs)NSObject",
+            "superclassNames": [
+              "ObjectiveC.NSObject"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExternalUserId",
+                "printedName": "Tude.ExternalUserId",
+                "usr": "c:@M@Tude@objc(cs)ExternalUserId"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Tude@objc(cs)ExternalUserId(im)init",
+            "mangledName": "$s4Tude14ExternalUserIdCACycfc",
+            "moduleName": "Tude",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Tude@objc(cs)ExternalUserId",
+        "mangledName": "$s4Tude14ExternalUserIdC",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -12225,6 +12658,20 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Models\/ExternalUserId.swift",
+      "kind": "StringLiteral",
+      "offset": 756,
+      "length": 8,
+      "value": "\"Tude.UniqueId\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Models\/ExternalUserId.swift",
+      "kind": "StringLiteral",
+      "offset": 445,
+      "length": 14,
+      "value": "\"Tude.ExternalUserId\""
+    },
+    {
       "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Models\/Network\/ConfigResponse.swift",
       "kind": "StringLiteral",
       "offset": 2448,
@@ -12367,28 +12814,28 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "BooleanLiteral",
-      "offset": 2246,
+      "offset": 2384,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "BooleanLiteral",
-      "offset": 2297,
+      "offset": 2435,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 2544,
+      "offset": 2682,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 2599,
+      "offset": 2737,
       "length": 3,
       "value": "[]"
     },
