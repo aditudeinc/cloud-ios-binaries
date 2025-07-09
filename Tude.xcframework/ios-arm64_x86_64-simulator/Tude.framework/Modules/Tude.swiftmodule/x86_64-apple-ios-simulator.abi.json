@@ -4166,6 +4166,57 @@
         "children": [
           {
             "kind": "Var",
+            "name": "isLoaded",
+            "printedName": "isLoaded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)InterstitialAd(py)isLoaded",
+            "mangledName": "$s4Tude14InterstitialAdC8isLoadedSbvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)InterstitialAd(im)isLoaded",
+                "mangledName": "$s4Tude14InterstitialAdC8isLoadedSbvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "onAdDidDismissFullScreenContent",
             "printedName": "onAdDidDismissFullScreenContent",
             "children": [
@@ -9809,6 +9860,57 @@
         "children": [
           {
             "kind": "Var",
+            "name": "isLoaded",
+            "printedName": "isLoaded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(py)isLoaded",
+            "mangledName": "$s4Tude15RewardedVideoAdC8isLoadedSbvp",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Tude@objc(cs)RewardedVideoAd(im)isLoaded",
+                "mangledName": "$s4Tude15RewardedVideoAdC8isLoadedSbvg",
+                "moduleName": "Tude",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "onAdDidDismissFullScreenContent",
             "printedName": "onAdDidDismissFullScreenContent",
             "children": [
@@ -12429,7 +12531,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4012,
+      "offset": 4063,
       "length": 5,
       "value": "false"
     },
@@ -12612,6 +12714,13 @@
       "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/InterstitialAd.swift",
       "kind": "BooleanLiteral",
       "offset": 434,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/InterstitialAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 492,
       "length": 5,
       "value": "false"
     },
@@ -12890,6 +12999,13 @@
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/RewardedVideoAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 486,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
       "offset": 234,
       "length": 15,
@@ -12898,7 +13014,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/Documents\/tude-refactor\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/RewardedVideoAd.swift",
       "kind": "StringLiteral",
-      "offset": 4721,
+      "offset": 4846,
       "length": 10,
       "value": "\"Tude.RewardItem\""
     },

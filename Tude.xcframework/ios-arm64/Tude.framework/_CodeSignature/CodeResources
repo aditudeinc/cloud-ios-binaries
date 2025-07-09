@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I5Y35Vt1asbWDt/noS9M8OhKXa8=
+		vT9xUUbY9vHqGUTDOOhMZWCkUlg=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Q6iCEIyK3zWsxnFEIr5GPiLaJe8=
+		NkYRJziSxrSNFWj7PbJcRXupo2w=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Vg5NyqqGjUULFCRNZaoO/8wfBp4=
+		I/XrKnL6fsxsxsxsU494yc/rQAw=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Vg5NyqqGjUULFCRNZaoO/8wfBp4=
+		I/XrKnL6fsxsxsxsU494yc/rQAw=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Y4qGQX5Cq77B4AS4eFieiQWD0tk=
+		cmfIAErlQtbDJphTuZULq1d+4hg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,22 +54,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q6iCEIyK3zWsxnFEIr5GPiLaJe8=
+			NkYRJziSxrSNFWj7PbJcRXupo2w=
 			</data>
 			<key>hash2</key>
 			<data>
-			KWTi5vpxmvpAfAkwe41Lo7cTiJfMurIGBnJgw2OwFcQ=
+			TF6IOdxmKHcLdTB1StfOxCBdZXLt9HT2HEVF/SVxhh0=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vg5NyqqGjUULFCRNZaoO/8wfBp4=
+			I/XrKnL6fsxsxsxsU494yc/rQAw=
 			</data>
 			<key>hash2</key>
 			<data>
-			BzvOUe1jQGpR+YvlFVEDnV97tIF1b0xyJ/crBJFqrz0=
+			nS7fpHnRzqDIjEXqLeyl6qGpOind6Lx/wdDbwn+/C+8=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -87,22 +87,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vg5NyqqGjUULFCRNZaoO/8wfBp4=
+			I/XrKnL6fsxsxsxsU494yc/rQAw=
 			</data>
 			<key>hash2</key>
 			<data>
-			BzvOUe1jQGpR+YvlFVEDnV97tIF1b0xyJ/crBJFqrz0=
+			nS7fpHnRzqDIjEXqLeyl6qGpOind6Lx/wdDbwn+/C+8=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y4qGQX5Cq77B4AS4eFieiQWD0tk=
+			cmfIAErlQtbDJphTuZULq1d+4hg=
 			</data>
 			<key>hash2</key>
 			<data>
-			epPewZyk6164gynrooM0OzDczdH964v/C/0Y/ItW6N0=
+			95thftWh0vYFOcXqxN6b50QS7sxsVN3Tux9OpcWB6XE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

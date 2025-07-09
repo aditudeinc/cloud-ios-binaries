@@ -124,6 +124,9 @@ public enum LogLevel : Swift.String, Swift.CaseIterable, Swift.Comparable {
   }
 }
 @objc @_hasMissingDesignatedInitializers final public class InterstitialAd : Tude.BaseAd {
+  @objc final public var isLoaded: Swift.Bool {
+    get
+  }
   @objc final public var onAdDidDismissFullScreenContent: (() -> Swift.Void)?
   @objc final public var onAdDidFailToPresentFullScreenWithError: ((any Swift.Error) -> Swift.Void)?
   @objc final public var onAdDidRecordImpression: (() -> Swift.Void)?
@@ -268,6 +271,9 @@ extension Tude.TargetingValue : Swift.Equatable {
   public static func == (lhs: Tude.TargetingValue, rhs: Tude.TargetingValue) -> Swift.Bool
 }
 @objc @_hasMissingDesignatedInitializers final public class RewardedVideoAd : Tude.BaseAd {
+  @objc final public var isLoaded: Swift.Bool {
+    get
+  }
   @objc final public var onAdDidDismissFullScreenContent: (() -> Swift.Void)?
   @objc final public var onAdDidFailToPresentFullScreenWithError: ((any Swift.Error) -> Swift.Void)?
   @objc final public var onAdDidRecordImpression: (() -> Swift.Void)?
