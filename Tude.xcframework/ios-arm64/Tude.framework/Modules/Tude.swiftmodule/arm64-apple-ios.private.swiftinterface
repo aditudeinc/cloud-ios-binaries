@@ -75,7 +75,7 @@ extension Tude.BannerAdView {
   @objc deinit
 }
 extension Tude.BaseAd {
-  @objc dynamic public var slotName: Swift.String {
+  @objc dynamic public var slotId: Swift.String {
     @objc get
   }
   @objc dynamic public var adUnitId: Swift.String {

@@ -2693,8 +2693,8 @@
           },
           {
             "kind": "Var",
-            "name": "slotName",
-            "printedName": "slotName",
+            "name": "slotId",
+            "printedName": "slotId",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2704,8 +2704,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@CM@Tude@objc(cs)BaseAd(py)slotName",
-            "mangledName": "$s4Tude6BaseAdC8slotNameSSvp",
+            "usr": "c:@CM@Tude@objc(cs)BaseAd(py)slotId",
+            "mangledName": "$s4Tude6BaseAdC6slotIdSSvp",
             "moduleName": "Tude",
             "declAttributes": [
               "Dynamic",
@@ -2727,8 +2727,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@CM@Tude@objc(cs)BaseAd(im)slotName",
-                "mangledName": "$s4Tude6BaseAdC8slotNameSSvg",
+                "usr": "c:@CM@Tude@objc(cs)BaseAd(im)slotId",
+                "mangledName": "$s4Tude6BaseAdC6slotIdSSvg",
                 "moduleName": "Tude",
                 "declAttributes": [
                   "Dynamic",
@@ -12733,7 +12733,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/AdViews\/BannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6111,
+      "offset": 6109,
       "length": 5,
       "value": "false"
     },
@@ -12780,23 +12780,51 @@
       "value": "\"https:\/\/cloud.aditude.io\/api\""
     },
     {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Bid\/BidClient.swift",
+      "kind": "Array",
+      "offset": 868,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Bid\/BidClient.swift",
+      "kind": "Array",
+      "offset": 925,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Bid\/BidClient.swift",
+      "kind": "StringLiteral",
+      "offset": 998,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "Dictionary",
-      "offset": 702,
+      "offset": 808,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 815,
+      "offset": 977,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4075,
+      "offset": 3768,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6402,
       "length": 5,
       "value": "false"
     },

@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EplOunreSmMkKmVBbkgchvus6TY=
+		4ZMFXuhZgCkX3WqLsD8+Ao+28k0=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		SwBwkveyHqENtlFjTs0VJe0zNV8=
+		nID7Fv9Jl+JiE0ZOkxphM0BoPhs=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		dQwu8yirmu1Slf0sg3ApJYfgzbE=
+		KpNu+h23G0K1g9WtRRSO6s3ofpI=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		dQwu8yirmu1Slf0sg3ApJYfgzbE=
+		KpNu+h23G0K1g9WtRRSO6s3ofpI=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		18AwZMpxxeoX69itxhtNFKmRCX4=
+		HDZnIu2FMrWYLB4mAfTYg5UK4AM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,22 +54,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SwBwkveyHqENtlFjTs0VJe0zNV8=
+			nID7Fv9Jl+JiE0ZOkxphM0BoPhs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fWB9MtMiXkGK6cFo1qBQDQYGhXnVk4rvYTH1UMc2EUY=
+			/LBo2ahpus0KTdrQhnOAl5veBRfaYMhDhEJqR6d01Us=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dQwu8yirmu1Slf0sg3ApJYfgzbE=
+			KpNu+h23G0K1g9WtRRSO6s3ofpI=
 			</data>
 			<key>hash2</key>
 			<data>
-			d1jx+tUdMOxtKOH4Nkd00XbQjNGV1OtnyMqAc0vuR0c=
+			Lo9wJj8AFChbRhQZanG7G3fV+m0GwyrdZSKXZRST9Ag=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -87,22 +87,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dQwu8yirmu1Slf0sg3ApJYfgzbE=
+			KpNu+h23G0K1g9WtRRSO6s3ofpI=
 			</data>
 			<key>hash2</key>
 			<data>
-			d1jx+tUdMOxtKOH4Nkd00XbQjNGV1OtnyMqAc0vuR0c=
+			Lo9wJj8AFChbRhQZanG7G3fV+m0GwyrdZSKXZRST9Ag=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			18AwZMpxxeoX69itxhtNFKmRCX4=
+			HDZnIu2FMrWYLB4mAfTYg5UK4AM=
 			</data>
 			<key>hash2</key>
 			<data>
-			g/dW2TZPTNbucFMNPoiiGzIQM5ES307EsfTFpflOoVE=
+			bnipEnH3k1BLFKaGYduRV5+H9wLoEcb1ASoDKd9WDxs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
