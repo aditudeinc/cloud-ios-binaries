@@ -1,0 +1,60 @@
+{
+    "id": 11,
+    "accountId": "10c3f5f3-0d86-42a6-ba5a-4add2d94be48",
+    "configId": "a47d6fc3-1637-4c27-aac4-bd8e4288bb95",
+    "type": "mobile",
+    "appId": "950ce4a3-a446-4bc1-8c53-2086037d9686",
+    "data": {
+        "ads": {
+            "display": {
+                "banner": [
+                    {
+                        "slot": "Banner 320x50",
+                        "width": 320,
+                        "height": 50,
+                        "adUnitId": "/21808260008/prebid_demo_app_original_api_banner",
+                        "configId": "prebid-ita-banner-320-50"
+                    },
+                    {
+                        "slot": "Banner 350x250",
+                        "width": 350,
+                        "height": 250,
+                        "adUnitId": "/21808260008/prebid_demo_app_original_api_banner_300x250_order",
+                        "configId": "prebid-ita-banner-300-250"
+                    },
+                    {
+                        "slot": "Banner 728x90",
+                        "width": 728,
+                        "height": 90,
+                        "adUnitId": "/21808260008/prebid_demo_app_original_api_banner_728x90",
+                        "configId": "prebid-demo-banner-728-90"
+                    },
+                    {
+                        "slot": "Banner Multisize",
+                        "width": 728,
+                        "height": 90,
+                        "adUnitId": "/21808260008/prebid_demo_app_original_api_banner_multisize",
+                        "configId": "prebid-demo-banner-multisize",
+                        "validAdSizes": [
+                            {
+                                "width": 728,
+                                "height": 90
+                            },
+                            {
+                                "width": 320,
+                                "height": 50
+                            }
+                        ],
+                        "refreshTimeSeconds": 30
+                    }
+                ]
+            }
+        },
+        "prebid": {
+            "prebidBidding": true,
+            "storedRequestId": "0689a263-318d-448b-a3d4-b02e8a709d9d",
+            "creativeFactoryTimeout": 50,
+            "creativeFactoryTimeoutPreRenderContent": 50
+        }
+    }
+}

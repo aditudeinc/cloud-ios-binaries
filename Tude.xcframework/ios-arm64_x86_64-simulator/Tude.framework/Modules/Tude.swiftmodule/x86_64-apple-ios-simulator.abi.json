@@ -2946,6 +2946,43 @@
           },
           {
             "kind": "Function",
+            "name": "setImpressionLevelORTBConfig",
+            "printedName": "setImpressionLevelORTBConfig(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)BaseAd(im)setImpressionLevelORTBConfig:",
+            "mangledName": "$s4Tude6BaseAdC28setImpressionLevelORTBConfigyySSSgF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "preload",
             "printedName": "preload(_:)",
             "children": [
@@ -12794,17 +12831,52 @@
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Network\/ApiClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1681,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Network\/ApiClient.swift",
       "kind": "StringLiteral",
-      "offset": 2664,
+      "offset": 5381,
       "length": 33,
       "value": "\"https:\/\/cache.prebid-server.com\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Network\/ApiClient.swift",
       "kind": "StringLiteral",
-      "offset": 2717,
+      "offset": 5434,
       "length": 30,
       "value": "\"https:\/\/cloud.aditude.io\/api\""
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Network\/ApiClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5551,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Network\/ApiClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5587,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Network\/ApiClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5625,
+      "length": 5,
+      "value": "30000"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Network\/ApiClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 5671,
+      "length": 3,
+      "value": "2.0"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Bid\/BidClient.swift",
@@ -12851,7 +12923,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6402,
+      "offset": 6409,
       "length": 5,
       "value": "false"
     },

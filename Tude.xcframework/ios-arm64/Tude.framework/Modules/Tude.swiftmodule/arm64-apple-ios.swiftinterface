@@ -85,6 +85,7 @@ extension Tude.BaseAd {
   @objc dynamic public func setNeighboringContentURLs(_ URLs: [Swift.String])
   @objc dynamic public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
   @objc dynamic public func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool = false)
+  @objc dynamic public func setImpressionLevelORTBConfig(_ ortbConfig: Swift.String?)
   @objc dynamic public func preload(_ completion: (() -> Swift.Void)? = nil)
   @objc dynamic public func load(_ viewController: UIKit.UIViewController? = nil)
 }

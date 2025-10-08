@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xK7ZaY2okXMQQHrUyEM5ITs4Eg8=
+		Skd4ZLaYRndurvVQVHMcu+ktLIw=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		SgySlUTcDZululjliLqF/NnxvzM=
+		m/IUea82Qks4YmoaPE2//029JCA=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		KpNu+h23G0K1g9WtRRSO6s3ofpI=
+		2Yrwi+Z6a0hCUHx1tR5nR7h2BkE=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,15 +26,19 @@
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		KpNu+h23G0K1g9WtRRSO6s3ofpI=
+		2Yrwi+Z6a0hCUHx1tR5nR7h2BkE=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		2j0iiIkIyh/fGJnfiDWibly1+ME=
+		9q2Q1LRlkX2auSxQxTYmD4RLG6A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		lMyMd67RQUoLYJH0tjbuaWpOk0s=
+		</data>
+		<key>prebid_demo_config.json</key>
+		<data>
+		G7AM4Vzk2JPN4QGlG75yGMWf4T0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -54,22 +58,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SgySlUTcDZululjliLqF/NnxvzM=
+			m/IUea82Qks4YmoaPE2//029JCA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hsJm0t0G8I6almHY+1/v4607QyxRN2aB6wIhhrCf2go=
+			OiHvoVmh/snGbz5XxgPdI86GHSUVvXJuBGvdorVguxE=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KpNu+h23G0K1g9WtRRSO6s3ofpI=
+			2Yrwi+Z6a0hCUHx1tR5nR7h2BkE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lo9wJj8AFChbRhQZanG7G3fV+m0GwyrdZSKXZRST9Ag=
+			4kTxsL0pmQbYFgkeNXl54gOx3IkfzP3JB3bu8ItKE9Q=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -87,22 +91,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KpNu+h23G0K1g9WtRRSO6s3ofpI=
+			2Yrwi+Z6a0hCUHx1tR5nR7h2BkE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lo9wJj8AFChbRhQZanG7G3fV+m0GwyrdZSKXZRST9Ag=
+			4kTxsL0pmQbYFgkeNXl54gOx3IkfzP3JB3bu8ItKE9Q=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2j0iiIkIyh/fGJnfiDWibly1+ME=
+			9q2Q1LRlkX2auSxQxTYmD4RLG6A=
 			</data>
 			<key>hash2</key>
 			<data>
-			NoyVCWnWj26SGOWIbtKY/oUwk91xfheL0Bc8eYXd25o=
+			b1T1I+zwUiq1EsbCbLiNdumxJ7WTdERXZcIgSeZdZZs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -114,6 +118,17 @@
 			<key>hash2</key>
 			<data>
 			uQvcwkb6JTEy3BBJ4wWm1Rq0ars5Rv0iDJBtc2UmA/8=
+			</data>
+		</dict>
+		<key>prebid_demo_config.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G7AM4Vzk2JPN4QGlG75yGMWf4T0=
+			</data>
+			<key>hash2</key>
+			<data>
+			iqrjvb7EgK/J5NTtLz6jX5TgUkNRI7+ipXHGxRs4sLw=
 			</data>
 		</dict>
 	</dict>
