@@ -8904,6 +8904,13 @@
       },
       {
         "kind": "Import",
+        "name": "WebKit.WKWebView",
+        "printedName": "WebKit.WKWebView",
+        "declKind": "Import",
+        "moduleName": "Tude"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -12476,6 +12483,13 @@
         "kind": "Import",
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "Tude"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "Tude"
       },
