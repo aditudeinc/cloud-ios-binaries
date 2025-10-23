@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VR6e4XaQL37VVO2uS5CW0guGypo=
+		cNPQbL58wwafQoXcuDSNfWgzvOQ=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		VkoOjLp3GzzZ12NFWykb3m9pcqc=
+		wJ7n+crowCvEKIKBD3cS1VfgBMg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -45,10 +45,6 @@
 	<dict>
 		<key>Headers/Tude.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GPlkRivgItTvHou3IT8pp19/aVw=
-			</data>
 			<key>hash2</key>
 			<data>
 			4vMJql/K605hr34kRRMyuDPY1vogD709Z3NMVdRSuE4=
@@ -56,10 +52,6 @@
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AAxTZPHZ7FH6R0A7GqqsORaJHIs=
-			</data>
 			<key>hash2</key>
 			<data>
 			10T0GotoE/Xev0o+QuLhuKhtcOSAuWL5s14TyRNuUYw=
@@ -67,10 +59,6 @@
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jItAiSR/u32ZshVwgLmk5QZ+pXA=
-			</data>
 			<key>hash2</key>
 			<data>
 			89nzqqTscgS/AaMhkTWQQhv+/V0JKbsF6kzU+B7ivdg=
@@ -78,10 +66,6 @@
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zjW0LbDszVc3hpEKNupA9SW045g=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZEOt0acpvpkzJjmq96vKA5N1y55USheKYfDqOe0t7Nk=
@@ -89,10 +73,6 @@
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jItAiSR/u32ZshVwgLmk5QZ+pXA=
-			</data>
 			<key>hash2</key>
 			<data>
 			89nzqqTscgS/AaMhkTWQQhv+/V0JKbsF6kzU+B7ivdg=
@@ -100,21 +80,13 @@
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VkoOjLp3GzzZ12NFWykb3m9pcqc=
-			</data>
 			<key>hash2</key>
 			<data>
-			dnfn862yvbmZlgHRwWXd2kZfBLS9VLC4u2KrV9oFbtM=
+			36ZEi7SAszRT0iorlLWbZx0VvcxBwii9cC46wJAmpm0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lMyMd67RQUoLYJH0tjbuaWpOk0s=
-			</data>
 			<key>hash2</key>
 			<data>
 			uQvcwkb6JTEy3BBJ4wWm1Rq0ars5Rv0iDJBtc2UmA/8=
@@ -122,10 +94,6 @@
 		</dict>
 		<key>prebid_demo_config.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			G7AM4Vzk2JPN4QGlG75yGMWf4T0=
-			</data>
 			<key>hash2</key>
 			<data>
 			iqrjvb7EgK/J5NTtLz6jX5TgUkNRI7+ipXHGxRs4sLw=

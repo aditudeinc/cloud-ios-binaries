@@ -1,10 +1,10 @@
-// swift-tools-version:5.8
+// swift-tools-version:6.0
 import PackageDescription
  
 let package = Package(
     name: "Tude",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -13,15 +13,16 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: "12.8.0")
+        .package(url: "https://github.com/prebid/prebid-mobile-ios.git", exact: "3.1.1"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: "12.9.0")
     ],
     targets: [
         .target(
             name: "_Tude",
             dependencies: [
                 "Tude",
-                "PrebidMobile",
                 "DTBiOSSDK",
+                .product(name: "PrebidMobile", package: "prebid-mobile-ios"),
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
             ],
             path: "Tude",
@@ -32,10 +33,6 @@ let package = Package(
         .binaryTarget(
             name: "Tude",
             path: "Tude.xcframework"
-        ),
-        .binaryTarget(
-            name: "PrebidMobile",
-            path: "PrebidMobile.xcframework"
         ),
         .binaryTarget(
             name: "DTBiOSSDK",
