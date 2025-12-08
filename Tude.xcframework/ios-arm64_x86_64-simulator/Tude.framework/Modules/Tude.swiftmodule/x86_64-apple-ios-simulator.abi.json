@@ -8741,6 +8741,45 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getInstreamVideoAd",
+            "printedName": "getInstreamVideoAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Tude.InstreamVideoAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstreamVideoAd",
+                    "printedName": "Tude.InstreamVideoAd",
+                    "usr": "c:@M@Tude@objc(cs)InstreamVideoAd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)TudeWrapper(im)getInstreamVideoAd:",
+            "mangledName": "$s4Tude0A7WrapperC18getInstreamVideoAdyAA0deF0CSgSSF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -9467,6 +9506,274 @@
         "declKind": "Class",
         "usr": "c:@M@Tude@objc(cs)BannerAd",
         "mangledName": "$s4Tude8BannerAdC",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@Tude@objc(cs)BaseAd",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Tude.BaseAd",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIViewController",
+        "printedName": "UIKit.UIViewController",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstreamVideoAd",
+        "printedName": "InstreamVideoAd",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "generateUri",
+            "printedName": "generateUri(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)InstreamVideoAd(im)generateUri:",
+            "mangledName": "$s4Tude15InstreamVideoAdC11generateUriyyySSSg_AEtcF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)InstreamVideoAd(im)load:",
+            "mangledName": "$s4Tude15InstreamVideoAdC4loadyySo16UIViewControllerCSgF",
+            "moduleName": "Tude",
+            "overriding": true,
+            "objc_name": "load:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "preload",
+            "printedName": "preload(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)InstreamVideoAd(im)preload:",
+            "mangledName": "$s4Tude15InstreamVideoAdC7preloadyyyycSgF",
+            "moduleName": "Tude",
+            "overriding": true,
+            "objc_name": "preload:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Tude@objc(cs)InstreamVideoAd",
+        "mangledName": "$s4Tude15InstreamVideoAdC",
         "moduleName": "Tude",
         "declAttributes": [
           "Final",
@@ -11935,6 +12242,17 @@
       },
       {
         "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -13022,14 +13340,14 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3821,
+      "offset": 3813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 7117,
+      "offset": 7109,
       "length": 5,
       "value": "false"
     },
@@ -13197,7 +13515,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Models\/Network\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2450,
+      "offset": 2490,
       "length": 7,
       "value": "\"appID\""
     },
@@ -13218,63 +13536,70 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/AdSlotConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 1464,
+      "offset": 1611,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/AdSlotConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 1541,
+      "offset": 1688,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/AdSlotConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 1616,
+      "offset": 1763,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/AdSlotConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 1685,
+      "offset": 1832,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/AdSlotConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 1760,
+      "offset": 1907,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/AdSlotConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 1847,
+      "offset": 1994,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/AdSlotConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 1933,
+      "offset": 2080,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/AdSlotConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 2016,
+      "offset": 2163,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/AdSlotConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 2068,
+      "offset": 2246,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/AdSlotConfigRepo.swift",
+      "kind": "Dictionary",
+      "offset": 2298,
       "length": 3,
       "value": "[]"
     },
@@ -13300,6 +13625,13 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/InstreamVideoAd.swift",
+      "kind": "Array",
+      "offset": 702,
+      "length": 13,
+      "value": "[\"video\/mp4\"]"
+    },
+    {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Initialization\/PrebidInitializer.swift",
       "kind": "BooleanLiteral",
       "offset": 685,
@@ -13316,28 +13648,28 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "BooleanLiteral",
-      "offset": 2393,
+      "offset": 2535,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "BooleanLiteral",
-      "offset": 2444,
+      "offset": 2586,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 2691,
+      "offset": 2833,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 2746,
+      "offset": 2888,
       "length": 3,
       "value": "[]"
     },

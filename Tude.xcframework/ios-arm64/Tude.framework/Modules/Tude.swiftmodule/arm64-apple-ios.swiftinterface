@@ -238,6 +238,7 @@ extension Tude.TudeWrapper {
   @objc final public func getMultiformatAd(_ adSlotId: Swift.String) -> Tude.NativeAd?
   @objc final public func getInterstitialAd(_ adSlotId: Swift.String) -> Tude.InterstitialAd?
   @objc final public func getRewardedVideoAd(_ adSlotId: Swift.String) -> Tude.RewardedVideoAd?
+  @objc final public func getInstreamVideoAd(_ adSlotId: Swift.String) -> Tude.InstreamVideoAd?
 }
 public struct LogMetadata {
   public init(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, context: [Swift.String : Any]? = nil, isPrivate: Swift.Bool = true)
@@ -255,6 +256,12 @@ extension Tude.BannerAd : GoogleMobileAds.BannerViewDelegate, GoogleMobileAds.Ad
   @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.BannerView)
   @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.BannerView)
   @objc final public func adView(_ bannerView: GoogleMobileAds.BannerView, willChangeAdSizeTo size: GoogleMobileAds.AdSize)
+}
+@objc @_hasMissingDesignatedInitializers final public class InstreamVideoAd : Tude.BaseAd {
+  @objc final public func generateUri(_ completion: @escaping (_ uri: Swift.String?, _ error: Swift.String?) -> Swift.Void)
+  @objc override final public func load(_ viewController: UIKit.UIViewController? = nil)
+  @objc override final public func preload(_ completion: (() -> Swift.Void)? = nil)
+  @objc deinit
 }
 public protocol Logger {
   func log(_ level: Tude.LogLevel, message: Swift.String, category: Swift.String, metadata: Tude.LogMetadata)

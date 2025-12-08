@@ -48,6 +48,17 @@
                         "refreshTimeSeconds": 30
                     }
                 ]
+            },
+            "video": {
+                "instream": [
+                    {
+                        "slot": "Instream 640x480",
+                        "width": 640,
+                        "height": 480,
+                        "adUnitId": "/21808260008/prebid_demo_app_instream",
+                        "configId": "prebid-demo-video-interstitial-320-480-original-api"
+                    }
+                ]
             }
         },
         "prebid": {
