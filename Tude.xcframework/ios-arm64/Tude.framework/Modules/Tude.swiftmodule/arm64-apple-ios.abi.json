@@ -354,7 +354,10 @@
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
         "declKind": "Import",
-        "moduleName": "Tude"
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1873,6 +1876,7 @@
         "declKind": "Import",
         "moduleName": "Tude",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -1898,7 +1902,10 @@
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
         "declKind": "Import",
-        "moduleName": "Tude"
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -3066,6 +3073,70 @@
               "AccessControl",
               "ObjC",
               "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCreativeId",
+            "printedName": "getCreativeId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)BaseAd(im)getCreativeId",
+            "mangledName": "$s4Tude6BaseAdC13getCreativeIdSSSgyF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLineItemId",
+            "printedName": "getLineItemId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Tude@objc(cs)BaseAd(im)getLineItemId",
+            "mangledName": "$s4Tude6BaseAdC13getLineItemIdSSSgyF",
+            "moduleName": "Tude",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -4284,7 +4355,10 @@
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
         "declKind": "Import",
-        "moduleName": "Tude"
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -5552,7 +5626,10 @@
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
         "declKind": "Import",
-        "moduleName": "Tude"
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -7812,6 +7889,7 @@
         "declKind": "Import",
         "moduleName": "Tude",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -8762,6 +8840,7 @@
         "declKind": "Import",
         "moduleName": "Tude",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -8931,7 +9010,10 @@
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
         "declKind": "Import",
-        "moduleName": "Tude"
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -9515,7 +9597,10 @@
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
         "declKind": "Import",
-        "moduleName": "Tude"
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9531,6 +9616,7 @@
         "declKind": "Import",
         "moduleName": "Tude",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -10207,7 +10293,10 @@
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
         "declKind": "Import",
-        "moduleName": "Tude"
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -12484,7 +12573,10 @@
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
         "declKind": "Import",
-        "moduleName": "Tude"
+        "moduleName": "Tude",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -12811,7 +12903,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/AdViews\/BannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6109,
+      "offset": 6118,
       "length": 5,
       "value": "false"
     },
@@ -12895,49 +12987,49 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Bid\/BidClient.swift",
       "kind": "Array",
-      "offset": 868,
+      "offset": 877,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Bid\/BidClient.swift",
       "kind": "Array",
-      "offset": 925,
+      "offset": 934,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Bid\/BidClient.swift",
       "kind": "StringLiteral",
-      "offset": 962,
+      "offset": 971,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "Dictionary",
-      "offset": 808,
+      "offset": 861,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 977,
+      "offset": 1030,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3768,
+      "offset": 3821,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/BaseAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6409,
+      "offset": 7117,
       "length": 5,
       "value": "false"
     },
@@ -13063,14 +13155,14 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/InterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 447,
+      "offset": 456,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/InterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 505,
+      "offset": 559,
       "length": 5,
       "value": "false"
     },
@@ -13105,7 +13197,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Models\/Network\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2448,
+      "offset": 2450,
       "length": 7,
       "value": "\"appID\""
     },
@@ -13189,7 +13281,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Network\/ConfigClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 596,
+      "offset": 605,
       "length": 4,
       "value": "true"
     },
@@ -13210,42 +13302,42 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Initialization\/PrebidInitializer.swift",
       "kind": "BooleanLiteral",
-      "offset": 676,
+      "offset": 685,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Initialization\/PrebidInitializer.swift",
       "kind": "BooleanLiteral",
-      "offset": 725,
+      "offset": 734,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "BooleanLiteral",
-      "offset": 2384,
+      "offset": 2393,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "BooleanLiteral",
-      "offset": 2435,
+      "offset": 2444,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 2682,
+      "offset": 2691,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 2737,
+      "offset": 2746,
       "length": 3,
       "value": "[]"
     },
@@ -13280,14 +13372,14 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/RewardedVideoAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 425,
+      "offset": 434,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Ads\/RewardedVideoAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 483,
+      "offset": 537,
       "length": 5,
       "value": "false"
     },

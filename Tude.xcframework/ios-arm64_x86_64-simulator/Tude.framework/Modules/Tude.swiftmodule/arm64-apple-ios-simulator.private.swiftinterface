@@ -7,7 +7,6 @@ import DTBiOSSDK
 import Foundation
 import GoogleMobileAds
 import OSLog
-import PrebidMobile
 import Swift
 @_exported import Tude
 import UIKit
@@ -91,6 +90,8 @@ extension Tude.BaseAd {
   @objc dynamic public func setImpressionLevelORTBConfig(_ ortbConfig: Swift.String?)
   @objc dynamic public func preload(_ completion: (() -> Swift.Void)? = nil)
   @objc dynamic public func load(_ viewController: UIKit.UIViewController? = nil)
+  @objc dynamic public func getCreativeId() -> Swift.String?
+  @objc dynamic public func getLineItemId() -> Swift.String?
 }
 @objc public enum TudeInitializationStatus : Swift.Int, Swift.Error {
   case succeeded
