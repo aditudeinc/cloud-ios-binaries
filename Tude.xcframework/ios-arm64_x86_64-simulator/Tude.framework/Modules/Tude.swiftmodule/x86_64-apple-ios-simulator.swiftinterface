@@ -249,6 +249,12 @@ extension Tude.NativeAd : GoogleMobileAds.BannerViewDelegate {
   #endif
   @objc public static func setSendSharedId(_ sendSharedId: Swift.Bool)
   @objc public static func resetSharedId()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func setOmidPartnerName(_ omidPartnerName: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func setOmidPartnerVersion(_ omidPartnerVersion: Swift.String?)
+  #endif
   @objc public static func refreshFlags(_ completion: @escaping (Tude.FlagsRefreshStatus) -> Swift.Void = { _ in })
   @objc public static func getFlags() -> [Foundation.NSString]
   public static func getFlags() -> [Tude.TudeFlag]

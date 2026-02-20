@@ -7524,6 +7524,82 @@
           },
           {
             "kind": "Function",
+            "name": "setOmidPartnerName",
+            "printedName": "setOmidPartnerName(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)setOmidPartnerName:",
+            "mangledName": "$s4Tude14AditudeWrapperC18setOmidPartnerNameyySSSgFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOmidPartnerVersion",
+            "printedName": "setOmidPartnerVersion(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Tude@objc(cs)AditudeWrapper(cm)setOmidPartnerVersion:",
+            "mangledName": "$s4Tude14AditudeWrapperC21setOmidPartnerVersionyySSSgFZ",
+            "moduleName": "Tude",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "refreshFlags",
             "printedName": "refreshFlags(_:)",
             "children": [
@@ -13556,7 +13632,7 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Models\/Network\/ConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2490,
+      "offset": 2575,
       "length": 7,
       "value": "\"appID\""
     },
@@ -13689,28 +13765,28 @@
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "BooleanLiteral",
-      "offset": 2535,
+      "offset": 2653,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "BooleanLiteral",
-      "offset": 2586,
+      "offset": 2704,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 2833,
+      "offset": 2951,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abdulmedzid.pehlic\/cloud-wrapper-ios\/Tude\/Tude\/Sources\/Repository\/ConfigRepo.swift",
       "kind": "Dictionary",
-      "offset": 2888,
+      "offset": 3006,
       "length": 3,
       "value": "[]"
     },
