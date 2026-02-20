@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VQKKYpx9XXvIUr+9YoQcZgbrOoM=
+		ohURkPnGwBJEE98CXIuzQ7XrtAM=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ueE1MCaVOENHYa9q2q9cryF/0w8=
+		UW++zvhITfMA+0xIKsZ3b2RAMXY=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		VXteSMuWX0dxIM87vMfwDH7VvEg=
+		EuN0DGzde0L7mxbrNB3g00oSX00=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		dCtTCJbUZWYUnvHhAT1xaENoolY=
+		Io518sGDQRe+J8muNqheiAZlNjs=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		VXteSMuWX0dxIM87vMfwDH7VvEg=
+		EuN0DGzde0L7mxbrNB3g00oSX00=
 		</data>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		buQA7hH9yOecqYuoDNHJQ0oQB1c=
+		8zoUH2WBpRhVFyJA38hv3N97ZZ4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -45,6 +45,10 @@
 	<dict>
 		<key>Headers/Tude.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GPlkRivgItTvHou3IT8pp19/aVw=
+			</data>
 			<key>hash2</key>
 			<data>
 			4vMJql/K605hr34kRRMyuDPY1vogD709Z3NMVdRSuE4=
@@ -52,41 +56,65 @@
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			UW++zvhITfMA+0xIKsZ3b2RAMXY=
+			</data>
 			<key>hash2</key>
 			<data>
-			oG728YObWaA+CT15e/bBi+jA4iaePL3ruEtoEA8Yzyw=
+			cOVb/cfPHSdV1riiQvHcgzUPPLOKss2F7CgzL5DdVZ0=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			EuN0DGzde0L7mxbrNB3g00oSX00=
+			</data>
 			<key>hash2</key>
 			<data>
-			8a10iq/RhQ4vwTOSqmfDdZgA9ZDCNeGTA6KBLhvKYUU=
+			+GbifoUu7n1GUWcHaGYW5khsK1yrdWnaWKJQS7fL4PI=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Io518sGDQRe+J8muNqheiAZlNjs=
+			</data>
 			<key>hash2</key>
 			<data>
-			glh7jSF2DwtFbLL0KGnr6sJ9kSztzmaHjonEkq9t7As=
+			b7neCTJTP25xCvV8fX7X6J8zcytkLA4ga7QszXy0qF0=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			EuN0DGzde0L7mxbrNB3g00oSX00=
+			</data>
 			<key>hash2</key>
 			<data>
-			8a10iq/RhQ4vwTOSqmfDdZgA9ZDCNeGTA6KBLhvKYUU=
+			+GbifoUu7n1GUWcHaGYW5khsK1yrdWnaWKJQS7fL4PI=
 			</data>
 		</dict>
 		<key>Modules/Tude.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8zoUH2WBpRhVFyJA38hv3N97ZZ4=
+			</data>
 			<key>hash2</key>
 			<data>
-			+jc3BIrxNiMULNmYTaYMXfGoR/Ka7ZZHxfnn8ctWEC0=
+			4akiCz1dizW+J20NNzgRcb2gXuklQKSwCdpF3YhMzmA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			lMyMd67RQUoLYJH0tjbuaWpOk0s=
+			</data>
 			<key>hash2</key>
 			<data>
 			uQvcwkb6JTEy3BBJ4wWm1Rq0ars5Rv0iDJBtc2UmA/8=
@@ -94,6 +122,10 @@
 		</dict>
 		<key>prebid_demo_config.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BYBjnhukjiVaXFF5bg8Ccu0DE8E=
+			</data>
 			<key>hash2</key>
 			<data>
 			Nd1HbZfFaFr4V9B033SxIGUY7a+EdOB4ESJ9PN7hav4=

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Tude
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Combine
 import DTBiOSSDK
 import Foundation
@@ -21,7 +21,9 @@ public enum TudeFlag : Swift.Int {
   case noAds
   case noPrebid
   case noAmazon
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -29,12 +31,16 @@ public enum TudeFlag : Swift.Int {
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class BannerAdView : UIKit.UIView {
   @objc @_Concurrency.MainActor @preconcurrency final public var onAdLoaded: (() -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public var slotName: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public var adUnitId: Swift.String? {
     @objc get
   }
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency final public var adSlot: Swift.String? {
     @objc get
     @objc set
@@ -42,31 +48,43 @@ public enum TudeFlag : Swift.Int {
   @objc deinit
 }
 extension Tude.BannerAdView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public func load(_ viewController: UIKit.UIViewController?)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency final public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
   @objc @_Concurrency.MainActor @preconcurrency final public func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool = false)
 }
 extension Tude.BannerAdView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public var onAdFailedToLoad: ((Tude.AdFailedToLoadError) -> Swift.Void)? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public var onAdClicked: (() -> Swift.Void)? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public var onAdImpression: (() -> Swift.Void)? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public var onAdOpened: (() -> Swift.Void)? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency final public var onAdClosed: (() -> Swift.Void)? {
     @objc get
     @objc set
   }
+  #endif
 }
 @objc @_hasMissingDesignatedInitializers public class BaseAd : ObjectiveC.NSObject {
   @objc public var onAdFailedToLoad: ((Tude.AdFailedToLoadError) -> Swift.Void)?
@@ -87,11 +105,21 @@ extension Tude.BaseAd {
   @objc dynamic public func setNeighboringContentURLs(_ URLs: [Swift.String])
   @objc dynamic public func setTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>)
   @objc dynamic public func appendTargeting(_ targeting: Swift.Dictionary<Swift.String, Any>, overwriteValues: Swift.Bool = false)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func setImpressionLevelORTBConfig(_ ortbConfig: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func preload(_ completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func load(_ viewController: UIKit.UIViewController? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func getCreativeId() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func getLineItemId() -> Swift.String?
+  #endif
 }
 @objc public enum TudeInitializationStatus : Swift.Int, Swift.Error {
   case succeeded
@@ -101,7 +129,9 @@ extension Tude.BaseAd {
   case initializing
   case noConfig
   case error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -119,7 +149,9 @@ public enum LogLevel : Swift.String, Swift.CaseIterable, Swift.Comparable {
   case error
   case critical
   public static func < (lhs: Tude.LogLevel, rhs: Tude.LogLevel) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [Tude.LogLevel]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [Tude.LogLevel] {
@@ -139,9 +171,13 @@ public enum LogLevel : Swift.String, Swift.CaseIterable, Swift.Comparable {
   @objc final public var onAdWillPresentFullScreenContent: (() -> Swift.Void)?
   @objc final public var onAdWillDismissFullScreenContent: (() -> Swift.Void)?
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func preload(_ completion: (() -> Swift.Void)? = nil)
+  #endif
   @objc final public func render(_ viewController: UIKit.UIViewController)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func load(_ viewController: UIKit.UIViewController?)
+  #endif
 }
 extension Tude.InterstitialAd : GoogleMobileAds.FullScreenContentDelegate {
   @_Concurrency.MainActor @preconcurrency @objc final public func ad(_ ad: any GoogleMobileAds.FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
@@ -156,31 +192,33 @@ extension Tude.InterstitialAd : GoogleMobileAds.FullScreenContentDelegate {
   @objc final public var onGoogleNativeAdLoaded: ((GoogleMobileAds.NativeAd) -> Swift.Void)?
   @objc final public var onCustomNativeAdLoaded: ((GoogleMobileAds.CustomNativeAd) -> Swift.Void)?
   @objc final public var onBannerAdLoaded: ((GoogleMobileAds.AdManagerBannerView) -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setAdLoaderOptions(_ adLoaderOptions: [GoogleMobileAds.GADAdLoaderOptions]?)
+  #endif
   @objc deinit
 }
 extension Tude.NativeAd : GoogleMobileAds.NativeAdLoaderDelegate {
-  @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didReceive nativeAd: GoogleMobileAds.NativeAd)
-  @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didFailToReceiveAdWithError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didReceive nativeAd: GoogleMobileAds.NativeAd)
+  @_Concurrency.MainActor @preconcurrency @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didFailToReceiveAdWithError error: any Swift.Error)
 }
 extension Tude.NativeAd : GoogleMobileAds.CustomNativeAdLoaderDelegate {
-  @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didReceive customNativeAd: GoogleMobileAds.CustomNativeAd)
+  @_Concurrency.MainActor @preconcurrency @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didReceive customNativeAd: GoogleMobileAds.CustomNativeAd)
   @objc final public func customNativeAdFormatIDs(for adLoader: GoogleMobileAds.AdLoader) -> [Swift.String]
 }
 extension Tude.NativeAd : GoogleMobileAds.AdManagerBannerAdLoaderDelegate {
-  @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didReceive bannerView: GoogleMobileAds.AdManagerBannerView)
+  @_Concurrency.MainActor @preconcurrency @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didReceive bannerView: GoogleMobileAds.AdManagerBannerView)
   @objc final public func validBannerSizes(for adLoader: GoogleMobileAds.AdLoader) -> [Foundation.NSValue]
 }
 extension Tude.NativeAd : GoogleMobileAds.NativeAdDelegate {
-  @objc final public func nativeAdDidRecordClick(_ nativeAd: GoogleMobileAds.NativeAd)
-  @objc final public func nativeAdDidRecordSwipeGestureClick(_ nativeAd: GoogleMobileAds.NativeAd)
-  @objc final public func nativeAdDidRecordImpression(_ nativeAd: GoogleMobileAds.NativeAd)
+  @_Concurrency.MainActor @preconcurrency @objc final public func nativeAdDidRecordClick(_ nativeAd: GoogleMobileAds.NativeAd)
+  @_Concurrency.MainActor @preconcurrency @objc final public func nativeAdDidRecordSwipeGestureClick(_ nativeAd: GoogleMobileAds.NativeAd)
+  @_Concurrency.MainActor @preconcurrency @objc final public func nativeAdDidRecordImpression(_ nativeAd: GoogleMobileAds.NativeAd)
   @_Concurrency.MainActor @preconcurrency @objc final public func nativeAdWillPresentScreen(_ nativeAd: GoogleMobileAds.NativeAd)
   @_Concurrency.MainActor @preconcurrency @objc final public func nativeAdDidDismissScreen(_ nativeAd: GoogleMobileAds.NativeAd)
 }
 extension Tude.NativeAd : GoogleMobileAds.CustomNativeAdDelegate {
-  @objc final public func customNativeAdDidRecordClick(_ nativeAd: GoogleMobileAds.CustomNativeAd)
-  @objc final public func customNativeAdDidRecordImpression(_ nativeAd: GoogleMobileAds.CustomNativeAd)
+  @_Concurrency.MainActor @preconcurrency @objc final public func customNativeAdDidRecordClick(_ nativeAd: GoogleMobileAds.CustomNativeAd)
+  @_Concurrency.MainActor @preconcurrency @objc final public func customNativeAdDidRecordImpression(_ nativeAd: GoogleMobileAds.CustomNativeAd)
   @_Concurrency.MainActor @preconcurrency @objc final public func customNativeAdWillPresentScreen(_ nativeAd: GoogleMobileAds.CustomNativeAd)
   @_Concurrency.MainActor @preconcurrency @objc final public func customNativeAdDidDismissScreen(_ nativeAd: GoogleMobileAds.CustomNativeAd)
 }
@@ -198,11 +236,17 @@ extension Tude.NativeAd : GoogleMobileAds.BannerViewDelegate {
   @objc public static func setGlobalTargeting(_ targeting: [Swift.String : Any])
   @objc public static func appendGlobalTargeting(_ targeting: [Swift.String : Any], overwriteValues: Swift.Bool = false)
   @objc public static func setPublisherProvidedId(_ id: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getPublisherProvidedId() -> Swift.String?
+  #endif
   @objc public static func setNonPersonalizedAdsFlag(_ enabled: Swift.Bool)
   @objc public static func isShowingPersonalizedAds() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func setGlobalORTBConfig(_ ortbConfig: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func setExternalUserIds(_ externalUserIds: [Tude.ExternalUserId]?)
+  #endif
   @objc public static func setSendSharedId(_ sendSharedId: Swift.Bool)
   @objc public static func resetSharedId()
   @objc public static func refreshFlags(_ completion: @escaping (Tude.FlagsRefreshStatus) -> Swift.Void = { _ in })
@@ -217,9 +261,13 @@ extension Tude.NativeAd : GoogleMobileAds.BannerViewDelegate {
   @objc deinit
 }
 @objc public class ExternalUserId : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(source: Swift.String, uniqueIds: [Tude.ExternalUserId.UniqueId], ext: [Swift.String : Any]? = nil)
+  #endif
   @objc public class UniqueId : ObjectiveC.NSObject {
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(id: Swift.String, aType: Foundation.NSNumber, ext: [Swift.String : Any]? = nil)
+    #endif
     @objc deinit
   }
   @objc deinit
@@ -229,19 +277,41 @@ extension Tude.NativeAd : GoogleMobileAds.BannerViewDelegate {
 }
 extension Tude.TudeWrapper {
   @objc final public func renderBannerAds(_ viewController: UIKit.UIViewController)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func createBannerAdView(_ viewController: UIKit.UIViewController, _ adSlotId: Swift.String) -> Tude.BannerAdView?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getBannerAd(_ adSlotId: Swift.String) -> Tude.BannerAd?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getAnchoredAdaptiveBannerAd(_ adSlotId: Swift.String, width: CoreFoundation.CGFloat) -> Tude.BannerAd?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getInlineAdaptiveBannerAd(_ adSlotId: Swift.String, width: CoreFoundation.CGFloat, maxHeight: CoreFoundation.CGFloat? = nil) -> Tude.BannerAd?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getNativeAd(_ adSlotId: Swift.String) -> Tude.NativeAd?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getGoogleNativeAd(_ adSlotId: Swift.String) -> Tude.NativeAd?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getMultiformatAd(_ adSlotId: Swift.String) -> Tude.NativeAd?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getInterstitialAd(_ adSlotId: Swift.String) -> Tude.InterstitialAd?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getRewardedVideoAd(_ adSlotId: Swift.String) -> Tude.RewardedVideoAd?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getInstreamVideoAd(_ adSlotId: Swift.String) -> Tude.InstreamVideoAd?
+  #endif
 }
 public struct LogMetadata {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, context: [Swift.String : Any]? = nil, isPrivate: Swift.Bool = true)
+  #endif
 }
 @objc @_hasMissingDesignatedInitializers final public class BannerAd : Tude.BaseAd {
   @objc final public let adManagerBannerView: GoogleMobileAds.AdManagerBannerView
@@ -255,12 +325,18 @@ extension Tude.BannerAd : GoogleMobileAds.BannerViewDelegate, GoogleMobileAds.Ad
   @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.BannerView)
   @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.BannerView)
   @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.BannerView)
-  @objc final public func adView(_ bannerView: GoogleMobileAds.BannerView, willChangeAdSizeTo size: GoogleMobileAds.AdSize)
+  @_Concurrency.MainActor @preconcurrency @objc final public func adView(_ bannerView: GoogleMobileAds.BannerView, willChangeAdSizeTo size: GoogleMobileAds.AdSize)
 }
 @objc @_hasMissingDesignatedInitializers final public class InstreamVideoAd : Tude.BaseAd {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func generateUri(_ completion: @escaping (_ uri: Swift.String?, _ error: Swift.String?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func load(_ viewController: UIKit.UIViewController? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func preload(_ completion: (() -> Swift.Void)? = nil)
+  #endif
   @objc deinit
 }
 public protocol Logger {
@@ -270,7 +346,9 @@ public protocol Logger {
   case appIdNotSet
   case successful
   case error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -294,9 +372,15 @@ extension Tude.TargetingValue : Swift.Equatable {
   @objc final public var onAdWillDismissFullScreenContent: (() -> Swift.Void)?
   @objc final public var onAdEarnedReward: ((Tude.RewardItem) -> Swift.Void)?
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func preload(_ completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func render(_ viewController: UIKit.UIViewController, rewardHandler: ((Tude.RewardItem) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func load(_ viewController: UIKit.UIViewController?)
+  #endif
 }
 extension Tude.RewardedVideoAd : GoogleMobileAds.FullScreenContentDelegate {
   @_Concurrency.MainActor @preconcurrency @objc final public func ad(_ ad: any GoogleMobileAds.FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
@@ -320,15 +404,19 @@ extension Tude.RewardedVideoAd : GoogleMobileAds.FullScreenContentDelegate {
   @objc deinit
 }
 extension Tude.AdFailedToLoadError {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var gadErrorCode: GoogleMobileAds.RequestError.Code? {
     get
   }
+  #endif
   @objc final public var message: Swift.String {
     @objc get
   }
 }
 extension GoogleMobileAds.AdManagerBannerView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func resizeForPrebid(fallbackSize: CoreFoundation.CGSize? = nil)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func resizeForPrebid()
 }
 extension Tude.TudeFlag : Swift.Equatable {}
