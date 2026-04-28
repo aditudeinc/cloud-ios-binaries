@@ -1,6 +1,0 @@
-framework module Tude {
-  umbrella header "Tude.h"
-  export *
-
-  module * { export * }
-}
