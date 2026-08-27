@@ -32,13 +32,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Tude",
-            url: "https://github.com/aditudeinc/cloud-ios-binaries/releases/download/3.10.1/Tude.xcframework.zip",
-            checksum: "55637013a4771b26aa3de6dd1a6e9b5e9b05232f49866d1d38d87a6af2f34169"
+            url: "https://github.com/aditudeinc/cloud-ios-binaries/releases/download/3.10.2-alpha3/Tude.xcframework.zip",
+            checksum: "861bc9726e3bad4d013a47b4b65e044133393d57278b241afb15ad4f1dcacf2b"
         ),
         .binaryTarget(
             name: "DTBiOSSDK",
-            url: "https://github.com/aditudeinc/cloud-ios-binaries/releases/download/3.10.1/DTBiOSSDK.xcframework.zip",
-            checksum: "745b42ec1bb914b9a499d8f26c3d9d37df29544d5c63d550f865c67bea831965"
+            url: "https://github.com/aditudeinc/cloud-ios-binaries/releases/download/3.10.2-alpha3/DTBiOSSDK.xcframework.zip",
+            checksum: "2ede6c72bfaffcb8d39037381a5fa256779396fe99f3f353b6d0b417f9297096"
         ),
     ]
 )
