@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "13.4.0"),
-        .package(url: "https://github.com/prebid/prebid-mobile-ios.git", exact: "3.3.1"),
+        .package(url: "https://github.com/prebid/prebid-mobile-ios.git", exact: "3.3.4"),
     ],
     targets: [
         .target(
