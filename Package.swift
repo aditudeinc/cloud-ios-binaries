@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "13.4.0"),
-        .package(url: "https://github.com/prebid/prebid-mobile-ios.git", exact: "3.3.1"),
+        .package(url: "https://github.com/prebid/prebid-mobile-ios.git", exact: "3.3.4"),
     ],
     targets: [
         .target(
@@ -32,13 +32,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Tude",
-            url: "https://github.com/aditudeinc/cloud-ios-binaries/releases/download/3.10.3-pinned/Tude.xcframework.zip",
-            checksum: "625b898d976084b865bbce3ac5b57bf58888762418c46e2cae8080d9f13b0644"
+            url: "https://github.com/aditudeinc/cloud-ios-binaries/releases/download/3.10.5-alpha/Tude.xcframework.zip",
+            checksum: "dcf6fa266c34f4d72b81b5476071a5dfc39e27a981c3570257001f557da2eabe"
         ),
         .binaryTarget(
             name: "DTBiOSSDK",
-            url: "https://github.com/aditudeinc/cloud-ios-binaries/releases/download/3.10.3-pinned/DTBiOSSDK.xcframework.zip",
-            checksum: "3145c5c28fe864a15724f981ff0369278ab962dff7ab63b3594215f8b63d1901"
+            url: "https://github.com/aditudeinc/cloud-ios-binaries/releases/download/3.10.5-alpha/DTBiOSSDK.xcframework.zip",
+            checksum: "5d002fe4a28de9fe05a53a0faaa4a5ef4f2ebc0d234f97b7d8cf1cc3190c37d1"
         ),
     ]
 )
